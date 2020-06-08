@@ -7,11 +7,16 @@
   background: #b70006;
   color: #fff;
 }
+.header .headernav {
+  text-align: center;
+}
 .nav-header {
   height: 0.8rem;
   line-height: 0.8rem;
+  text-align: center;
 }
 .nav-header > li {
+  text-align: center;
   display: flex;
   align-items: center;
 }
