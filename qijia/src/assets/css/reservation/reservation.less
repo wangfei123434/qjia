@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;
+	body{
+		background-color: #f8fafc;
+		.reservation{
+			.my_header{
+				height: 40/100rem;
+				line-height: 40/100rem;
+				text-align: center;
+				font-size: 30/100rem;
+				position: relative;
+				a{
+					display: inline-block;
+					height: 40/100rem;
+					width: 40/100rem;
+					position: absolute;
+				}
+				.left{
+					left: 10/100rem;
+					background: url(../../images/预约有礼/left.png) no-repeat 0px 0px;
+					background-size: 100%;
+				}
+				.right{
+					right: 10/100rem;
+					background: url(../../images/预约有礼/detail-icons.png) no-repeat 0px -240/100rem;
+					background-size: 100%;
+				}
+			}
+			.company_brief{
+				background-color: white;
+				padding: 0 20/100rem;
+				h2,p{
+					padding: 15/100rem 0;
+				}
+				h2{
+					img{
+						height: 60/100rem;
+						width: 60/100rem;
+						border-radius: 5px;
+						vertical-align: top;
+					}
+				}
+				.star{
+					img{
+						height: 40/100rem;
+						margin-right: 20/100rem;
+					}
+				}
+				.number{
+					border-bottom: 1px solid #ccc;
+					img{
+						height: 35/100rem;
+						vertical-align: top;
+					}
+					span{
+						margin-left: -90/100rem;
+						font-size: 23/100rem;
+						i{
+							color: orangered;
+							margin-right: 40/100rem;
+						}
+					}
+				}
+				.introduce{
+					font-size: 27/100rem;
+					position: relative;
+					text-indent: 2em;
+					span,i{
+						display: inline-block;
+						height: 30/100rem;
+						width: 30/100rem;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					span{
+						left: 0;
+						background: url(../../images/预约有礼/header-icons.png) no-repeat 0px 0px;
+						background-size: 100%;
+					}
+					i{
+						right: 0;
+						background: url(../../images/预约有礼/product-arrow-1.png) no-repeat 10/100rem 0px;
+					}
+				}
+			}
+		}
+		.contanier{
+			padding: 20/100rem 20/100rem 0 20/100rem;
+			.promotion{
+				margin-bottom: 30/100rem;
+				h3{
+					padding: 20/100rem 0;
+				}
+				.discount_coupon{
+					width: 100%;
+					display: flex;
+					div{
+						width: 49%;
+						height: 240/100rem;
+						background: url(../../images/预约有礼/promotion-bg-1.png) no-repeat;
+						background-size: 100%;
+						p,h5,h2{
+							text-align: center;
+						}
+						.left_p1,.right_p1{
+							color: gray;
+							font-size: 24/100rem;
+							margin-top: 30/100rem;
+						}
+						.left_p2,.right_p3{
+							color: white;
+							font-size: 27/100rem;
+							font-weight: bold;
+						}
+					}
+					.left{
+						margin-right: 2%;
+						h4{
+							padding: 10/100rem 40/100rem;
+							text-indent: 1em;
+							color: red;
+							margin-bottom: 10/100rem;
+							font-size: 25/100rem;
+						}
+					}
+					.right{
+						h2{
+							color: red;
+						}
+						.right_p2{
+							color: red;
+							font-size: 20/100rem;
+							margin-bottom: 12/100rem;
+							span{
+								background-color: #ffecea;
+								padding: 5/100rem 20/100rem;
+								border-radius: 5px;
+							}
+						}
+					}
+					
+				}
+			}
+			.nav1{
+				.van-tabs__nav{
+					background-color: #f8fafc;
+					border: none;
+					.van-tab--active{
+						font-weight: bold;
+					}
+					span{
+						font-size: 30/100rem;
+					}
+				}
+				.van-tabs__content{
+					margin-top: 30/100rem;
+					background-color: white;
+					border-radius: 5px;
+					padding: 20/100rem 0 20/100rem 20/100rem;
+					.child{
+						position: relative;
+						margin-top: 20/100rem;
+						// border-bottom: 1px solid #ccc;
+						h4{
+							margin-bottom: 10/100rem;
+						}
+						p{
+							font-size: 23/100rem;
+							margin-bottom: 10/100rem;
+						}
+						.content{
+							color: gray;
+							width: 75%;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							-o-text-overflow: ellipsis
+						}
+						.price{
+							color: orangered;
+						}
+						.tabel{
+							color: blue;
+						}
+						span{
+							position: absolute;
+							top:50%;
+							transform: translateY(-50%);
+						    right:20/100rem;
+							color: red;
+							border: 1px solid red;
+							background-color: #fef4f3;
+							padding: 5/100rem 20/100rem;
+							border-radius: 20px;
+							font-size: 22/100rem;
+						}
+					}
+				}
+			}
+		}
+		.van-tabs__line{
+			z-index: 0;
+		}
+	}
+	
+}

@@ -1,0 +1,391 @@
+{
+	"data": {
+		"list": [{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1053/Xmr7TFAPt0kNk1YuHJhAm2bj861j.png",
+				"title": "橱柜"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1053/7NvRF84AvH20KjEbqnMs46zPHW0o.png",
+				"title": "瓷砖"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1054/3tesgxXZoPLH9ZfDk7EJUwZUJdeW.png",
+				"title": "地板"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1054/7r9Lfa1dXDZRfVky9rZ24iiBxsGB.png",
+				"title": "门窗"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1054/4S4jBe1zNhlSgc1pQIIzIozedxv1.png",
+				"title": "卫浴洁具"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1155/kb9u7JKfifLNJx5xoyJI1NKcZTeS.png",
+				"title": "全屋定制"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1139/c5sBVjg0L6uWSzbWV3mKs783UX5V.png",
+				"title": "基础建材"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1145/2BQWdkvkbVsnAybnX26TNab3nrE3.png",
+				"title": "集成吊顶"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1139/hdYN1hBdbMb5lEA2CjMYvCWeH3MM.png",
+				"title": "家用电器"
+			},
+			{
+				"srcimg": "//imgwangpu.tg.com.cn/WANGPU/2019/01/16/1053/d0SaOCWtOkNnPv4ezZ5uHYCierIo.png",
+				"title": "全部"
+			}
+		],
+		"nav": [{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1047.7km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2019/10/15/1606/FBkFN4XwVnn3xpZXSxn05GlNCAVX.jpg?imageView2/0/w/190/h/190",
+				"text": "正泰居家杭州滨江店",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1047.7km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2019/10/15/1605/hLJvCxyv8ZVrrKUpkE0Yh7GtXNSI.jpg?imageView2/0/w/190/h/190",
+				"text": "正泰居家智能杭州滨江店",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1057.5km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2018/08/31/1412/2Jdr4fH15t3vsD3GrnmYHDwVdBHN.jpg?imageView2/0/w/190/h/190",
+				"text": "杭州市欧派定制衣柜(萧山店)",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1054km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2018/11/12/1738/CHqmUiUChtyqlJ2U6kAdWl1IhZt0.jpg?imageView2/0/w/190/h/190",
+				"text": "顾家家居官方旗舰店",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1025.7km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2018/11/27/1504/KlUvIxOKJwa0pQErr76OEvjQXhX5.jpg?imageView2/0/w/190/h/190",
+				"text": "金牌厨柜店临安",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1073.1km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2020/05/28/1613/dcet1EyuDS05XDBLOFDJZwrjKBnS.png?imageView2/0/w/190/h/190",
+				"text": "杭州丽博家居有限公司",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1055.7km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2020/05/28/1613/dcet1EyuDS05XDBLOFDJZwrjKBnS.png?imageView2/0/w/190/h/190",
+				"text": "杭州奥华生态集成吊顶（新时代家居广场一楼G区19号）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1047.6km",
+				"imgae": "//imgwangpu.tg.com.cn/WANGPU/2019/01/11/0920/EDJyBwwpA8yvlBP2OCxImC78jaKp.jpg?imageView2/0/w/190/h/190",
+				"text": "杭州索菲亚全屋定制（杭州西溪山姆店）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png",
+				"introduce": "杭州索菲亚衣柜（杭州西溪山姆店）"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "981.6km",
+				"imgae": "//imgwangpu.tg.com.cn/WANGPU/2018/08/17/1532/PMhNImMNbZFRapyrHMZNPvuCfiV4.jpg?imageView2/0/w/190/h/190",
+				"text": "桐庐优格集成灶/橱柜（乔林璐店）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1055.3km",
+				"imgae": "//imgwangpu.tg.com.cn/WANGPU/2018/08/22/1705/L2njNiLOgrkK1S5wTCzSE7mAEcrO.jpg?imageView2/0/w/190/h/190",
+				"text": "杭州美大集成灶（新时代建材市场店）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png",
+				"introduce": "美大 集成灶 烟机"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1057.5km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2018/08/31/1412/2Jdr4fH15t3vsD3GrnmYHDwVdBHN.jpg?imageView2/0/w/190/h/190",
+				"text": "杭州市欧派定制衣柜(萧山店)",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1054km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2018/11/12/1738/CHqmUiUChtyqlJ2U6kAdWl1IhZt0.jpg?imageView2/0/w/190/h/190",
+				"text": "顾家家居官方旗舰店",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1025.7km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2018/11/27/1504/KlUvIxOKJwa0pQErr76OEvjQXhX5.jpg?imageView2/0/w/190/h/190",
+				"text": "金牌厨柜店临安",
+				"mouth": "口碑值2",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1073.1km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2020/05/28/1613/dcet1EyuDS05XDBLOFDJZwrjKBnS.png?imageView2/0/w/190/h/190",
+				"text": "杭州丽博家居有限公司",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1055.7km",
+				"imgae": "http://imgwangpu.tg.com.cn/WANGPU/2020/05/28/1613/dcet1EyuDS05XDBLOFDJZwrjKBnS.png?imageView2/0/w/190/h/190",
+				"text": "杭州奥华生态集成吊顶（新时代家居广场一楼G区19号）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1047.6km",
+				"imgae": "//imgwangpu.tg.com.cn/WANGPU/2019/01/11/0920/EDJyBwwpA8yvlBP2OCxImC78jaKp.jpg?imageView2/0/w/190/h/190",
+				"text": "杭州索菲亚全屋定制（杭州西溪山姆店）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png",
+				"introduce": "杭州索菲亚衣柜（杭州西溪山姆店）"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "981.6km",
+				"imgae": "//imgwangpu.tg.com.cn/WANGPU/2018/08/17/1532/PMhNImMNbZFRapyrHMZNPvuCfiV4.jpg?imageView2/0/w/190/h/190",
+				"text": "桐庐优格集成灶/橱柜（乔林璐店）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png"
+			},
+
+			{
+				"img": "//mued3.jia.com/image/mobile/activity/wp-kb-icon.png",
+				"icon": "1055.3km",
+				"imgae": "//imgwangpu.tg.com.cn/WANGPU/2018/08/22/1705/L2njNiLOgrkK1S5wTCzSE7mAEcrO.jpg?imageView2/0/w/190/h/190",
+				"text": "杭州美大集成灶（新时代建材市场店）",
+				"mouth": "口碑值1",
+				"xing": "//fastued3.jia.com/image/mobile/wxStore/star-sel.png",
+				"rise": "//mued3.jia.com/image/mobile/activity/wp-ud-icon.png",
+				"introduce": "美大 集成灶 烟机"
+			}
+		],
+		"hide":[
+			"友邦厨卫集成吊顶(62)",
+			"家居吊顶(50)",
+			"装饰吊顶(50)",
+			"定制衣柜什么牌子好(58)",
+			"定制衣柜用什么材料(58)",
+			"定制衣柜怎么样(58)",
+			"定制衣柜团购(58)",
+			"星丽衣柜怎么样(50)",
+			"吊顶团购(49)"
+		],
+		"listen":[
+			{
+				"tevt":"橱柜",
+				"number":"56"
+			},
+			{
+				"tevt":"瓷砖",
+				"number":"33"
+			},
+			{
+				"tevt":"地板",
+				"number":"8"
+			},
+			{
+				"tevt":"门窗",
+				"number":"30"
+			},
+			{
+				"tevt":"卫浴洁具",
+				"number":"29"
+			},
+			{
+				"tevt":"家具",
+				"number":"34"
+			},
+			{
+				"tevt":"家用电器",
+				"number":"46"
+			},
+			{
+				"tevt":"墙饰涂料",
+				"number":"7"
+			},
+			{
+				"tevt":"集成吊顶",
+				"number":"62"
+			},
+			{
+				"tevt":"地暖/空调",
+				"number":"56"
+			},
+			{
+				"tevt":"智能家具",
+				"number":"2"
+			},
+			{
+				"tevt":"全屋定制",
+				"number":"77"
+			},
+			{
+				"tevt":"开关照明",
+				"number":"38"
+			}
+			
+		],
+		"listao":[
+			{
+				"whole":"全部",
+				"numberone":"橱柜",
+				"numbertwo":"56",
+				"numberthree":"56"
+			},
+			{
+				"whole":"全部",
+				"numberone":"瓷砖",
+				"numbertwo":"33",
+				"numberthree":"33"
+			},
+			{
+				"whole":"全部",
+				"numberone":"地板",
+				"numbertwo":"8",
+				"numberthree":"8"
+			},
+			{
+				"whole":"全部",
+				"numberone":"木门",
+				"numberfour":"阳台窗",
+				"numbertwo":"30",
+				"numberthree":"27",
+				"numbersix":"6"
+			},
+			{
+				"whole":"全部",
+				"numberone":"卫浴",
+				"numberfour":"龙头水槽",
+				"numbertwo":"29",
+				"numberthree":"5",
+				"numbersix":"6"
+			},
+			{
+				"whole":"全部",
+				"numberone":"家具",
+				"numberfour":"沙发床垫",
+				"numbertwo":"34",
+				"numberthree":"5",
+				"numbersix":"6"
+			},
+			{
+				"whole":"全部",
+				"numberone":"卫浴电器",
+				"numberfour":"生活家电",
+				"numbefive":"厨房电器",
+				"numbertwo":"34",
+				"numberthree":"5",
+				"numbersix":"6"
+			},
+			{
+				"whole":"全部",
+				"numberone":"油漆涂料",
+				"numberfour":"硅藻泥",
+				"numbertwo":"34",
+				"numberthree":"5",
+				"numbersix":"6"
+			},
+			{
+				"whole":"全部",
+				"numberone":"集成吊顶",
+				"numbertwo":"34",
+				"numberthree":"5"
+			},
+			{
+				"whole":"全部",
+				"numberone":"中央空调",
+				"numbertwo":"34",
+				"numberthree":"5"
+			},
+			{
+				"whole":"全部",
+				"numberone":"智能家具",
+				"numbertwo":"34",
+				"numberthree":"5"
+			},
+			{
+				"whole":"全部",
+				"numberone":"全屋定制",
+				"numberfour":"移门衣柜/塌塌米",
+				"numbertwo":"34",
+				"numberthree":"5",
+				"numbersix":"6"
+			},
+			{
+				"whole":"全部",
+				"numberone":"灯饰灯具",
+				"numberfour":"开关",
+				"numbertwo":"34",
+				"numberthree":"5",
+				"numbersix":"6"
+			}
+			
+		]
+	}
+}
