@@ -1,0 +1,331 @@
+.myBox{
+	padding: 0 20/100rem;
+	.myHeader {
+		width: 100%;
+		font-size: 0.35rem;
+		font-weight: 100;
+		text-align: center;
+		position: relative;
+	
+		.left_a {
+			border-left: .02rem solid #333;
+			border-bottom: .02rem solid #333;
+			width: .2rem;
+			height: .2rem;
+			display: inline-block;
+			font-weight: bold;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: rotate(45deg) translateY(-50%);
+		}
+	
+		.right_a {
+			display: inline-block;
+			width: .45rem;
+			height: .45rem;
+			background: url(../../images/选建材/share-icon.png) no-repeat 0px 0px;
+			background-size: contain;
+			position: absolute;
+			right: 0;
+		}
+	}
+	.search{
+		width: 100%;
+		margin-top: 20/100rem;
+		text-align: center;
+		position: relative;
+		input{
+			width: 100%;
+			height: 60/100rem;
+			text-align: center;
+			border-radius: 20px;
+			border: none;
+			background-color: #f5f6f9;
+		}
+		span{
+			position: absolute;
+			left: 160/100rem;
+			top: 50%;
+			transform: translateY(-50%);
+			img{
+				height: 30/100rem;
+				width: 30/100rem;
+				margin-top: 3/100rem;
+			}
+		}
+	}
+	.advert {
+		margin:30/100rem 0 ;
+		width: 100%;
+		img {
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+	.nav{
+		width: 100%;
+		display: flex;
+		margin-bottom: 40/100rem;
+		a{
+			display: inline-block;
+			width: 25%;
+			text-align: center;
+			font-size: .25rem;
+			font-weight: bold;
+			i{
+				display: inline-block;
+				height: 58/100rem;
+				width: 58/100rem;
+				background: url(../../images/选建材/jc-icons.png) no-repeat;
+				background-size: cover;
+			}
+		}
+		:nth-of-type(1){
+			i{
+				background-position: 0rem 0rem;
+			}
+		}
+		:nth-of-type(2){
+			i{
+				background-position: 0rem -135/100rem;
+			}
+		}
+		:nth-of-type(3){
+			i{
+				background-position: 0px -205/100rem;
+			}
+		}
+		:nth-of-type(4){
+			i{
+				background-position: 0px -70/100rem;
+			}
+		}
+	}
+	.select_jc{
+		width: 100%;
+		img {
+			width: 100%;
+			margin-top: 20/100rem;
+			border-radius: 5px;
+		}
+	}
+	.my_swipe{
+		width: 100%;
+		background-color: #f7f9fc;
+		.swipe1{
+			height: 40px;
+		}
+		.swipe2{
+			height: 600/100rem;
+			ul{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				li{
+					list-style: none;
+					text-align: center;
+					width: 33.3333333%;
+					margin-top: 20/100rem;
+					a{
+						display: inline-block;
+						img{
+							height: 180/100rem;
+							border-radius: 10px;
+						}
+					}
+				}
+				:last-child{
+					a{
+						background: white;
+						padding: 45/100rem 35/100rem;
+						border-radius: 10px;
+						img{
+							height: 50/100rem;
+						}
+					}
+				}
+			}
+			h5{
+				padding: 20/100rem;
+			}
+		}	
+	}
+	h2{
+		margin: 20/100rem 0;
+	}
+	.myVant_tab{
+		ul{
+			width: 100%;
+			margin-top: 20/100rem;
+			display: flex;
+			overflow-x: scroll;
+			li{
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				margin-right: 20/100rem;
+				text-align: center;
+				background-color: #f5f6f9;
+				font-size: 25/100rem;
+				padding-bottom: 10/100rem;
+				img{
+					height: 100px;
+					width: 120px;
+					border-radius: 10px 10px 0 0 ;
+				}
+			}
+		}
+	}
+	.my_footer{
+		margin-bottom: 200px;
+		ul{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			li{
+				color: #6ba7fc;
+				font-size: 25/100rem;
+				border: 1px solid #6ba7fc;
+				border-radius: 10px;
+				padding: 2/100rem 10/100rem;
+				margin: 10/100rem 10/100rem 10/100rem 0;
+			}
+			// li:first-child{
+			// 	background-color: #000000;
+			// 	border: none;
+			// 	a{
+			// 		color: #ffffff;
+			// 	}
+				
+			// }
+			.active{
+				background-color: #569bfc;
+				border: none;
+			}
+			.active>a {
+				color: white;
+			}
+			:nth-of-type(2),:nth-of-type(3),:nth-of-type(4){
+			    color: red;
+				border-color: red;
+			}
+		}
+	}
+	.overlay{
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,.5);
+		.share{
+			background-color: #f6f6f6;
+			ul{
+				width: 100%;
+				display: flex;
+				padding-top: 40/100rem;
+				li{
+					width: 33.3333%;
+					text-align: center;
+					a{
+						display: inline-block;
+						height: 200/100rem;
+					}
+					a:before{
+						display: block;
+						content: "";
+						width: 100/100rem;
+						height: 100/100rem;
+						background: url(//mued3.jia.com/image/mobile/zhuangxiu/case_expand/shareto_icon.png) no-repeat ;
+					    background-size: 100% ;
+						margin-bottom: 20/100rem;
+					}
+				}
+				:first-child{
+					a:before{
+						background-position: 0 -110/100rem;
+					}
+				}
+				:nth-of-type(2){
+					a:before{
+						background-position: 0 -535/100rem;
+					}
+				}
+				:last-child{
+					a:before{
+						background-position: 0 0rem;
+					}
+				}
+			}
+		}
+		.cancel{
+			background-color: white;
+			text-align: center;
+			height: 80/100rem;
+			line-height: 80/100rem;
+		}
+	}
+	.v-enter,.v-leave-to{
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	.v-enter-active,.v-leave-active{
+		transition: all 0.6s ease;
+	}
+	// 点击搜索弹出框
+	.van-popup--right{
+		height: 100%;
+		width: 100%;
+		padding-top: 30/100rem;
+		.mySearch{
+			position: relative;
+			height:100/100rem ;
+			img{
+				height: 30/100rem;
+				width: 30/100rem;
+				position: absolute;
+				top: 10/100rem;
+				left: 30/100rem;
+				z-index: 9999;
+			}
+			input{
+				width: 85%;
+				height: 50/100rem;
+				border-radius: 10px;
+				position: absolute;
+				left: 20/100rem;
+				text-indent: 2em;
+				background-color: #f5f5f5;
+				border: none;
+			}
+			span{
+				color: #ccc;
+				font-size: 25/100rem;
+				position: absolute;
+				right: 20/100rem;
+				top: 10/100rem;
+			}
+		}
+		.hot{
+			padding-left: 20/100rem;
+			p{
+				font-size: 28/100rem;
+			}
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				font-size: 22/100rem;
+				margin-top: 20/100rem;
+				li{
+					margin-top: 15/100rem;
+					margin-right: 10/100rem;
+					background-color: #f5f5f5;
+					border-radius: 10px;
+					padding: 5/100rem 20/100rem;
+				}
+			}
+		}
+	}
+}

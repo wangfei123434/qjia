@@ -1,4 +1,5 @@
 module.exports = {
+<<<<<<< HEAD
   "presets": [
     "@vue/cli-plugin-babel/preset"
   ],
@@ -12,3 +13,9 @@ module.exports = {
     ]
   ]
 }
+=======
+  presets: [
+    '@vue/cli-plugin-babel/preset'
+  ]
+}
+>>>>>>> 3c8224aa2e32fb052be9d066a81565a055f5fc74

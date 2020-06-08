@@ -1,0 +1,306 @@
+.myBox {
+  padding: 0 0.2rem;
+}
+.myBox .myHeader {
+  width: 100%;
+  font-size: 0.35rem;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+}
+.myBox .myHeader .left_a {
+  border-left: 0.02rem solid #333;
+  border-bottom: 0.02rem solid #333;
+  width: 0.2rem;
+  height: 0.2rem;
+  display: inline-block;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.myBox .myHeader .right_a {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: url(../../images/选建材/share-icon.png) no-repeat 0px 0px;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+}
+.myBox .search {
+  width: 100%;
+  margin-top: 0.2rem;
+  text-align: center;
+  position: relative;
+}
+.myBox .search input {
+  width: 100%;
+  height: 0.6rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: #f5f6f9;
+}
+.myBox .search span {
+  position: absolute;
+  left: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.myBox .search span img {
+  height: 0.3rem;
+  width: 0.3rem;
+  margin-top: 0.03rem;
+}
+.myBox .advert {
+  margin: 0.3rem 0;
+  width: 100%;
+}
+.myBox .advert img {
+  width: 100%;
+  border-radius: 5px;
+}
+.myBox .nav {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+.myBox .nav a {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 0.25rem;
+  font-weight: bold;
+}
+.myBox .nav a i {
+  display: inline-block;
+  height: 0.58rem;
+  width: 0.58rem;
+  background: url(../../images/选建材/jc-icons.png) no-repeat;
+  background-size: cover;
+}
+.myBox .nav :nth-of-type(1) i {
+  background-position: 0rem 0rem;
+}
+.myBox .nav :nth-of-type(2) i {
+  background-position: 0rem -1.35rem;
+}
+.myBox .nav :nth-of-type(3) i {
+  background-position: 0px -2.05rem;
+}
+.myBox .nav :nth-of-type(4) i {
+  background-position: 0px -0.7rem;
+}
+.myBox .select_jc {
+  width: 100%;
+}
+.myBox .select_jc img {
+  width: 100%;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+}
+.myBox .my_swipe {
+  width: 100%;
+  background-color: #f7f9fc;
+}
+.myBox .my_swipe .swipe1 {
+  height: 40px;
+}
+.myBox .my_swipe .swipe2 {
+  height: 6rem;
+}
+.myBox .my_swipe .swipe2 ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myBox .my_swipe .swipe2 ul li {
+  list-style: none;
+  text-align: center;
+  width: 33.3333333%;
+  margin-top: 0.2rem;
+}
+.myBox .my_swipe .swipe2 ul li a {
+  display: inline-block;
+}
+.myBox .my_swipe .swipe2 ul li a img {
+  height: 1.8rem;
+  border-radius: 10px;
+}
+.myBox .my_swipe .swipe2 ul :last-child a {
+  background: white;
+  padding: 0.45rem 0.35rem;
+  border-radius: 10px;
+}
+.myBox .my_swipe .swipe2 ul :last-child a img {
+  height: 0.5rem;
+}
+.myBox .my_swipe .swipe2 h5 {
+  padding: 0.2rem;
+}
+.myBox h2 {
+  margin: 0.2rem 0;
+}
+.myBox .myVant_tab ul {
+  width: 100%;
+  margin-top: 0.2rem;
+  display: flex;
+  overflow-x: scroll;
+}
+.myBox .myVant_tab ul li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 0.2rem;
+  text-align: center;
+  background-color: #f5f6f9;
+  font-size: 0.25rem;
+  padding-bottom: 0.1rem;
+}
+.myBox .myVant_tab ul li img {
+  height: 100px;
+  width: 120px;
+  border-radius: 10px 10px 0 0 ;
+}
+.myBox .my_footer {
+  margin-bottom: 200px;
+}
+.myBox .my_footer ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myBox .my_footer ul li {
+  color: #6ba7fc;
+  font-size: 0.25rem;
+  border: 1px solid #6ba7fc;
+  border-radius: 10px;
+  padding: 0.02rem 0.1rem;
+  margin: 0.1rem 0.1rem 0.1rem 0;
+}
+.myBox .my_footer ul .active {
+  background-color: #569bfc;
+  border: none;
+}
+.myBox .my_footer ul .active > a {
+  color: white;
+}
+.myBox .my_footer ul :nth-of-type(2),
+.myBox .my_footer ul :nth-of-type(3),
+.myBox .my_footer ul :nth-of-type(4) {
+  color: red;
+  border-color: red;
+}
+.myBox .overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.myBox .overlay .share {
+  background-color: #f6f6f6;
+}
+.myBox .overlay .share ul {
+  width: 100%;
+  display: flex;
+  padding-top: 0.4rem;
+}
+.myBox .overlay .share ul li {
+  width: 33.3333%;
+  text-align: center;
+}
+.myBox .overlay .share ul li a {
+  display: inline-block;
+  height: 2rem;
+}
+.myBox .overlay .share ul li a:before {
+  display: block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url(//mued3.jia.com/image/mobile/zhuangxiu/case_expand/shareto_icon.png) no-repeat;
+  background-size: 100% ;
+  margin-bottom: 0.2rem;
+}
+.myBox .overlay .share ul :first-child a:before {
+  background-position: 0 -1.1rem;
+}
+.myBox .overlay .share ul :nth-of-type(2) a:before {
+  background-position: 0 -5.35rem;
+}
+.myBox .overlay .share ul :last-child a:before {
+  background-position: 0 0rem;
+}
+.myBox .overlay .cancel {
+  background-color: white;
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.myBox .v-enter,
+.myBox .v-leave-to {
+  opacity: 0;
+  transform: translateY(80px);
+}
+.myBox .v-enter-active,
+.myBox .v-leave-active {
+  transition: all 0.6s ease;
+}
+.myBox .van-popup--right {
+  height: 100%;
+  width: 100%;
+  padding-top: 0.3rem;
+}
+.myBox .van-popup--right .mySearch {
+  position: relative;
+  height: 1rem;
+}
+.myBox .van-popup--right .mySearch img {
+  height: 0.3rem;
+  width: 0.3rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.3rem;
+  z-index: 9999;
+}
+.myBox .van-popup--right .mySearch input {
+  width: 85%;
+  height: 0.5rem;
+  border-radius: 10px;
+  position: absolute;
+  left: 0.2rem;
+  text-indent: 2em;
+  background-color: #f5f5f5;
+  border: none;
+}
+.myBox .van-popup--right .mySearch span {
+  color: #ccc;
+  font-size: 0.25rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.1rem;
+}
+.myBox .van-popup--right .hot {
+  padding-left: 0.2rem;
+}
+.myBox .van-popup--right .hot p {
+  font-size: 0.28rem;
+}
+.myBox .van-popup--right .hot ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.22rem;
+  margin-top: 0.2rem;
+}
+.myBox .van-popup--right .hot ul li {
+  margin-top: 0.15rem;
+  margin-right: 0.1rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 0.05rem 0.2rem;
+}
