@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-color: #f8fafc;
+}
+* body .reservation .my_header {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.3rem;
+  position: relative;
+}
+* body .reservation .my_header a {
+  display: inline-block;
+  height: 0.4rem;
+  width: 0.4rem;
+  position: absolute;
+}
+* body .reservation .my_header .left {
+  left: 0.1rem;
+  background: url(../../images/预约有礼/left.png) no-repeat 0px 0px;
+  background-size: 100%;
+}
+* body .reservation .my_header .right {
+  right: 0.1rem;
+  background: url(../../images/预约有礼/detail-icons.png) no-repeat 0px -2.4rem;
+  background-size: 100%;
+}
+* body .reservation .company_brief {
+  background-color: white;
+  padding: 0 0.2rem;
+}
+* body .reservation .company_brief h2,
+* body .reservation .company_brief p {
+  padding: 0.15rem 0;
+}
+* body .reservation .company_brief h2 img {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 5px;
+  vertical-align: top;
+}
+* body .reservation .company_brief .star img {
+  height: 0.4rem;
+  margin-right: 0.2rem;
+}
+* body .reservation .company_brief .number {
+  border-bottom: 1px solid #ccc;
+}
+* body .reservation .company_brief .number img {
+  height: 0.35rem;
+  vertical-align: top;
+}
+* body .reservation .company_brief .number span {
+  margin-left: -0.9rem;
+  font-size: 0.23rem;
+}
+* body .reservation .company_brief .number span i {
+  color: orangered;
+  margin-right: 0.4rem;
+}
+* body .reservation .company_brief .introduce {
+  font-size: 0.27rem;
+  position: relative;
+  text-indent: 2em;
+}
+* body .reservation .company_brief .introduce span,
+* body .reservation .company_brief .introduce i {
+  display: inline-block;
+  height: 0.3rem;
+  width: 0.3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+* body .reservation .company_brief .introduce span {
+  left: 0;
+  background: url(../../images/预约有礼/header-icons.png) no-repeat 0px 0px;
+  background-size: 100%;
+}
+* body .reservation .company_brief .introduce i {
+  right: 0;
+  background: url(../../images/预约有礼/product-arrow-1.png) no-repeat 0.1rem 0px;
+}
+* body .contanier {
+  padding: 0.2rem 0.2rem 0 0.2rem;
+}
+* body .contanier .promotion {
+  margin-bottom: 0.3rem;
+}
+* body .contanier .promotion h3 {
+  padding: 0.2rem 0;
+}
+* body .contanier .promotion .discount_coupon {
+  width: 100%;
+  display: flex;
+}
+* body .contanier .promotion .discount_coupon div {
+  width: 49%;
+  height: 2.4rem;
+  background: url(../../images/预约有礼/promotion-bg-1.png) no-repeat;
+  background-size: 100%;
+}
+* body .contanier .promotion .discount_coupon div p,
+* body .contanier .promotion .discount_coupon div h5,
+* body .contanier .promotion .discount_coupon div h2 {
+  text-align: center;
+}
+* body .contanier .promotion .discount_coupon div .left_p1,
+* body .contanier .promotion .discount_coupon div .right_p1 {
+  color: gray;
+  font-size: 0.24rem;
+  margin-top: 0.3rem;
+}
+* body .contanier .promotion .discount_coupon div .left_p2,
+* body .contanier .promotion .discount_coupon div .right_p3 {
+  color: white;
+  font-size: 0.27rem;
+  font-weight: bold;
+}
+* body .contanier .promotion .discount_coupon .left {
+  margin-right: 2%;
+}
+* body .contanier .promotion .discount_coupon .left h4 {
+  padding: 0.1rem 0.4rem;
+  text-indent: 1em;
+  color: red;
+  margin-bottom: 0.1rem;
+  font-size: 0.25rem;
+}
+* body .contanier .promotion .discount_coupon .right h2 {
+  color: red;
+}
+* body .contanier .promotion .discount_coupon .right .right_p2 {
+  color: red;
+  font-size: 0.2rem;
+  margin-bottom: 0.12rem;
+}
+* body .contanier .promotion .discount_coupon .right .right_p2 span {
+  background-color: #ffecea;
+  padding: 0.05rem 0.2rem;
+  border-radius: 5px;
+}
+* body .contanier .nav1 .van-tabs__nav {
+  background-color: #f8fafc;
+  border: none;
+}
+* body .contanier .nav1 .van-tabs__nav .van-tab--active {
+  font-weight: bold;
+}
+* body .contanier .nav1 .van-tabs__nav span {
+  font-size: 0.3rem;
+}
+* body .contanier .nav1 .van-tabs__content {
+  margin-top: 0.3rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.2rem 0 0.2rem 0.2rem;
+}
+* body .contanier .nav1 .van-tabs__content .child {
+  position: relative;
+  margin-top: 0.2rem;
+}
+* body .contanier .nav1 .van-tabs__content .child h4 {
+  margin-bottom: 0.1rem;
+}
+* body .contanier .nav1 .van-tabs__content .child p {
+  font-size: 0.23rem;
+  margin-bottom: 0.1rem;
+}
+* body .contanier .nav1 .van-tabs__content .child .content {
+  color: gray;
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+* body .contanier .nav1 .van-tabs__content .child .price {
+  color: orangered;
+}
+* body .contanier .nav1 .van-tabs__content .child .tabel {
+  color: blue;
+}
+* body .contanier .nav1 .van-tabs__content .child span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.2rem;
+  color: red;
+  border: 1px solid red;
+  background-color: #fef4f3;
+  padding: 0.05rem 0.2rem;
+  border-radius: 20px;
+  font-size: 0.22rem;
+}
+* body .van-tabs__line {
+  z-index: 0;
+}
