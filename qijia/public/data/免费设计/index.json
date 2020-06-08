@@ -1,0 +1,67 @@
+{
+    "list":[
+        {
+            "auter":{
+                "imgsrc":"https://mued3.jia.com/image/mobile/toufang/s1.png",
+                "name":"郝天",
+                "title":"6年设计经验",
+                "txt":"擅长北欧和现代简约风格设计"
+            },
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/big1.png"
+        },
+        {
+            "auter":{
+                "imgsrc":"https://mued3.jia.com/image/mobile/toufang/s2.png",
+                "name":"吉木森",
+                "title":"8年设计经验",
+                "txt":"擅长合理布局，打造舒适空间"
+            },
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/big2.png"
+        },
+        {
+            "auter":{
+                "imgsrc":"https://mued3.jia.com/image/mobile/toufang/s3.png",
+                "name":"孙立新",
+                "title":"7年设计经验",
+                "txt":"擅长美式田园和地中海风格设计"
+            },
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/big3.png"
+        },
+        {
+            "auter":{
+                "imgsrc":"https://mued3.jia.com/image/mobile/toufang/s4.png",
+                "name":"班松涛",
+                "title":"12年设计经验",
+                "txt":"擅长空间利用和户型改造改造"
+            },
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/big4.png"
+        },
+        {
+            "auter":{
+                "imgsrc":"https://mued3.jia.com/image/mobile/toufang/s5.png",
+                "name":"贺永美",
+                "title":"7年设计经验",
+                "txt":"擅长中式和现代简约风格设计"
+            },
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/big5.png"
+        }
+        
+    ],
+    "navlist":[
+        {
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/zz1.png",
+            "title":"专业预算规划",
+            "con":" 厨、卫、卧、厅 各空间造价最优分配 人工、主材、辅材等300个项目详尽拆解 "
+        },
+        {
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/zz2.png",
+            "title":"3D全景家装体验",
+            "con":"  根据你的户型图，定制720度全景家装方案 还未装修，亲眼看见家装效果  "
+        },
+        {
+            "imgsrc":"https://mued3.jia.com/image/mobile/toufang/zz3.png",
+            "title":"专业监理质检",
+            "con":"  五次节点验收，严控工期和施工质量 平台服务 专业 公正 透明 "
+        }
+    ]
+}
