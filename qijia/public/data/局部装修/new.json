@@ -1,0 +1,52 @@
+{
+
+	"data": {
+		"mySwiper": [{
+				"arrSrc": "//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/s1.png",
+				"title": "厨房翻新"
+			},
+			{
+				"arrSrc": "//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/s2.png",
+				"title": "卫生间翻新"
+			},
+			{
+				"arrSrc": "//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/s3.png",
+				"title": "墙面刷新"
+			},
+			{
+				"arrSrc": "//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/s4.png",
+				"title": "卧室翻新"
+			},
+			{
+				"arrSrc": "//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/s5.png",
+				"title": "阳台翻新"
+			},
+			{
+				"arrSrc": "//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/s6.png",
+				"title": "更多局部服装"
+			}
+		],
+		"option": [
+			{
+				"srr": "厨房翻新",
+				"imgSrc":"//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/sl_i1.png"
+			},
+			{
+				"srr": "卫生间翻新",
+				"imgSrc":"//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/sl_i2.png"
+			},
+			{
+				"srr": "墙面刷新",
+				"imgSrc":"//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/sl_i3.png"
+			},
+			{
+				"srr": "卧室翻新",
+				"imgSrc":"//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/sl_i4.png"
+			},
+			{
+				"srr": "阳台翻新",
+				"imgSrc":"//mued3.jia.com/image/mobile/zhuangxiu/wap_jubu/sl_i5.png"
+			}
+		]
+	}
+}
