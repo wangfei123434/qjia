@@ -39,12 +39,9 @@
 			"https://tgi12.jia.com/128/398/28398136.jpg",
 			"https://tgi13.jia.com/128/330/28330348.jpg",
 			"https://tgi13.jia.com/128/384/28384687.jpg",
-<<<<<<< HEAD
 			"https://tgi12.jia.com/127/279/27279956.png",
-			"https://tgi13.jia.com/128/330/28330348.jpg"
-=======
+			"https://tgi13.jia.com/128/330/28330348.jpg",
 			"https://tgi12.jia.com/127/279/27279956.png"
->>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
 		],
 		"nav2":[
 			"推荐",
@@ -71,10 +68,6 @@
 				"roadwork":9.9,
 				"serve":10,
 				"my_label":[
-<<<<<<< HEAD
-
-=======
->>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
 					"三维设计",
 					"样板房带看",
 					"超长质保期"
@@ -86,10 +79,7 @@
 				"imgSrc":"https://imgmall.tg.com.cn/zx/2020/04/12/0926/f486d533ef4b66efb4ed998f80e8.jpeg?imageView2/2/w/320",
 				"title":"领航装饰",
 				"right_top_bgSrc":"//mued3.jia.com/image/mobile/zhuangxiu/success-zxgs-renzhen.png",
-<<<<<<< HEAD
 				"left_top_src":"//mued3.jia.com/image/mobile/zhuangxiu/success-zxgs-star2.png",
-=======
->>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
 				"style_width":"85%",
 				"favorable_rate":"100%",
 				"design":10,

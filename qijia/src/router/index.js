@@ -1,20 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-<<<<<<< HEAD
-import Home from '../views/Home.vue'
 import BuildingMaterials from "../views/buildingMaterials/BuildingMaterials.vue"
+import Home from '../views/Home/home.vue'
 
+import MustBuy1 from "../components/mustBuy1.vue"
+import MustBuy2 from "../components/mustBuy2.vue"
+import MustBuy3 from "../components/mustBuy3.vue"
+import MustBuy4 from "../components/mustBuy4.vue"
+import MustBuy5 from "../components/mustBuy5.vue"
+import MustBuy6 from "../components/mustBuy6.vue"
+import MustBuy7 from "../components/mustBuy7.vue"
+import MustBuy8 from "../components/mustBuy8.vue"
 Vue.use(VueRouter)
 
 const routes = [{
 		path: '/',
 		name: 'Home',
 		component: Home
-	},
-	{
-		path: '/about',
-		name: 'About',
-		component: () => import('../views/About.vue')
 	},
 	{
 		path: '/buildingMaterials',
@@ -35,71 +37,38 @@ const routes = [{
 		path: '/Business',
 		name: 'business',
 		component: () => import('../views/Business/business.vue')
-	}
-
-=======
-import Home from '../views/Home/home.vue'
-import BuildingMaterials from "../views/buildingMaterials/BuildingMaterials.vue"
-
-import MustBuy1 from "../components/mustBuy1.vue"
-import MustBuy2 from "../components/mustBuy2.vue"
-import MustBuy3 from "../components/mustBuy3.vue"
-import MustBuy4 from "../components/mustBuy4.vue"
-import MustBuy5 from "../components/mustBuy5.vue"
-import MustBuy6 from "../components/mustBuy6.vue"
-import MustBuy7 from "../components/mustBuy7.vue"
-import MustBuy8 from "../components/mustBuy8.vue"
-Vue.use(VueRouter)
-
-
-
-const routes = [{
-			path: '/',
-			name: 'Home',
-			component: Home
-		}, {
-			path: '/buildingMaterials',
-			name: 'BuildingMaterials',
-			component: () =>
-				import('../views/buildingMaterials/BuildingMaterials.vue')
-		}, {
-			path: '/mine',
-			name: 'Mine',
-			component: () =>
-				import('../views/mine/Mine.vue')
-		}, {
-			path: '/freesheji',
-			name: 'Freesheji',
-			component: () =>
-				import('../views/Home/freesheji.vue')
-		}, {
-			path: '/community',
-			name: 'Community',
-			redirect: '/community/forum',
-			component: () =>
-				import('../views/community/Community.vue'),
-			children: [{
-				path: '/community/question',
-				component: () =>
-					import('../components/community/question'),
-				redirect: '/community/question/remen',
-				children: [{
-					path: '/community/question/remen',
-					component: () =>
-						import('../components/community/remen')
-				}]
-			}, {
-				path: '/community/forum',
-				component: () =>
-					import('../components/community/forum')
-			}]
-		},
-		{
-			path: '/about',
-		name: 'About',
+	},{
+		path: '/mine',
+		name: 'Mine',
 		component: () =>
-		import('../views/About.vue')
-		},
+			import('../views/mine/Mine.vue')
+	}, {
+		path: '/freesheji',
+		name: 'Freesheji',
+		component: () =>
+			import('../views/Home/freesheji.vue')
+	}, {
+		path: '/community',
+		name: 'Community',
+		redirect: '/community/forum',
+		component: () =>
+			import('../views/community/Community.vue'),
+		children: [{
+			path: '/community/question',
+			component: () =>
+				import('../components/community/question'),
+			redirect: '/community/question/remen',
+			children: [{
+				path: '/community/question/remen',
+				component: () =>
+					import('../components/community/remen')
+			}]
+		}, {
+			path: '/community/forum',
+			component: () =>
+				import('../components/community/forum')
+		}]
+	},
 	{
 		path: '/buildingMaterials',
 		name: 'BuildingMaterials',
@@ -133,21 +102,16 @@ const routes = [{
 			path: "mustbuy8",
 			component: MustBuy8
 		}]
-	}, {
+	}, 
+	{
 		path: '/reservation',
 		name: 'reservation',
 		component: () =>
 			import('../views/reservation/reservation.vue')
 	}
->>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
 ]
 
 const router = new VueRouter({
 	routes
 })
-
-<<<<<<< HEAD
 export default router
-=======
-export default router
->>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
