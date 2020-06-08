@@ -36,10 +36,10 @@
           <router-link to="/home">首页</router-link>
         </div>
         <div :class="{active:curindex==1}" @click="curindex=1">
-          <router-link to="/renovate">找装修</router-link>
+          <router-link to="/renovation">找装修</router-link>
         </div>
         <div :class="{active:curindex==2}" @click="curindex=2">
-          <router-link to="/choosematerials">选建材</router-link>
+          <router-link to="/buildingMaterials">选建材</router-link>
         </div>
         <div :class="{active:curindex==3}" @click="curindex=3">
           <router-link to="/community">社区</router-link>

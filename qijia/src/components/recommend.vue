@@ -276,14 +276,14 @@
           >{{itemc.name1}}</li>
         </ul>
         <!-- 小编推荐等 -->
-        <div v-for="(items,indexs) in gongnue" :key="indexs" class="gongnues">
+        <div v-for="(items,index) in gongnue"  class="gongnues" :key="index">
           <div
             v-for="(itemy,indexy) in items.desc"
-            :key="indexy"
+            :key="indexy+'-only1'"
             class="gongbuenav"
             style="border-bottom: 1px solid rgba(236, 236, 236);"
           >
-            <div v-for="(itemz,indexz) in itemy.stylepic" :key="indexz">
+            <div class="aa" v-for="(itemz,indexz) in itemy.stylepic" :key="indexz+'-only2'">
               <p>{{itemz.title}}</p>
               <img :src="itemz.imgsrc" alt class="gongnuepic" />
               <div>

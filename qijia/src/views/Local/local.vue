@@ -30,7 +30,7 @@
 		</div>
 		
 		<van-tabs animated>
-		  <van-tab v-for="item,index in list.option" :title="item.srr" class="tab">
+		  <van-tab v-for="(item,index) in list.option" :title="item.srr" class="tab" :key="index">
 		    <img :src="item.imgSrc" alt="">
 		  </van-tab>
 		</van-tabs>
@@ -97,7 +97,7 @@
 					</div>
 					<!-- 三维设计 -->
 					<div class="three">
-						<a class="threeone" v-for="(itemone,index) in item.my_label">
+						<a class="threeone" v-for="(itemone,index) in item.my_label" :key="index">
 							{{itemone}}
 						</a>
 					</div>

@@ -13,58 +13,51 @@ import MustBuy7 from "../components/mustBuy7.vue"
 import MustBuy8 from "../components/mustBuy8.vue"
 Vue.use(VueRouter)
 
-const routes = [{
-    path: '/home',
-    redirect:"/home/recommend",  //重定向
-    name: 'Home',
-    component: Home,
-     //配置首页的二级路由
-     children:[
-      {path:"recommend",component:()=>import ('../components/recommend.vue')},
-      {path:"shenzhen",component:()=>import ('../components/shenzhen.vue')},
-      {path:"brand",component:()=> import ('../components/brand.vue')},
-      {path:"tvlive",component:()=> import('../components/tvlive.vue')},
-      {path:"strategy",component:()=>import('../components/strategy.vue')},
-      {path:"housing",component:()=>import('../components/housing.vue')},
-      {path:"meitu",component:()=>import('../components/meitu.vue')},
-      {path:"diray",component:()=>import('../components/diray.vue')},
-      {path:"case",component:()=>import('../components/case.vue')},
-      {path:"topic",component:()=>import('../components/topic.vue')},
-      {path:"vedio",component:()=>import('../components/vedio.vue')},
-      {path:"logsorting",component:()=>import('../components/logsorting.vue')},
-      {path:"fengshui",component:()=>import('../components/fengshui.vue')}
-    ]
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path: '/renovate',
-    // redirect:"/broadcast/films",  //重定向
-    name: 'Renovate',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Renovate/renovate.vue'),
-  },
-  {
-    path: '/choosematerials',
-    name: 'Choosematerials', 
-    component: () => import(/* webpackChunkName: "about" */ '../views/Choosematerials/choosematerials.vue')
-  },
-  
-  {
-    path: '/login',
-    name: 'Login',
-    component: () => import(/* webpackChunkName: "about" */'../components/login.vue')
-  },
+const routes = [
 	{
-		path: '/buildingMaterials',
-		name: 'BuildingMaterials',
-		component: () => import('../views/buildingMaterials/BuildingMaterials.vue')
+		path: "/",
+		redirect: "/home/recommend",
 	},
+	{
+		path: '/home',
+		redirect: "/home/recommend",  //重定向
+		name: 'Home',
+		component: Home,
+		//配置首页的二级路由
+		children: [
+			{ path: "recommend", component: () => import('../components/recommend.vue') },
+			{ path: "shenzhen", component: () => import('../components/shenzhen.vue') },
+			{ path: "brand", component: () => import('../components/brand.vue') },
+			{ path: "tvlive", component: () => import('../components/tvlive.vue') },
+			{ path: "strategy", component: () => import('../components/strategy.vue') },
+			{ path: "housing", component: () => import('../components/housing.vue') },
+			{ path: "meitu", component: () => import('../components/meitu.vue') },
+			{ path: "diray", component: () => import('../components/diray.vue') },
+			{ path: "case", component: () => import('../components/case.vue') },
+			{ path: "topic", component: () => import('../components/topic.vue') },
+			{ path: "vedio", component: () => import('../components/vedio.vue') },
+			{ path: "logsorting", component: () => import('../components/logsorting.vue') },
+			{ path: "fengshui", component: () => import('../components/fengshui.vue') }
+		]
+	},
+	{
+		path: '/renovate',
+		// redirect:"/broadcast/films",  //重定向
+		name: 'Renovate',
+		component: () => import(/* webpackChunkName: "about" */ '../views/Renovate/renovate.vue'),
+	},
+	{
+		path: '/choosematerials',
+		name: 'Choosematerials',
+		component: () => import(/* webpackChunkName: "about" */ '../views/Choosematerials/choosematerials.vue')
+	},
+
+	{
+		path: '/login',
+		name: 'Login',
+		component: () => import(/* webpackChunkName: "about" */'../components/login.vue')
+	},
+
 	{
 		path: '/renovation',
 		name: 'Renovation',
@@ -79,7 +72,7 @@ const routes = [{
 		path: '/Business',
 		name: 'business',
 		component: () => import('../views/Business/business.vue')
-	},{
+	}, {
 		path: '/mine',
 		name: 'Mine',
 		component: () =>
@@ -144,17 +137,23 @@ const routes = [{
 			path: "mustbuy8",
 			component: MustBuy8
 		}]
-	}, 
+	},
+
+	{
+		path: '/renovation',
+		name: 'renovation',
+		component: () =>
+			import('../views/Renovation/renovation.vue')
+	},
 	{
 		path: '/reservation',
-		name: 'reservation',
 		component: () =>
-			import('../views/reservation/reservation.vue')
+			import('../views/reservation/reservation.vue'),
 	}
 ]
 
 const router = new VueRouter({
 	routes,
-  mode: 'history',//就是去掉了#号 默认是hash模式是加了#号的
+	mode: 'history',//就是去掉了#号 默认是hash模式是加了#号的
 })
 export default router

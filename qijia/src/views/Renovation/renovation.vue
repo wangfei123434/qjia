@@ -40,7 +40,7 @@
 					</ul>
 					<!-- 列表 -->
 					<ul class="list">
-						<li v-for="(item,index) in arr.list" :key="index">
+						<li v-for="(item,index) in arr.list" :key="index" @click="goTo()">
 							<div class="left">
 								<img :src="item.imgSrc" alt="">
 							</div>
@@ -62,7 +62,7 @@
 								</div>
 								<!-- 三维设计 -->
 								<div class="three">
-									<a class="threeone" v-for="(itemone,index) in item.my_label">
+									<a class="threeone" v-for="(itemone,index) in item.my_label" :key="index">
 										{{itemone}}
 									</a>
 								</div>
@@ -106,7 +106,7 @@
 								</div>
 								<!-- 三维设计 -->
 								<div class="three">
-									<a class="threeone" v-for="(itemone,index) in item.my_label">
+									<a class="threeone" v-for="(itemone,index) in item.my_label" :key="index">
 										{{itemone}}
 									</a>
 								</div>
@@ -149,7 +149,7 @@
 								</div>
 								<!-- 三维设计 -->
 								<div class="three">
-									<a class="threeone" v-for="(itemone,index) in item.my_label">
+									<a class="threeone" v-for="(itemone,index) in item.my_label" :key="index">
 										{{itemone}}
 									</a>
 								</div>
@@ -176,7 +176,7 @@
 		<div class="body" v-show="show" @click="show=false">
 			<div class="tion">
 				<ul class="tionone">
-					<li @click="change(index)" v-for="(item,index) in list" :class="{'tion2':ind === index}">
+					<li @click="change(index)" v-for="(item,index) in list" :class="{'tion2':ind === index}" :key="index">
 						<a href="#">{{item}}</a>
 					</li>
 				</ul>
@@ -190,7 +190,7 @@
 						<p>综合排序</p>
 						<p>齐家平台综合智能排序</p>
 					</div>
-					<li @click="en(index)" v-for="(item,index) in listen" :class="{'ao':ten === index}">
+					<li @click="en(index)" v-for="(item,index) in listen" :class="{'ao':ten === index}" :key="index">
 						<a href="#">{{item}}</a>
 					</li>
 				</ul>
@@ -202,27 +202,27 @@
 					<h4>擅长房型</h4>
 				<ul class="shanchang">
 				
-					<li @click="fang(index)" v-for="(item,index) in listone"  :class="{'tion3':one === index}">
+					<li @click="fang(index)" v-for="(item,index) in listone"  :class="{'tion3':one === index}"  :key="index" >
 						<a href="#">{{item}}</a>
 					</li>
 				</ul>
 				<h4 class="hr">装修服务</h4>
 				<ul class="shanchang">
-					<li @click="xiu(index)" v-for="(item,index) in listtwo"  :class="{'tion3':two === index}">
+					<li @click="xiu(index)" v-for="(item,index) in listtwo"  :class="{'tion3':two === index}"  :key="index">
 						<a href="#">{{item}}</a>
 					</li>
 				</ul>
 				
 				<h4 class="hr">特色服务</h4>
 				<ul class="shanchang">
-					<li @click="hao(index)" v-for="(item,index) in arr.nav3" :class="{'tion3':arren === index}">
+					<li @click="hao(index)" v-for="(item,index) in arr.nav3" :class="{'tion3':arren === index}"  :key="index">
 						<a href="#">{{item}}</a>
 					</li>
 				</ul>
 				
 				<h4 class="hr">风格偏好</h4>
 				<ul class="shanchang">
-					<li @click="feng(index)" v-for="(item,index) in listthree" :class="{'tion3':three === index}">
+					<li @click="feng(index)" v-for="(item,index) in listthree" :class="{'tion3':three === index}"  :key="index">
 						<a href="#">{{item}}</a>
 					</li>
 				</ul>
@@ -260,6 +260,9 @@
 				window.addEventListener('scroll', this.handleScroll)
 		},
 		methods: {
+			goTo(){
+				this.$router.push('/reservation')
+			},
 			aaa() {
 				this.show = !this.show
 				this.bobyonearr = false

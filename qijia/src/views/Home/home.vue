@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- 首页的父组件 -->
 <template>
     <div class="home">
@@ -80,13 +79,3 @@
 <style lang="less">
   @import url("../../assets/css/home/home.css");
 </style>
-=======
-<template>
-    <div></div>
-</template>
-<script>
-export default {
-    name:'home'
-}
-</script>
->>>>>>> c76122b522511c76fc68199160efa980652ebfb6

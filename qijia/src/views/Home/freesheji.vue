@@ -208,7 +208,7 @@ export default {
       box-sizing: border-box;
       padding: 18/100rem;
       border-radius: 8px;
-      > div {
+      >div {
         box-sizing: border-box;
         width: 100%;
         margin-bottom: 15/100rem;

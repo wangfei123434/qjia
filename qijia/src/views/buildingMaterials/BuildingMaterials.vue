@@ -46,7 +46,7 @@
   			</van-tabs> -->
   			<!-- 类别轮播 -->
   			<mt-swipe :auto="2000" :show-indicators="false" class="swipe2">
-  				<mt-swipe-item v-for="(item,index) in buildingMaterials_data.listb">
+  				<mt-swipe-item v-for="(item,index) in buildingMaterials_data.listb" :key="index">
   					<h5>{{ item.nav }}</h5>
   					<ul>
   						<li ref="li" v-for="(itemChild,indexChild) in item.list1_child" :key="indexChild">
@@ -72,7 +72,7 @@
   		<van-tabs class="myVant_tab" animated>
   		  <van-tab v-for="(item,index) in nav1" :key="index" :title="item">
   		    <ul>
-  				<li v-for="(itemChild,indexChild) in nav_detailData[index].detail_list">
+  				<li v-for="(itemChild,indexChild) in nav_detailData[index].detail_list" :key="indexChild">
   					<img :src="itemChild.img" />
   					<br />
   					品牌热度：{{ itemChild.heat}}
