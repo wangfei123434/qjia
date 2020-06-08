@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.login .top {
+  height: 0.7rem;
+  line-height: 0.7rem;
+  position: relative;
+}
+.login .top a {
+  color: rgba(52, 52, 52);
+}
+.login .top .back {
+  position: absolute;
+  left: 0.3rem;
+}
+.login .login-nav {
+  background: #fff;
+  display: flex;
+}
+.login .login-nav li {
+  flex: 1;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.login .login-nav .tored {
+  border-bottom: 2px solid rgba(208, 0, 0);
+  color: rgba(208, 0, 0);
+}
+.login .login-form {
+  margin-top: 0.3rem;
+  background: #fff;
+  border: 1px solid #e3e0e0;
+  border-bottom: none;
+}
+.login .login-form form {
+  height: 0.7rem;
+  line-height: 0.7rem;
+  border-bottom: 1px solid #e3e0e0;
+  text-align: left;
+  padding-left: 0.2rem;
+}
+.login .login-form form input {
+  border: none;
+  outline: none;
+}
+.login .login-form form ::-webkit-input-placeholder {
+  color: rgba(205, 205, 205);
+}
+.login .login-form form .span01 img {
+  width: 0.3rem;
+  vertical-align: middle;
+  margin-right: 0.15rem;
+}
+.login .login-form .form01 {
+  display: flex;
+}
+.login .login-form .form01 .div02 {
+  border-left: 1px solid lightgray;
+  display: flex;
+}
+.login .login-form .form01 .div02 .code {
+  width: 1.5rem;
+  height: 100%;
+}
+.login .login-form .form01 .div02 a {
+  height: 100%;
+  display: inline-block;
+  color: red;
+  margin-left: 0.3rem;
+}
+.login .login-form .form02 {
+  display: flex;
+}
+.login .login-form .form02 div:nth-of-type(2) {
+  border-left: 1px solid lightgray;
+  padding-left: 0.5rem;
+}
+.login .login-form .form02 div:nth-of-type(2) a {
+  color: red;
+}
+.login .login-p {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: left;
+  padding: 0.2rem;
+  color: rgba(179, 179, 179);
+}
+.login .btn {
+  width: 90%;
+  color: #fff;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 0.08rem;
+  margin: 0.2rem;
+  background: rgba(208, 0, 0);
+}
+.login .btn input {
+  border: none;
+  color: #fff;
+  outline: none;
+  width: 100%;
+  background: rgba(208, 0, 0);
+  height: 100%;
+  border-radius: 0.08rem;
+}
+.login .pwd {
+  width: 90%;
+  margin: 0.2rem;
+  overflow: hidden;
+}
+.login .pwd a {
+  color: rgba(73, 178, 249);
+}
+.login .pwd a:first-of-type {
+  float: left;
+}
+.login .pwd a:nth-of-type(2) {
+  float: right;
+}
+.login .other-login {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.login .other-login div {
+  position: relative;
+}
+.login .other-login div .line {
+  content: "";
+  top: 50%;
+  position: absolute;
+  width: 50%;
+  height: 1px;
+}
+.login .other-login div .line01 {
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+.login .other-login div .line02 {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+.login .other-login div .word {
+  font-size: 12px;
+  padding: 0 0.1rem;
+  margin: 0 0.1rem;
+  display: inline-block;
+}
+.login .other-login .qq {
+  display: flex;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+.login .other-login .qq li {
+  flex: 1;
+}
+.login .other-login .qq li a img {
+  border-radius: 50%;
+  width: 0.55rem;
+}
+.login .other-login .login-footer {
+  margin-top: 0.6rem;
+  color: rgba(157, 157, 157);
+  font-size: 13px;
+}
+.login .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 12px;
+  color: rgba(157, 157, 157);
+}
+.person {
+  width: 0.5rem !important;
+}
+.password {
+  width: 0.5rem !important;
+}
+.form03 {
+  position: relative;
+}
+.div03 {
+  border: none !important;
+  position: absolute;
+  right: 0.2rem;
+}

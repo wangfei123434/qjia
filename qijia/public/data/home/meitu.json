@@ -1,0 +1,1444 @@
+{
+    "mydata": {
+        "nav": [
+            {
+                "title": "推荐",
+                "desc": [
+                    {
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/2020/06/05/a5054eb0fd6a404ebba32121cccd79d0_v1.gif?imageMogr2/crop/!285x190a27a0",
+                                "finishStyle": "新房装修耗时半年终于完工，轻奢风格显得太上档次了，忍不住想晒...",
+                                "person": "http://imgmall.tg.com.cn/kol/2020/02/08/1132/pGBcKzKsEsxNAJkeNwT2NYY7QRWX.jpg",
+                                "name": "气质家居"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/9/172/4153d8f2-2c23-4198-965e-de4ea6522129.jpg?imageView2/2/w/2000",
+                                "finishStyle": "68平米两居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "65㎡小户型装修沙发边几设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1150/fe7ce6e9-bc5d-47ed-b366-d1a4c8a2218b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《自在林间》安之若素，质朴为真",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "smalltitle": "日式|4室及以上",
+                                "name": "熹维设计"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/2020/06/05/a83c81dc56ad4bf8af7561b463d1c143_v1.gif?imageMogr2/crop/!285x190a27a0",
+                                "finishStyle": "110平新房花费40万装修轻奢风，全屋处处是亮点，沙发墙太漂...",
+                                "person": "http://imgmall.tg.com.cn/kol/2020/02/08/1132/pGBcKzKsEsxNAJkeNwT2NYY7QRWX.jpg",
+                                "name": "气质家居"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/8/14/162/b635ac86-9a35-42b6-af40-a09aa3d464b8.JPG?imageView2/2/w/2000",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/119/757/19757535.l.jpg",
+                                "finishStyle": "120平现代简约过道装修效果图"
+                            },
+                            {
+                                "imgSrc": "http://tgi1.jia.com/125/822/25822332.l.jpg",
+                                "finishStyle": "温暖如初|现代|两室|67平米|客厅,餐厅,卫生间",
+                                "name": "现代/两室"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/127/810/27810066.l.jpg",
+                                "finishStyle": "50㎡复式两居装修书桌柜设计图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/854/09c1717a-c14e-4595-ad58-20ee3516ef8d.jpg?imageView2/2/w/2000",
+                                "finishStyle": "暖阳 | 入户小院改造下沉式客厅，开放式厨餐厅让生活更暖心",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "壹石设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2017/12/2/1826/af82d26f-0fd6-4eb9-a2ba-93e85eed3182.jpg?imageView2/2/w/2000",
+                                "finishStyle": "80平日式装修沙发背景墙图片"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/10/27/931/2e26d563-4236-4555-98f9-eec96162cb5f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式三居餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1150/fe7ce6e9-bc5d-47ed-b366-d1a4c8a2218b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《自在林间》安之若素，质朴为真",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "smalltitle": "日式|4室及以上",
+                                "name": "熹维设计"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/2020/06/05/a83c81dc56ad4bf8af7561b463d1c143_v1.gif?imageMogr2/crop/!285x190a27a0",
+                                "finishStyle": "110平新房花费40万装修轻奢风，全屋处处是亮点，沙发墙太漂...",
+                                "person": "http://imgmall.tg.com.cn/kol/2019/10/25/1138/rhjf7rxaerAziYKp33ddj3jfsFPw.jpg",
+                                "name": "气质家居"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/8/14/162/b635ac86-9a35-42b6-af40-a09aa3d464b8.JPG?imageView2/2/w/2000",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/119/757/19757535.l.jpg",
+                                "finishStyle": "120平现代简约过道装修效果图"
+                            },
+                            {
+                                "imgSrc": "http://tgi1.jia.com/125/822/25822332.l.jpg",
+                                "finishStyle": "温暖如初|现代|两室|67平米|客厅,餐厅,卫生间",
+                                "name": "现代/两室"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/127/810/27810066.l.jpg",
+                                "finishStyle": "50㎡复式两居装修书桌柜设计图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/854/09c1717a-c14e-4595-ad58-20ee3516ef8d.jpg?imageView2/2/w/2000",
+                                "finishStyle": "暖阳 | 入户小院改造下沉式客厅，开放式厨餐厅让生活更暖心",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "壹石设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2017/12/2/1826/af82d26f-0fd6-4eb9-a2ba-93e85eed3182.jpg?imageView2/2/w/2000",
+                                "finishStyle": "80平日式装修沙发背景墙图片"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/1/1620/98a74d20-e751-4566-b1dd-f990a289f4b2.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式三居餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/119/757/19757535.l.jpg",
+                                "finishStyle": "120平现代简约过道装修效果图"
+                            },
+                            {
+                                "imgSrc": "http://tgi1.jia.com/125/822/25822332.l.jpg",
+                                "finishStyle": "温暖如初|现代|两室|67平米|客厅,餐厅,卫生间",
+                                "name": "现代/两室"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "风格",
+                "desc": [
+                    {
+                        "name": "全部",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/2020/06/05/a83c81dc56ad4bf8af7561b463d1c143_v1.gif?imageMogr2/crop/!285x190a27a0",
+                                "finishStyle": "新房装修耗时半年终于完工，轻奢风格显得太上档次了，忍不住想晒...",
+                                "person": "http://imgmall.tg.com.cn/kol/2020/02/08/1132/pGBcKzKsEsxNAJkeNwT2NYY7QRWX.jpg",
+                                "name": "气质家居"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/222/28222675.l.jpg",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "简约",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/1/845/d3fde682-a970-40db-ba6f-4afb25f7d80c.jpg?imageView2/2/w/2000",
+                                "finishStyle": "工业打造极简后现代",
+                                "person": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq9hUAn7jZz6l3diaVeSeP3Xiav00HUGW2L61YRJPFTVic4qUwicbPMxQF5mybT1FhtmNXHykqEQU3f1g/132",
+                                "name": "久栖设计",
+                                "smalltitle": "后现代|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/7/18/104/a66368f7-b4b3-4ef3-9b28-07e1fbb5d42f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "90㎡简约北欧风装修极简挂钟设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "中式",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/12/1429/g0gPHd81C9X1JMjRcg35wBTALjiA.JPG",
+                                "finishStyle": "曹东-雅 中式",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/4/7/124/57193832-2378-41bd-a706-95d47de8fe4d.jpg",
+                                "name": "曹东"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1246/19c6a3ed-7728-458d-9efd-7dd865b87611.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格书房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "田园",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://tgi12.jia.com/119/904/19904186.l.jpg",
+                                "finishStyle": "田园|望京西园",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "秋舍民宿设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/11/1/1659/e1ff33bf-3f4e-4817-9b1f-32a5e9520a9f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "田园风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "现代",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/4/1320/NJBNVO2IXPo7XcEOhjv20Sb70o71.jpg",
+                                "finishStyle": "本家设计-现代轻奢，属于年轻人的自在-现代-3室",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/05/24/1923/7RZhqmmsUpQ93tQD1dAKKqkeCssN.png",
+                                "name": "本家设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/1/1620/b1bb2c12-4e62-454f-85db-dfbccc64c3d9.jpg?imageView2/2/w/2000",
+                                "finishStyle": "现代四居室餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "欧式",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/19/118/iBhkWmkdFStq3oEH8phq1wJlmmCM.jpg",
+                                "finishStyle": "美颂雅庭-简约欧式-欧式-3室",
+                                "person": "http://wx.qlogo.cn/mmopen/ibuzdAPt4aaRalkwvwOAdhUhvb3oZ6Pyf4sgjicqzEKYLdQP6GsJY1lfiazDTjGkic24cSGbOCKZXpicHHhC6ibbQ1O4iaR9jRCbxLw/0",
+                                "name": "??高磊?"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/22/44/CgooeFfXqPCz7eWyAAeYnwLT20U391.jpg?imageView2/2/w/2000",
+                                "finishStyle": "欧式风格装修玄关吊顶"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "美式",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/3/1515/551e1d53-97f5-4701-a708-50d8f53c0e9b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《柔雾可可》优雅文艺美式风格，开启文艺慵懒的生活方式",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "零玖贰捌设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/1/31/1053/4c1ffbfa-e0fe-4c52-8269-85b2ec5edd2e.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "户型",
+                "desc": [
+                    {
+                        "name": "全部",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/8/14/162/b635ac86-9a35-42b6-af40-a09aa3d464b8.JPG?imageView2/2/w/2000",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "小户型",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/4/29/936/7a9afe0a-7a13-4aca-a359-ae2f6ac7e5d6.jpg?imageView2/2/w/2000",
+                                "finishStyle": "神仙小户型案例！89m²两房变三房，还有衣帽间和游戏房！",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/4/1/1558/d1c4a7ed-df3c-4e0f-86b8-e842ca3b7cc5.jpg?imageView2/2/w/320",
+                                "name": "云行设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/7/18/104/a66368f7-b4b3-4ef3-9b28-07e1fbb5d42f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "90㎡简约北欧风装修极简挂钟设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "一居室",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/7/1547/8e94d605-f32e-4dad-95bf-72a942694795.jpg?imageView2/2/w/2000",
+                                "finishStyle": "两房改一房的现代台式风",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "DE设计事务所"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1246/19c6a3ed-7728-458d-9efd-7dd865b87611.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格书房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "二居室",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/2/4/1156/a76f7c10-0b9d-4d02-8c2d-af7d9b338d51.jpg?imageView2/2/w/2000",
+                                "finishStyle": "47㎡半地下一居变两居",
+                                "person": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq9hUAn7jZz6l3diaVeSeP3Xiav00HUGW2L61YRJPFTVic4qUwicbPMxQF5mybT1FhtmNXHykqEQU3f1g/132",
+                                "name": "久栖设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/11/1/1659/e1ff33bf-3f4e-4817-9b1f-32a5e9520a9f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "田园风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "三居室",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/4/1320/NJBNVO2IXPo7XcEOhjv20Sb70o71.jpg",
+                                "finishStyle": "本家设计-现代轻奢，属于年轻人的自在-现代-3室",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/05/24/1923/7RZhqmmsUpQ93tQD1dAKKqkeCssN.png",
+                                "name": "本家设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/1/1620/b1bb2c12-4e62-454f-85db-dfbccc64c3d9.jpg?imageView2/2/w/2000",
+                                "finishStyle": "现代四居室餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "四房",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/19/118/iBhkWmkdFStq3oEH8phq1wJlmmCM.jpg",
+                                "finishStyle": "美颂雅庭-简约欧式-欧式-3室",
+                                "person": "http://wx.qlogo.cn/mmopen/ibuzdAPt4aaRalkwvwOAdhUhvb3oZ6Pyf4sgjicqzEKYLdQP6GsJY1lfiazDTjGkic24cSGbOCKZXpicHHhC6ibbQ1O4iaR9jRCbxLw/0",
+                                "name": "??高磊?"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/22/44/CgooeFfXqPCz7eWyAAeYnwLT20U391.jpg?imageView2/2/w/2000",
+                                "finishStyle": "欧式风格装修玄关吊顶"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "复式",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/3/1515/551e1d53-97f5-4701-a708-50d8f53c0e9b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《柔雾可可》优雅文艺美式风格，开启文艺慵懒的生活方式",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "零玖贰捌设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/1/31/1053/4c1ffbfa-e0fe-4c52-8269-85b2ec5edd2e.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "空间",
+                "desc": [
+                    {
+                        "name": "全部",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2020/03/30/1136/GcNhDy7N6C24wQnZce2stX26xKGD_v1_13.gif?imageMogr2/crop/!285x190a27a0",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/20/AE/CgooeVe2VIHa5GkkAAZCJk-k92g130.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "客厅",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/4/29/936/7a9afe0a-7a13-4aca-a359-ae2f6ac7e5d6.jpg?imageView2/2/w/2000",
+                                "finishStyle": "神仙小户型案例！89m²两房变三房，还有衣帽间和游戏房！",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/4/1/1558/d1c4a7ed-df3c-4e0f-86b8-e842ca3b7cc5.jpg?imageView2/2/w/320",
+                                "name": "云行设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/7/18/104/a66368f7-b4b3-4ef3-9b28-07e1fbb5d42f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "90㎡简约北欧风装修极简挂钟设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "卧室",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/7/1547/8e94d605-f32e-4dad-95bf-72a942694795.jpg?imageView2/2/w/2000",
+                                "finishStyle": "两房改一房的现代台式风",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "DE设计事务所"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1246/19c6a3ed-7728-458d-9efd-7dd865b87611.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格书房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "卫生间",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/2/4/1156/a76f7c10-0b9d-4d02-8c2d-af7d9b338d51.jpg?imageView2/2/w/2000",
+                                "finishStyle": "47㎡半地下一居变两居",
+                                "person": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq9hUAn7jZz6l3diaVeSeP3Xiav00HUGW2L61YRJPFTVic4qUwicbPMxQF5mybT1FhtmNXHykqEQU3f1g/132",
+                                "name": "久栖设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/11/1/1659/e1ff33bf-3f4e-4817-9b1f-32a5e9520a9f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "田园风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "厨房",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/4/1320/NJBNVO2IXPo7XcEOhjv20Sb70o71.jpg",
+                                "finishStyle": "本家设计-现代轻奢，属于年轻人的自在-现代-3室",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/05/24/1923/7RZhqmmsUpQ93tQD1dAKKqkeCssN.png",
+                                "name": "本家设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/1/1620/b1bb2c12-4e62-454f-85db-dfbccc64c3d9.jpg?imageView2/2/w/2000",
+                                "finishStyle": "现代四居室餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "玄关",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/19/118/iBhkWmkdFStq3oEH8phq1wJlmmCM.jpg",
+                                "finishStyle": "美颂雅庭-简约欧式-欧式-3室",
+                                "person": "http://wx.qlogo.cn/mmopen/ibuzdAPt4aaRalkwvwOAdhUhvb3oZ6Pyf4sgjicqzEKYLdQP6GsJY1lfiazDTjGkic24cSGbOCKZXpicHHhC6ibbQ1O4iaR9jRCbxLw/0",
+                                "name": "??高磊?"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/22/44/CgooeFfXqPCz7eWyAAeYnwLT20U391.jpg?imageView2/2/w/2000",
+                                "finishStyle": "欧式风格装修玄关吊顶"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "餐厅",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/3/1515/551e1d53-97f5-4701-a708-50d8f53c0e9b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《柔雾可可》优雅文艺美式风格，开启文艺慵懒的生活方式",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "零玖贰捌设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/1/31/1053/4c1ffbfa-e0fe-4c52-8269-85b2ec5edd2e.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "局部",
+                "desc": [
+                    {
+                        "name": "全部",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/2020/05/21/f94c07e3f1bd41a6960618f11cb6a087_v1.gif?imageMogr2/crop/!336x504a0a48",
+                                "finishStyle": "新房装修耗时半年终于完工，轻奢风格显得太上档次了，忍不住想晒...",
+                                "person": "http://imgmall.tg.com.cn/kol/2020/02/08/1132/pGBcKzKsEsxNAJkeNwT2NYY7QRWX.jpg",
+                                "name": "气质家居"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/20/AE/CgooeVe2VIHa5GkkAAZCJk-k92g130.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "电视背景墙",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/1/845/d3fde682-a970-40db-ba6f-4afb25f7d80c.jpg?imageView2/2/w/2000",
+                                "finishStyle": "工业打造极简后现代",
+                                "person": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq9hUAn7jZz6l3diaVeSeP3Xiav00HUGW2L61YRJPFTVic4qUwicbPMxQF5mybT1FhtmNXHykqEQU3f1g/132",
+                                "name": "久栖设计",
+                                "smalltitle": "后现代|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/7/18/104/a66368f7-b4b3-4ef3-9b28-07e1fbb5d42f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "90㎡简约北欧风装修极简挂钟设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "吊顶",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/12/1429/g0gPHd81C9X1JMjRcg35wBTALjiA.JPG",
+                                "finishStyle": "曹东-雅 中式",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/4/7/124/57193832-2378-41bd-a706-95d47de8fe4d.jpg",
+                                "name": "曹东"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1246/19c6a3ed-7728-458d-9efd-7dd865b87611.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格书房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "隔断",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://tgi12.jia.com/119/904/19904186.l.jpg",
+                                "finishStyle": "田园|望京西园",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "秋舍民宿设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/11/1/1659/e1ff33bf-3f4e-4817-9b1f-32a5e9520a9f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "田园风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "窗帘",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/4/1320/NJBNVO2IXPo7XcEOhjv20Sb70o71.jpg",
+                                "finishStyle": "本家设计-现代轻奢，属于年轻人的自在-现代-3室",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/05/24/1923/7RZhqmmsUpQ93tQD1dAKKqkeCssN.png",
+                                "name": "本家设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/1/1620/b1bb2c12-4e62-454f-85db-dfbccc64c3d9.jpg?imageView2/2/w/2000",
+                                "finishStyle": "现代四居室餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "吧台",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/19/118/iBhkWmkdFStq3oEH8phq1wJlmmCM.jpg",
+                                "finishStyle": "美颂雅庭-简约欧式-欧式-3室",
+                                "person": "http://wx.qlogo.cn/mmopen/ibuzdAPt4aaRalkwvwOAdhUhvb3oZ6Pyf4sgjicqzEKYLdQP6GsJY1lfiazDTjGkic24cSGbOCKZXpicHHhC6ibbQ1O4iaR9jRCbxLw/0",
+                                "name": "??高磊?"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/22/44/CgooeFfXqPCz7eWyAAeYnwLT20U391.jpg?imageView2/2/w/2000",
+                                "finishStyle": "欧式风格装修玄关吊顶"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "飘窗",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/3/1515/551e1d53-97f5-4701-a708-50d8f53c0e9b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《柔雾可可》优雅文艺美式风格，开启文艺慵懒的生活方式",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "零玖贰捌设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/1/31/1053/4c1ffbfa-e0fe-4c52-8269-85b2ec5edd2e.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "工装",
+                "desc": [
+                    {
+                        "name": "全部",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://tgi12.jia.com/115/076/15076945.m.jpg",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/115/077/15077014.m.jpg",
+                                "finishStyle": "美式风格二居室卫生间装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "美容院",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/4/29/936/7a9afe0a-7a13-4aca-a359-ae2f6ac7e5d6.jpg?imageView2/2/w/2000",
+                                "finishStyle": "神仙小户型案例！89m²两房变三房，还有衣帽间和游戏房！",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/4/1/1558/d1c4a7ed-df3c-4e0f-86b8-e842ca3b7cc5.jpg?imageView2/2/w/320",
+                                "name": "云行设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/7/18/104/a66368f7-b4b3-4ef3-9b28-07e1fbb5d42f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "90㎡简约北欧风装修极简挂钟设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "酒店",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/7/1547/8e94d605-f32e-4dad-95bf-72a942694795.jpg?imageView2/2/w/2000",
+                                "finishStyle": "两房改一房的现代台式风",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "DE设计事务所"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1246/19c6a3ed-7728-458d-9efd-7dd865b87611.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格书房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ktv",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/2/4/1156/a76f7c10-0b9d-4d02-8c2d-af7d9b338d51.jpg?imageView2/2/w/2000",
+                                "finishStyle": "47㎡半地下一居变两居",
+                                "person": "http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq9hUAn7jZz6l3diaVeSeP3Xiav00HUGW2L61YRJPFTVic4qUwicbPMxQF5mybT1FhtmNXHykqEQU3f1g/132",
+                                "name": "久栖设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/11/1/1659/e1ff33bf-3f4e-4817-9b1f-32a5e9520a9f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "田园风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "酒吧",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/4/1320/NJBNVO2IXPo7XcEOhjv20Sb70o71.jpg",
+                                "finishStyle": "本家设计-现代轻奢，属于年轻人的自在-现代-3室",
+                                "person": "https://imgmall.tg.com.cn/zmzx/2019/05/24/1923/7RZhqmmsUpQ93tQD1dAKKqkeCssN.png",
+                                "name": "本家设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2018/6/1/1620/b1bb2c12-4e62-454f-85db-dfbccc64c3d9.jpg?imageView2/2/w/2000",
+                                "finishStyle": "现代四居室餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "美发",
+                        "stylepic": [
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/kol/2019/11/19/118/iBhkWmkdFStq3oEH8phq1wJlmmCM.jpg",
+                                "finishStyle": "美颂雅庭-简约欧式-欧式-3室",
+                                "person": "http://wx.qlogo.cn/mmopen/ibuzdAPt4aaRalkwvwOAdhUhvb3oZ6Pyf4sgjicqzEKYLdQP6GsJY1lfiazDTjGkic24cSGbOCKZXpicHHhC6ibbQ1O4iaR9jRCbxLw/0",
+                                "name": "??高磊?"
+                            },
+                            {
+                                "imgSrc": "http://imgmall.tg.com.cn/group2/M00/22/44/CgooeFfXqPCz7eWyAAeYnwLT20U391.jpg?imageView2/2/w/2000",
+                                "finishStyle": "欧式风格装修玄关吊顶"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "写字楼",
+                        "stylepic": [
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/3/1515/551e1d53-97f5-4701-a708-50d8f53c0e9b.jpg?imageView2/2/w/2000",
+                                "finishStyle": "《柔雾可可》优雅文艺美式风格，开启文艺慵懒的生活方式",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "零玖贰捌设计"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/1/31/1053/4c1ffbfa-e0fe-4c52-8269-85b2ec5edd2e.jpg?imageView2/2/w/2000",
+                                "finishStyle": "美式风格三居厨房装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/4/26/826/dd0e81ec-b1e2-404b-ab9f-545f0f595509.png?imageView2/2/w/2000",
+                                "finishStyle": "大户型复式混搭风餐厅装修效果图"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2020/6/5/1642/6e899062-d54b-4901-b55a-8a17b674dd1f.jpg?imageView2/2/w/2000",
+                                "finishStyle": "1+1>2 红绿CP喜形于色，精装房也能时髦高调",
+                                "person": "http://imgmall.tg.com.cn/group2/M00/37/73/CgooeVjrQzSCkzTRAAAKsyCa_Fg230.png?imageView2/2/w/320",
+                                "name": "支点室内设计",
+                                "smalltitle": "混搭|3室"
+                            },
+                            {
+                                "imgSrc": "https://imgmall.tg.com.cn/zmzx/2019/5/8/1241/2c83e102-8192-4fc9-a382-0b8b54bde205.jpg?imageView2/2/w/2000",
+                                "finishStyle": "140㎡中式风格装修电视柜设计"
+                            },
+                            {
+                                "imgSrc": "http://tgi12.jia.com/128/231/28231584.l.jpg",
+                                "finishStyle": "现代简约四居儿童房装修效果图"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "footerpic": [
+            {
+                "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon1.png",
+                "area": "房屋面积",
+                "tel": "联系方式",
+                "btn": "申请免费设计服务",
+                "color": "rgba(56, 128, 229)",
+                "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon1.png",
+                "title":"免费设计",
+                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+            },
+            {
+                "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon2.png",
+                "area": "房屋面积",
+                "tel": "联系方式",
+                "btn": "免费获取报价明细",
+                "color": "rgba(216, 62, 63)",
+                "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon2.png",
+                "title":"智能报价",
+                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+            },
+            {
+                "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon3.png",
+                "area": "姓名",
+                "tel": "联系方式",
+                "btn": "年利率3.55%限时申请",
+                "color": "rgba(244, 142, 51)",
+                "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon3.png",
+                "title":"装修贷款",
+                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+            },
+            {
+                "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon4.png",
+                "area": "房屋面积",
+                "tel": "联系方式",
+                "btn": "限时免费设计定制",
+                "color": "rgba(112, 69, 225)",
+                "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon4.png",
+                "title":"全景定制",
+                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+            }
+        ]
+    }
+}

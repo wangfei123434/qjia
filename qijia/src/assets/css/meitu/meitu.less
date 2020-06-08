@@ -1,0 +1,281 @@
+.meitu {
+    background: #b70006;
+}
+
+.top {
+    position: relative;
+    color: #fff;
+
+    img {
+        width: 100%;
+    }
+
+    .logo {
+        width: 40/100rem;
+        position: absolute;
+        top: 10/100rem;
+        left: 20/100rem;
+    }
+
+    span {
+        position: absolute;
+        top: 10/100rem;
+        left: 70/100rem;
+        font-size: 12px;
+    }
+
+    p {
+        position: absolute;
+        top: 50/100rem;
+        left: 20/100rem;
+
+    }
+}
+
+.logotop {
+    background: #b70006;
+    position: relative;
+    height: 60/100rem;
+    padding: 10/100rem;
+
+    img {
+        width: 50/100rem;
+        position: absolute;
+        top: 20/100rem;
+    }
+
+    .search {
+        right: 20/100rem;
+        width: 30/100rem;
+
+    }
+}
+
+// 筛选导航区域
+//红色字体颜色
+.tored {
+    color: rgba(183, 0, 6);
+    font-weight: bold;
+}
+
+.tuku-page {
+    width: 100%;
+    background: #f5f6f9;
+    overflow: hidden;
+    border-radius: 20/100rem 20/100rem 0 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.ullist {
+    padding: 20/100rem;
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid #ebe8e8;
+
+    li {
+        flex: 1;
+    }
+}
+
+.navlist {
+    border: 1px solid blue;
+    display: flex;
+    width: 100%;
+
+}
+
+.picsshow {
+    background: rgba(245, 246, 249);
+    display: flex;
+    overflow-y: scroll;
+    height: 100%;
+
+    li {
+
+        .picsdisplay {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10/100rem;
+
+            div {
+                height: 100%;
+                background: #fff;
+                text-align: left;
+                margin-right: 8/100rem;
+                margin-bottom: 10/100rem;
+                padding-bottom: 10/100rem;
+
+                img {
+                    width: 300/100rem;
+                    border-radius: 8/100rem;
+                }
+
+                .person {
+                    width: 40/100rem;
+                    height: 40/100rem;
+                    border-radius: 20/100rem;
+                    vertical-align: middle;
+                    margin-right: 10/100rem;
+                    padding-left: 10/100rem;
+                }
+
+                .title {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: 14px;
+                    width: 300/100rem;
+                    padding-top: 10/100rem;
+                    padding-bottom: 10/100rem;
+                    text-indent: 10/100rem;
+                }
+
+                .name {
+                    font-size: 12px;
+                }
+
+                .smalltitle {
+                    margin-top: 10/100rem;
+                    margin-bottom: 10/100rem;
+                }
+            }
+        }
+    }
+}
+
+//底部区域
+aside {
+    border-top: 1px solid #e7e2e2;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20/100rem;
+
+    div {
+        ul {
+            display: flex;
+
+            li {
+                flex: 1;
+                position: relative;
+
+                img {
+                    width: 40/100rem;
+                }
+
+                span {
+                    font-size: 12px;
+                    color: #aba6a6;
+                }
+
+                .activeborder {
+                    content: '';
+                    position: absolute;
+                    top: -0.3rem;
+                    left: 40%;
+                    background: #fff;
+                    border-top: 1px solid #e6e6e6;
+                    margin-left: -0.175rem;
+                    width: 0.7rem;
+                    height: 0.17rem;
+                    border-radius: 4rem 4rem 0 0;
+                    z-index: -1;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.footer-pic {
+    background: rgba(245, 246, 249);
+
+    .totop {
+        .picbox {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .close {
+                width: 40/100rem;
+                position: absolute;
+                top: -60/100rem;
+                right: 10/100rem;
+                background: yellow;
+            }
+        }
+
+        .input-area {
+            width: 90%;
+            text-align: left;
+            margin: 20/100rem;
+
+            form {
+                background: #fff;
+                border: 1px solid #eceaea;
+
+                margin-bottom: 10/100rem;
+                padding: 13/100rem;
+                border-radius: 8/100rem;
+                font-size: 12px;
+                position: relative;
+
+                input {
+                    border: none;
+                    outline: none;
+
+                }
+
+                ::-webkit-input-placeholder {
+                    color: rgba(205, 205, 205);
+                }
+
+                span {
+                    display: inline-block;
+                }
+
+                .span01 {
+                    width: 20%;
+                }
+
+                .span02 {
+                    position: absolute;
+                    right: 20/100rem;
+                }
+
+
+            }
+        }
+
+        .btn {
+            width: 90%;
+            color: #fff;
+            height: 80/100rem;
+            line-height: 80/100rem;
+            border-radius: 8/100rem;
+            margin: 20/100rem;
+
+            button {
+                border: none;
+                color: #fff;
+                outline: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: 9999;
+}

@@ -1,0 +1,551 @@
+a {
+  text-decoration: none;
+  color: rgba(213, 213, 213);
+}
+/* 导航区域 */
+.ul-nav {
+  padding-top: 0.4rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background: #fff;
+}
+.ul-nav li {
+  width: 20%;
+  margin-bottom: 0.3rem;
+  position: relative;
+}
+.ul-nav li img {
+  width: 0.95rem;
+}
+.ul-nav li span {
+  font-size: 12px;
+}
+.ul-nav li .smalltitle {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  background: rgba(255, 94, 94);
+  color: #fff;
+  border-radius: 10px;
+  width: 31px;
+  box-shadow: 2px 2px 2px #fff;
+}
+.ul-nav li:nth-of-type(5) .smalltitle {
+  background: rgba(154, 123, 255);
+}
+/* 大图区域 */
+.nav-img {
+  background: #fff;
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+  position: relative;
+}
+.banner {
+  width: 100%;
+}
+.linghang {
+  position: absolute;
+  top: 0.49rem;
+  left: 0.47rem;
+  color: #fff;
+  font-size: 12px;
+}
+.linghang img {
+  width: 0.3rem;
+  margin-right: 0.1rem;
+}
+.design {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.47rem;
+  color: #fff;
+}
+/* 深圳找装修区域 */
+.search-renovate {
+  padding: 0.1rem;
+  background: #fff;
+  margin-top: 0.3rem;
+}
+.search-renovate .search-renovate-h {
+  display: flex;
+  position: relative;
+}
+.search-renovate .search-renovate-h .more {
+  font-size: 12px;
+  color: rgba(194, 194, 194);
+  text-decoration: none;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.1rem;
+}
+.search-renovate .search-renovate-h .search-renovate-t h3 {
+  color: rgba(245, 142, 20);
+}
+.search-renovate .search-renovate-h .search-renovate-m span {
+  font-size: 12px;
+  color: rgba(194, 194, 194);
+  margin: 0.2rem;
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+.search-renovate .search-renovate-h .search-renovate-m span a {
+  margin-right: 0.1rem;
+}
+.renovatenav {
+  display: flex;
+  overflow-x: scroll;
+}
+.renovatenav li {
+  padding: 0.1rem;
+  text-align: center;
+  margin-right: 0.1rem;
+  border: 1px solid rgba(236, 236, 236);
+}
+.renovatenav li img {
+  width: 1.5rem;
+  border: 1px solid rgba(236, 236, 236);
+  border-radius: 50%;
+}
+.renovate-title {
+  width: 2.2rem;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.service {
+  color: rgba(254, 62, 45);
+  border: 1px solid rgba(254, 62, 45);
+  border-radius: 20px;
+  padding: 0.05rem 0.2rem;
+  font-size: 12px;
+  margin: 0.2rem 0;
+  display: inline-block;
+}
+.renovatelist {
+  /* width:100%; */
+  display: flex;
+  overflow-x: scroll;
+}
+.renovatelist li {
+  display: flex;
+  padding: 0.1rem;
+  text-align: center;
+}
+.renovatelist li div {
+  margin-right: 0.1rem;
+  border: 1px solid rgba(236, 236, 236);
+}
+.renovatelist li img {
+  width: 1.5rem;
+  border: 1px solid rgba(236, 236, 236);
+  border-radius: 50%;
+}
+.coupon {
+  text-align: left;
+}
+.coupon p {
+  padding: 0.2rem 0;
+}
+.coupon ul {
+  display: flex;
+}
+.coupon ul li {
+  margin-right: 0.2rem;
+  margin-left: 0.1rem;
+  display: flex;
+}
+.coupon ul li:first-of-type {
+  background: rgba(247, 243, 232);
+  color: rgba(217, 183, 124);
+}
+.coupon ul li:nth-of-type(2) {
+  background: rgba(243, 225, 216);
+}
+.coupon ul .aboutprice {
+  font-size: 30px;
+  font-weight: bold;
+}
+.coupon ul .use {
+  font-size: 12px;
+}
+.coupon ul .coupon-right {
+  width: 20px;
+  font-size: 12px;
+  background: rgba(245, 236, 211);
+  padding: 8px;
+}
+.coupon ul .coupon-bottom {
+  color: rgba(153, 153, 153);
+  font-size: 12px;
+}
+.goodservice p {
+  text-align: left;
+  padding: 0.2rem 0;
+}
+.goodservice ul {
+  display: flex;
+  overflow-x: scroll;
+}
+.goodservice ul li {
+  position: relative;
+  width: 4rem;
+  margin-right: 0.2rem;
+}
+.goodservice ul li img {
+  width: 3.5rem;
+}
+.goodservice ul li h4 {
+  color: rgba(108, 160, 224);
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+  width: 2rem;
+}
+.goodservice ul li .service-design {
+  font-size: 12px;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+.renovate-material {
+  display: flex;
+  flex-wrap: wrap;
+}
+.renovate-material li {
+  width: 1.3rem;
+  border-radius: 0.2rem;
+  font-size: 12px;
+  padding: 0.05rem;
+  background: rgba(245, 245, 245);
+  margin-right: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+.renovate-material .liactive {
+  color: rgba(238, 64, 64);
+  border: 1px solid rgba(248, 182, 176);
+}
+.buymaterial li img {
+  border-radius: 0;
+  margin-top: 0.2rem;
+}
+.buymaterial li .num {
+  font-size: 12px;
+  color: rgba(202, 202, 202);
+}
+.brand {
+  display: flex;
+  padding: 0.1rem;
+}
+.brand li img {
+  width: 1.5rem;
+  margin-right: 0.1rem;
+}
+.brand .gotosee {
+  border: 1px solid rgba(64, 64, 64);
+  border-radius: 8px;
+  width: 2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin: 0.2rem 0 0 0.15rem;
+}
+.nav-list {
+  display: flex;
+  border-bottom: 1px solid rgba(236, 236, 236);
+}
+.nav-list li {
+  flex: 1;
+  padding: 0.2rem;
+}
+.nav-list .actives {
+  border-bottom: 3px solid rgba(238, 45, 27);
+  color: #000;
+  font-weight: bold;
+}
+.stylelist li {
+  display: flex;
+}
+.stylelist li span {
+  flex: 1;
+  border-radius: 20px;
+  padding: 0.05rem 0.2rem;
+  font-size: 12px;
+  margin: 0.2rem 0.2rem;
+  background: rgba(245, 245, 245);
+}
+.stylelist li:nth-of-type(3) span {
+  border: none;
+  background-color: #fff;
+}
+.style-display {
+  overflow-x: scroll;
+}
+.style-display li .mydiv {
+  display: flex;
+}
+.style-display li .mydiv div {
+  position: relative;
+  margin-right: 0.1rem;
+}
+.style-display li img {
+  width: 2.5rem;
+  height: 3rem;
+  border-radius: 0.08rem;
+}
+.style-display li .styles {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  font-weight: bold;
+  z-index: 9999;
+}
+.style-display li .style01 {
+  top: 0.6rem;
+}
+.style-display li .count {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.2rem;
+  font-size: 12px;
+  z-index: 9999;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(2) div span {
+  text-align: right;
+  right: 0.1rem;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(2) div .style02 {
+  top: 0.5rem;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(2) div .count {
+  top: 0.8rem;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(3) div span {
+  text-align: center;
+  width: 100%;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(3) div .style02 {
+  top: 0.5rem;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(3) div .count {
+  top: 0.8rem;
+}
+.style-display li:nth-of-type(1) div:nth-of-type(4) div .styles {
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+}
+.style-display li:nth-of-type(1) div:nth-of-type(4) div .count {
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -60%);
+}
+.style-display li:nth-of-type(2) div:nth-of-type(1) div .style03 {
+  width: 100%;
+  text-align: center;
+  top: 2rem;
+  left: 0;
+}
+.style-display li:nth-of-type(2) div:nth-of-type(1) div .style04 {
+  top: 2.2rem;
+}
+.apartment li span {
+  text-align: right;
+}
+.apartment .styles {
+  top: 0.2rem;
+  right: 0.2rem;
+}
+.apartment .count {
+  top: 0.6rem;
+  right: 0.2rem;
+}
+.case li {
+  position: relative;
+  width: 2.5rem;
+}
+.case li img {
+  height: 124px;
+  width: 2.5rem;
+}
+.case li .styles {
+  position: absolute;
+  color: #fff;
+}
+.case li .desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 2.5rem;
+  display: inline-block;
+  font-weight: bold;
+}
+.diray {
+  display: flex;
+  overflow-x: scroll;
+}
+.diray li {
+  border-radius: 8px;
+  margin-right: 0.2rem;
+}
+.diray li img {
+  width: 4rem;
+}
+.diray li .person {
+  width: 0.6rem;
+  border-radius: 50%;
+}
+.diray li h4 {
+  text-align: left;
+}
+.diray li div {
+  text-align: left;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+.searchmore {
+  padding: 0.3rem;
+}
+.getprice {
+  margin-top: 0.3rem;
+  display: flex;
+}
+.getprice li img {
+  width: 2rem;
+  margin-right: 0.2rem;
+}
+.getprice .price-right .top {
+  display: flex;
+}
+.getprice .price-right .top input {
+  width: 1.6rem;
+  margin-right: 0.2em;
+  padding: 0.09rem;
+  border: 1px solid rgba(244, 244, 244);
+}
+.getprice .price-right .top .input02 {
+  position: relative;
+}
+.getprice .price-right .top .icon01 {
+  position: absolute;
+  right: 0.04rem;
+  top: 0.05rem;
+}
+.getprice .price-right .bottom {
+  width: 100%;
+  border: 1px solid rgba(241, 83, 69);
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-top: 0.3rem;
+  background: rgba(254, 244, 243);
+  border-radius: 0.06rem;
+}
+.getprice .price-right .bottom button {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(241, 83, 69);
+}
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+.bidprice {
+  width: 6rem;
+  background: #fff;
+  border-radius: 0.1rem;
+  position: absolute;
+  margin: 0.2rem auto;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bidprice .close {
+  position: absolute;
+  right: 0;
+  top: -0.7rem;
+}
+.bidprice .close img {
+  width: 0.7rem;
+}
+.bidprice p {
+  line-height: 1;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+.bidprice div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.bidprice div ul li {
+  border: 1px solid #efecec;
+  margin-right: 0.3rem;
+  margin-top: 0.2rem;
+}
+.bidprice .confirmbtn {
+  width: 60%;
+  background: red;
+  color: #fff;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding: 0.2rem;
+  display: inline-block;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.1rem;
+}
+.sactive {
+  color: rgba(254, 62, 45);
+  border: 1px solid rgba(254, 62, 45);
+}
+.stylelist01 li {
+  overflow: hidden;
+}
+.stylelist01 li span {
+  float: left;
+  width: 1rem;
+}
+.cargolist ul {
+  padding-top: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cargolist ul li {
+  width: 1.3rem;
+  border-radius: 0.2rem;
+  font-size: 12px;
+  padding: 0.05rem;
+  background: rgba(245, 245, 245);
+  margin-right: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+.cargolist .gongnues .gongbuenav div {
+  text-align: left;
+  padding: 0.2rem;
+}
+.cargolist .gongnues .gongbuenav div .author {
+  font-size: 12px;
+  color: rgba(236, 236, 236);
+}
+.cargolist .gongnues .gongbuenav div .count {
+  font-size: 12px;
+  color: rgba(236, 236, 236);
+}
+.cargolist .gongnues .gongnuepic {
+  width: 2rem;
+}
