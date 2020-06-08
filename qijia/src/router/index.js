@@ -1,18 +1,19 @@
-<<<<<<< HEAD
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import BuildingMaterials from "../views/buildingMaterials/BuildingMaterials.vue"
 import Home from '../views/Home/home.vue'
 
+import MustBuy1 from "../components/mustBuy1.vue"
+import MustBuy2 from "../components/mustBuy2.vue"
+import MustBuy3 from "../components/mustBuy3.vue"
+import MustBuy4 from "../components/mustBuy4.vue"
+import MustBuy5 from "../components/mustBuy5.vue"
+import MustBuy6 from "../components/mustBuy6.vue"
+import MustBuy7 from "../components/mustBuy7.vue"
+import MustBuy8 from "../components/mustBuy8.vue"
 Vue.use(VueRouter)
 
-  const routes = [
-  {
-    path: '/',
-    name: 'Home1',
-    redirect:"/home/recommend",  //重定向
-    component: Home
-  },
-  {
+const routes = [{
     path: '/home',
     redirect:"/home/recommend",  //重定向
     name: 'Home',
@@ -53,45 +54,12 @@ Vue.use(VueRouter)
     name: 'Choosematerials', 
     component: () => import(/* webpackChunkName: "about" */ '../views/Choosematerials/choosematerials.vue')
   },
-  {
-    path: '/community',
-    name: 'Community',
-    component: () => import(/* webpackChunkName: "about" */'../views/Community/community.vue')
-  },
+  
   {
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "about" */'../components/login.vue')
   },
-]
-
-const router = new VueRouter({
-  routes,
-  mode: 'history',//就是去掉了#号 默认是hash模式是加了#号的
-})
-
-export default router
-=======
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import BuildingMaterials from "../views/buildingMaterials/BuildingMaterials.vue"
-import Home from '../views/Home/home.vue'
-
-import MustBuy1 from "../components/mustBuy1.vue"
-import MustBuy2 from "../components/mustBuy2.vue"
-import MustBuy3 from "../components/mustBuy3.vue"
-import MustBuy4 from "../components/mustBuy4.vue"
-import MustBuy5 from "../components/mustBuy5.vue"
-import MustBuy6 from "../components/mustBuy6.vue"
-import MustBuy7 from "../components/mustBuy7.vue"
-import MustBuy8 from "../components/mustBuy8.vue"
-Vue.use(VueRouter)
-
-const routes = [{
-		path: '/',
-		name: 'Home',
-		component: Home
-	},
 	{
 		path: '/buildingMaterials',
 		name: 'BuildingMaterials',
@@ -186,7 +154,7 @@ const routes = [{
 ]
 
 const router = new VueRouter({
-	routes
+	routes,
+  mode: 'history',//就是去掉了#号 默认是hash模式是加了#号的
 })
 export default router
->>>>>>> c76122b522511c76fc68199160efa980652ebfb6
