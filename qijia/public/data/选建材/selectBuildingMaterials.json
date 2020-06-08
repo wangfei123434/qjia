@@ -1,6 +1,16 @@
 {
 	"data":{
 		"list1":[
+<<<<<<< HEAD
+=======
+		"lista":[
+			"生活馆",
+			"享福利",
+			"挑品牌",
+			"找旺铺"
+		],
+		"listb":[
+>>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
 			{
 				"nav":"开工第一周",
 				"list1_child":[
@@ -302,6 +312,85 @@
 				"#极美全屋",
 				"#飘窗",
 				"#拼色墙"
+<<<<<<< HEAD
+=======
+				{
+					"text":"全部",
+					"pathChild":"/buildingMaterials/mustbuy1"
+				},
+				{
+					"text":"#千元好物",
+					"pathChild":"/buildingMaterials/mustbuy2"
+				},
+				{
+					"text":"#最爱的收纳",
+					"pathChild":"/buildingMaterials/mustbuy3"
+				},
+				{
+					"text":"#家居小贴士",
+					"pathChild":"/buildingMaterials/mustbuy4"
+				},
+				{
+					"text":"#开箱测评",
+					"pathChild":"/buildingMaterials/mustbuy5"
+				},
+				{
+					"text":"#全屋定制",
+					"pathChild":"/buildingMaterials/mustbuy6"
+				},
+				{
+					"text":"#我爱黑科技",
+					"pathChild":"/buildingMaterials/mustbuy7"
+				},
+				{
+					"text":"#迷你家电",
+					"pathChild":"/buildingMaterials/mustbuy8"
+				},
+				{
+					"text":"#清洁大作战",
+					"pathChild":"/buildingMaterials/mustbuy9"
+				},
+				{
+					"text":"#百元好物",
+					"pathChild":"/buildingMaterials/mustbuy10"
+				},
+				{
+					"text":"#懒人生活指南",
+					"pathChild":"/buildingMaterials/mustbuy11"
+				},
+				{
+					"text":"#10元好物",
+					"pathChild":"/buildingMaterials/mustbuy12"
+				},
+				{
+					"text":"#品质生活",
+					"pathChild":"/buildingMaterials/mustbuy13"
+				},
+				{
+					"text":"#智能家居",
+					"pathChild":"/buildingMaterials/mustbuy14"
+				},
+				{
+					"text":"#买了部后悔的家电",
+					"pathChild":"/buildingMaterials/mustbuy15"
+				},
+				{
+					"text":"#好看的地板",
+					"pathChild":"/buildingMaterials/mustbuy16"
+				},
+				{
+					"text":"#极美全屋",
+					"pathChild":"/buildingMaterials/mustbuy17"
+				},
+				{
+					"text":"#飘窗",
+					"pathChild":"/buildingMaterials/mustbuy18"
+				},
+				{
+					"text":"#拼色墙",
+					"pathChild":"/buildingMaterials/mustbuy19"
+				}
+>>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
 			],
 			"mustBuy_list":[
 				{

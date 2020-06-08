@@ -9,9 +9,17 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+<<<<<<< HEAD
     "less": "^3.11.2",
     "less-loader": "^6.1.0",
     "mint-ui": "^2.2.13",
+=======
+    "element-ui": "^2.4.5",
+    "jquery": "^3.5.1",
+    "less": "^3.11.2",
+    "less-loader": "^6.1.0",
+    "mint-ui": "2.2.13",
+>>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
     "swiper": "^5.4.1",
     "vant": "^2.8.4",
     "vue": "^2.6.11",
@@ -23,6 +31,11 @@
     "@vue/cli-plugin-router": "~4.4.0",
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+<<<<<<< HEAD
+=======
+    "babel-plugin-component": "^1.1.1",
+    "vue-cli-plugin-element": "^1.0.1",
+>>>>>>> 6aab02d524030304e5bde26d37d7ba282e3bdec4
     "vue-template-compiler": "^2.6.11"
   }
 }
