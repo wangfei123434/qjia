@@ -1,18 +1,5 @@
 <template>
-<<<<<<< HEAD
-  <div>
-    <h1>找建筑</h1>
-  </div>
-</template>
-
-<script>
-	
-</script>
-
-<style scoped>
-	@import url("../../assets/css/buildingMaterials.css");
-=======
-	<div class="myBox">
+  <div class="myBox">
 		<!--头部  -->
 		<header class="myHeader">
 			<a href="#" class="left_a"></a>
@@ -142,8 +129,6 @@
 	</div>
 </template>
 
-
-
 <script>
 	import MustBuy1 from "../../components/mustBuy1.vue"
 	import SearchOverlay from "../../components/searchOverlay.vue"
@@ -207,5 +192,4 @@
 
 <style scoped lang="less">
 	@import url("../../assets/css/buildingMaterials/buildingMaterials.less");
->>>>>>> 3c8224aa2e32fb052be9d066a81565a055f5fc74
 </style>

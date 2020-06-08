@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-<<<<<<< HEAD
 //引入axios
 import Axios from "axios"
 Vue.prototype.$axios = Axios
@@ -17,7 +16,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 // iconfont
 import './assets/myqijiafont/iconfont.js'
-=======
 import $ from 'jquery'
 
 // mint-ui库
@@ -52,13 +50,6 @@ Vue.use(VanImage);
 //vant库  search框
 import { Search } from 'vant';
 Vue.use(Search);
-
-//引入axios
-import Axios from "axios"
-Vue.prototype.$axios = Axios
-
->>>>>>> 3c8224aa2e32fb052be9d066a81565a055f5fc74
-Vue.config.productionTip = false
 
 new Vue({
   router,
