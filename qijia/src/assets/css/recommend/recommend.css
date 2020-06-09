@@ -155,15 +155,18 @@ a {
   display: flex;
 }
 .coupon ul li {
-  margin-right: 0.2rem;
-  margin-left: 0.1rem;
-  display: flex;
+  width: 3rem;
 }
 .coupon ul li:first-of-type {
   background: rgba(247, 243, 232);
   color: rgba(217, 183, 124);
+  margin-right: 0.1rem;
 }
 .coupon ul li:nth-of-type(2) {
+  background: rgba(247, 237, 232);
+  color: rgba(229, 151, 118);
+}
+.coupon ul li:nth-of-type(2) .coupon-right {
   background: rgba(243, 225, 216);
 }
 .coupon ul .aboutprice {
@@ -172,12 +175,20 @@ a {
 }
 .coupon ul .use {
   font-size: 12px;
+  display: inline-block;
+  width: 0.64rem;
 }
 .coupon ul .coupon-right {
   width: 20px;
   font-size: 12px;
   background: rgba(245, 236, 211);
   padding: 8px;
+  float: right;
+}
+.coupon ul .coupon-left {
+  width: 78%;
+  float: left;
+  padding-top: 0.2rem;
 }
 .coupon ul .coupon-bottom {
   color: rgba(153, 153, 153);
@@ -225,6 +236,7 @@ a {
   background: rgba(245, 245, 245);
   margin-right: 0.1rem;
   margin-bottom: 0.2rem;
+  text-align: center;
 }
 .renovate-material .liactive {
   color: rgba(238, 64, 64);
@@ -253,10 +265,12 @@ a {
   height: 0.4rem;
   line-height: 0.4rem;
   margin: 0.2rem 0 0 0.15rem;
+  text-align: center;
 }
 .nav-list {
   display: flex;
   border-bottom: 1px solid rgba(236, 236, 236);
+  text-align: center;
 }
 .nav-list li {
   flex: 1;
@@ -266,6 +280,9 @@ a {
   border-bottom: 3px solid rgba(238, 45, 27);
   color: #000;
   font-weight: bold;
+}
+.stylelist {
+  text-align: center;
 }
 .stylelist li {
   display: flex;
@@ -524,6 +541,7 @@ a {
   padding-top: 0.3rem;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 .cargolist ul li {
   width: 1.3rem;

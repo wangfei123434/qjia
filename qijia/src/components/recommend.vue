@@ -20,7 +20,7 @@
     </Banner>
     <!-- 导航区域 -->
     <ul class="ul-nav">
-      <li v-for="(item,index) in arrlist" :key="index">
+      <li v-for="(item,index) in arrlist" :key="index" @click="goto">
         <img :src="item.url" alt class="mypic" />
         <span class="smalltitle">{{item.smalltitle}}</span>
         <br />
@@ -119,7 +119,7 @@
         >{{item.title}}</li>
       </ul>
       <!-- 下拉箭头 和上提的箭头 -->
-      <div>
+      <div style="text-align:center">
         <i class="iconfont icon-shanglajiantou" v-show="ishow" @click="pickup"></i>
         <i class="iconfont icon-xialasanjiao" v-show="!ishow" @click="show"></i>
       </div>
@@ -257,17 +257,19 @@
           <span>百万装友跳出的好内容</span>
         </li>
       </ul>
+      <!-- 引入底部的装修干货的组件 -->
+      <Cargotab></Cargotab>
       <!-- 导航区域 -->
-      <ul class="nav-list">
+      <!-- <ul class="nav-list">
         <li
           v-for="(item,index) in ulnavlist"
           :key="index"
           v-bind:class="{actives:actives==index}"
           @click="changenav(index,item.name)"
         >{{item}}</li>
-      </ul>
+      </ul>-->
       <!-- 二级菜单  -->
-      <div class="cargolist">
+      <!-- <div class="cargolist">
         <ul v-for="(item,index) in gongnue" :key="index">
           <li
             v-for="(itemc,indexc) in item.desc"
@@ -275,8 +277,8 @@
             v-bind:class="{sactive:cuactive==indexc}"
           >{{itemc.name1}}</li>
         </ul>
-        <!-- 小编推荐等 -->
-        <div v-for="(items,index) in gongnue"  class="gongnues" :key="index">
+      <! 小编推荐等-->
+      <!-- <div v-for="(items,index) in gongnue"  class="gongnues" :key="index">
           <div
             v-for="(itemy,indexy) in items.desc"
             :key="indexy+'-only1'"
@@ -292,8 +294,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </div>-->
+      <!-- </div> -->
     </div>
     <!-- 遮罩层区域 -->
     <div class="mask" v-show="isclose"></div>
@@ -419,11 +421,12 @@
 </template>
 <script>
 import Banner from "../components/Banner.vue";
-
+import Cargotab from "../components/cargotab.vue";
 export default {
   name: "recommend",
   components: {
-    Banner
+    Banner,
+    Cargotab
   },
   data: function() {
     return {
@@ -458,7 +461,7 @@ export default {
       showgoods: [],
       ulnavlist: [],
       gongnue: [],
-      cuactive:0
+      cuactive: 0
     };
   },
   mounted() {
@@ -477,9 +480,10 @@ export default {
         // let {list1,list2,list3} = obj
         // let [a,b,c] = [1,2,3]
 
-        console.log("加油", res.data.mydata.nav);
-        console.log("更改", res.data.mydata.renovatematerial);
+        // console.log("加油", res.data.mydata.nav);
+        // console.log("更改", res.data.mydata.renovatematerial);
         this.renovatematerialarr = res.data.mydata.renovatematerial;
+        console.log("烦躁", res.data.myydata);
         this.navlist = res.data.mydata.nav;
         this.arrlist = res.data.mydata.ullists;
         this.renovatearr = res.data.mydata.renovate;
@@ -552,6 +556,10 @@ export default {
     },
     getprice() {
       this.isclose = true;
+    },
+    goto() {
+      console.log("去哪");
+      this.$router.push("/meitu");
     }
   }
 };

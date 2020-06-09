@@ -149,6 +149,11 @@ const routes = [
 		path: '/reservation',
 		component: () =>
 			import('../views/reservation/reservation.vue'),
+	},
+	{
+		path: '/meitu',
+		component: () =>
+			import('../components/meitu.vue'),
 	}
 ]
 

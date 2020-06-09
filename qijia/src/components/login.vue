@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="top">
-      <a href="#" class="iconfont icon-fanhuitubiao back"></a>
+      <a href="#" class="iconfont icon-fanhuitubiao back" @click="goback"></a>
       <a href="#">登录</a>
     </div>
     <ul class="login-nav">
@@ -25,7 +25,7 @@
         </div>
         <div class="div02">
           <img src="../assets/images/home/code.jpg" alt class="code" />
-          <a href="#">换一张</a>
+          <a href="#"></a>
         </div>
       </form>
       <form action="#" class="form02">
@@ -56,7 +56,7 @@
           </span>
         </div>
         <div class="div02 div03">
-          <a href="#">换一张</a>
+          <a href="#"></a>
         </div>
       </form>
     </div>
@@ -160,6 +160,10 @@ export default {
       this.isshow = false;
       this.iscoming = true;
     },
+    goback() {
+      console.log("返回了");
+      this.$router.go(-1)
+    },
     getcode() {
       console.log("发送短信了");
 
@@ -191,7 +195,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 @import url("../assets/css/myfont/iconfont.css");
 @import url("../assets/css/login/login.css");
 </style>

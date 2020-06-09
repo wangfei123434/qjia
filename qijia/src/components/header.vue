@@ -4,8 +4,9 @@
     <ul class="nav-header">
       <li>
         <div>
-          <span class="logo">齐家</span>
-          <span>jia.coM</span>
+          <span class="logo">
+            <img src="../assets/images/home/jia_logo.png" alt="" class="jialogo">
+          </span>
           <span>
             深圳
             <i class="iconfont icon-xialasanjiao"></i>

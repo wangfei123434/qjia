@@ -2,7 +2,7 @@
   <div class="myBox">
   		<!--头部  -->
   		<header class="myHeader">
-  			<a href="#" class="left_a"></a>
+  			<a href="#" class="left_a" @click="goback"></a>
   			选建材
   			<a href="#" class="right_a" is-link @click="overlay=true" ></a>
   		</header>
@@ -186,6 +186,9 @@
 					.catch(err => {
 						console.log(err)
 					})
+			},
+			goback(){
+				this.$router.go(-1)
 			}
 		}
 	}
