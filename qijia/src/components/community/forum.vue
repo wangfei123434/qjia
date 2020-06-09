@@ -1,7 +1,7 @@
 <template>
   <div class="forum">
-    <el-backtop :bottom="20" :right="15" >
-      <img src="../../assets/images/社区/back-top.png" alt="" style="width:.8rem">
+    <el-backtop :bottom="20" :right="15">
+      <img src="../../assets/images/社区/back-top.png" alt style="width:.8rem" />
     </el-backtop>
     <div class="toplist-wrap">
       <div class="list" v-for="(item,index) in toplist" :key="index">
@@ -11,7 +11,7 @@
         <span class="font">{{item.title}}</span>
       </div>
     </div>
-    
+
     <div class="hot">
       <h1>热门</h1>
       <div class="color-font">
@@ -113,22 +113,25 @@
       <p class="title">请选择快捷登录</p>
       <form action="#">
         <p class="after">
-          <input type="number" placeholder="手机号" maxlength="11" />
+          <input type="number" id="phone" placeholder="手机号" maxlength="11" />
         </p>
         <p class="yanzhengma after">
-          <input type="text" placeholder="验证码" maxlength="4" />
+          <input type="text" id="yanzhengma" placeholder="验证码" maxlength="4" />
           <span>换一张</span>
         </p>
         <p class="duanxinma after">
-          <input type="text" placeholder="短信码" maxlength="6" />
+          <input type="text" id="duanxinma" placeholder="短信码" maxlength="6" />
           <span>获取短信码</span>
         </p>
         <p class="check">
-          <input type="checkbox" />
+          <input type="checkbox" id="freelogin" />
           <span>一个月之内免登录</span>
         </p>
         <p class="sub">
-          <input type="submit" value="登录" />
+          <van-button class="sub" type="primary" text="登录" @click="goaddress" />
+          <van-notify v-model="btnshow" type="warning">
+            <span id="alertmsg">{{msg}}</span>
+          </van-notify>
         </p>
         <p class="line">
           <span>其他账号登录</span>
@@ -140,7 +143,6 @@
       </form>
     </div>
     <div class="zhezao" v-show="zhezaoshow" @click="zhezaoshow=false"></div>
-    
   </div>
 </template>
 <script>
@@ -148,6 +150,8 @@ export default {
   name: "question",
   data() {
     return {
+      msg: "",
+      btnshow: false,
       toplist: [],
       colorfont: [],
       active: 0,
@@ -155,13 +159,13 @@ export default {
       quelist: [],
       zhezaoshow: false,
       myBackToTopStyle: {
-        right: '50px',
-        bottom: '50px',
-        width: '40px',
-        height: '40px',
-        borderRadius: '4px',
-        lineHeight: '45px', // 请保持与高度一致以垂直居中
-        background: '#e7eaf1'// 按钮的背景颜色
+        right: "50px",
+        bottom: "50px",
+        width: "40px",
+        height: "40px",
+        borderRadius: "4px",
+        lineHeight: "45px", // 请保持与高度一致以垂直居中
+        background: "#e7eaf1" // 按钮的背景颜色
       }
     };
   },
@@ -208,11 +212,88 @@ export default {
         .catch(err => {
           console.log(err);
         });
+    },
+    goaddress() {
+      var phone = document.getElementById("phone").value;
+      var yonghuxieyi = document.getElementById("yonghuxieyi");
+      var yanzhengma = document.getElementById("yanzhengma").value;
+      var duanxinma = document.getElementById("duanxinma").value;
+      if (phone == "") {
+        this.msg = "手机号不能为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else if (!/^1[3456789]\d{9}$/.test(phone)) {
+        this.msg = "手机号格式错误";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else if ((yanzhengma == "")) {
+        this.msg = "验证码为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else if (yanzhengma != "1234") {
+        this.msg = "验证码错误";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      }else if (duanxinma =="") {
+        this.msg = "短信码为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      }else if (duanxinma !="654321") {
+        this.msg = "短信码为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else {
+        this.msg = "登录成功";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        this.zhezaoshow=false
+        }, 2000);
+        return false
+      }
     }
   }
 };
 </script>
 <style lang="less" scoped>
+@keyframes from {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 55%;
+  }
+  65% {
+    top: 45%;
+  }
+  80% {
+    top: 53%;
+  }
+  90% {
+    top: 48%;
+  }
+  100% {
+    top: 50%;
+  }
+}
 .zhezao {
   width: 100%;
   height: 100hv;
@@ -242,10 +323,11 @@ export default {
   }
 }
 .form {
+  animation: from 0.5s;
   padding: 10/100rem;
   border-radius: 8px;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -336,7 +418,8 @@ export default {
     }
   }
   .sub {
-    input {
+    .sub {
+      border: none;
       background-color: #dd0000;
       color: #fff;
       text-align: center;

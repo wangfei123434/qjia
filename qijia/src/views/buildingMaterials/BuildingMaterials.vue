@@ -130,7 +130,7 @@
 </template>
 
 <script>
-	import MustBuy1 from "../../components/mustBuy1.vue"
+	import MustBuy1 from "../../components/building/mustBuy1.vue"
 	import SearchOverlay from "../../components/searchOverlay.vue"
 	export default {
 		name: "buildingMaterials",
