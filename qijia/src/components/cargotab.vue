@@ -1,5 +1,6 @@
 <template>
   <div class="footer_list">
+    <div>asd</div>
     <van-tabs v-model="activeName" animated>
       <van-tab title="攻略" name="a" class="case">
         <ul v-for="(item,index) in gongnuearr" :key="index" class="cargolist">
