@@ -18,15 +18,18 @@
             class="cargobox"
             v-show="indexc==liactive"
           >
-            <div v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="cragocontent">
+            <div v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="cragocontent" :class="{'right':itemz.imgsrc.length<=1,'right1':itemz.imgsrc.length>1}">
               <div class="left">
                 <p class="title">{{itemz.title}}</p>
                 <p class="myp">
                   <span class="author">{{itemz.author}}</span>
+                  <span class="circle">ㆍ</span>
                   <span class="count">{{itemz.count}}</span>
                 </p>
               </div>
-              <div :class="{'right':itemz.imgsrc.length<=1,'right1':itemz.imgsrc>1}" >
+              <!-- 如果说imgsrc中的数组的长度大于1的话 我就选用right1这套样式
+              如果说是imgsrc中的数组长度要是小于等于1的话 我就选用right的这套样式 -->
+              <div>
                 <img v-for="(img,i) in itemz.imgsrc" :src="img" alt :key="i"/>
               </div>
             </div>

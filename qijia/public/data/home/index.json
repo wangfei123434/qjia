@@ -28,7 +28,7 @@
 			},
 			{
 				"title": "免费设计",
-				"path": "",
+				"path": "/freesheji",
 				"url": "https://mued3.jia.com/image/mobile/m_sygb/first_page/icon_list_mfsj.png",
 				"circle": {
 					"wz": "免费",
@@ -101,7 +101,7 @@
 			},
 			{
 				"title": "装修美图",
-				"path": "",
+				"path": "/meitu",
 				"url": "https://mued3.jia.com/image/mobile/m_sygb/first_page/icon_list_zxmt.png",
 				"circle": {
 					"wz": "免费",

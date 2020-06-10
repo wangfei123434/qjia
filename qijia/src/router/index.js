@@ -73,11 +73,11 @@ const routes = [
 	}, {
 		path: '/mine',
 		name: 'Mine',
-		component: () =>import('../views/Mine/mine.vue')
+		component: () => import('../views/Mine/mine.vue')
 	}, {
 		path: '/freesheji',
 		name: 'Freesheji',
-		component: () =>import('../views/Home/freesheji.vue')
+		component: () => import('../views/Home/freesheji.vue')
 	}, {
 		path: '/community',
 		name: 'Community',
@@ -88,15 +88,15 @@ const routes = [
 			{
 				path: '/community/question', component: () => import('../components/community/question'),
 				redirect: '/community/question/remen',
-				children: [{path: '/community/question/remen', component: () => import('../components/community/remen')}]
-			}, 
-			{path: '/community/forum',component: () =>import('../components/community/forum')}
+				children: [{ path: '/community/question/remen', component: () => import('../components/community/remen') }]
+			},
+			{ path: '/community/forum', component: () => import('../components/community/forum') }
 		]
 	},
 	{
 		path: '/buildingMaterials',
 		name: 'BuildingMaterials',
-		component: () =>import('../views/BuildingMaterials/buildingMaterials.vue'),
+		component: () => import('../views/BuildingMaterials/buildingMaterials.vue'),
 		children: [
 			{ path: "/buildingMaterials", redirect: "/buildingMaterials/mustbuy1" },
 			{ path: "mustbuy1", component: MustBuy1 },
@@ -108,7 +108,13 @@ const routes = [
 			{ path: "mustbuy7", component: MustBuy7 },
 			{ path: "mustbuy8", component: MustBuy8 }
 		]
+	},
+	{
+		path: '/meitu',
+		name: 'Meitu',
+		component: () => import('../components/home/meitu.vue')
 	}
+
 ]
 
 const router = new VueRouter({

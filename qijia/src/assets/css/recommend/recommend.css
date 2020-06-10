@@ -440,6 +440,7 @@ a {
   display: flex;
 }
 .getprice .price-right .top input {
+  font-size: 12px;
   width: 1.6rem;
   margin-right: 0.2em;
   padding: 0.09rem;
