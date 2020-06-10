@@ -7,6 +7,7 @@
   font-weight: 100;
   text-align: center;
   position: relative;
+  margin-top: 0.1rem;
 }
 .myBox .myHeader .left_a {
   border-left: 0.02rem solid #333;

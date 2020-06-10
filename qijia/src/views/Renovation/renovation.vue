@@ -312,7 +312,6 @@
 				scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false
 			}
 
-
 		}
 	}
 </script>
