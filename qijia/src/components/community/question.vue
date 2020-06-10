@@ -58,29 +58,32 @@
         <span>我要提问</span>
       </a>
     </div>
-    <div class="form" v-show="zhezaoshow" :class="{ftop:zhezaoshow}">
+    <div class="form" v-show="zhezaoshow">
       <p class="close">
         <span @click="zhezaoshow=!zhezaoshow">X</span>
       </p>
       <p class="title">请选择快捷登录</p>
       <form action="#">
         <p class="after">
-          <input type="number" placeholder="手机号" maxlength="11" />
+          <input type="number" id="phone" placeholder="手机号" maxlength="11" />
         </p>
         <p class="yanzhengma after">
-          <input type="text" placeholder="验证码" maxlength="4" />
+          <input type="text" id="yanzhengma" placeholder="验证码" maxlength="4" />
           <span>换一张</span>
         </p>
         <p class="duanxinma after">
-          <input type="text" placeholder="短信码" maxlength="6" />
+          <input type="text" id="duanxinma" placeholder="短信码" maxlength="6" />
           <span>获取短信码</span>
         </p>
         <p class="check">
-          <input type="checkbox" />
+          <input type="checkbox" id="freelogin" />
           <span>一个月之内免登录</span>
         </p>
         <p class="sub">
-          <input type="submit" value="登录" />
+          <van-button class="sub" type="primary" text="登录" @click="goaddress" />
+          <van-notify v-model="btnshow" type="warning">
+            <span id="alertmsg">{{msg}}</span>
+          </van-notify>
         </p>
         <p class="line">
           <span>其他账号登录</span>
@@ -99,13 +102,74 @@ export default {
   name: "question",
   data() {
     return {
+      msg:'',
+      btnshow:false,
       zhezaoshow: false,
       currIndex: 0
     };
   },
   mounted() {},
-  methods: {}
-};
+  methods: {
+    goaddress() {
+      var phone = document.getElementById("phone").value;
+      var yonghuxieyi = document.getElementById("yonghuxieyi");
+      var yanzhengma = document.getElementById("yanzhengma").value;
+      var duanxinma = document.getElementById("duanxinma").value;
+      if (phone == "") {
+        this.msg = "手机号不能为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else if (!/^1[3456789]\d{9}$/.test(phone)) {
+        this.msg = "手机号格式错误";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else if ((yanzhengma == "")) {
+        this.msg = "验证码为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else if (yanzhengma != "1234") {
+        this.msg = "验证码错误";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      }else if (duanxinma =="") {
+        this.msg = "短信码为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      }else if (duanxinma !="654321") {
+        this.msg = "短信码为空";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        }, 2000);
+        return false;
+      } else {
+        this.msg = "登录成功";
+        this.btnshow = true;
+        setTimeout(() => {
+          this.btnshow = false;
+        this.zhezaoshow=false
+        }, 2000);
+        return false
+      }
+    }
+  }
+  }
+
 </script>
 <style lang="less" scoped>
 @keyframes from{
@@ -281,15 +345,12 @@ export default {
   z-index: 3;
 }
 .form {
-  animation: from .5s;
-  &.ftop{
-    top: 50%;
-  }
+  animation: from 0.5s;
   padding: 10/100rem;
   border-radius: 8px;
   background-color: #fff;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
@@ -379,7 +440,8 @@ export default {
     }
   }
   .sub {
-    input {
+    .sub {
+      border: none;
       background-color: #dd0000;
       color: #fff;
       text-align: center;

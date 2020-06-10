@@ -34,7 +34,6 @@
             <div :class="{active:curindex==9}" @click="curindex=9">
                 <router-link to="/home/topic">专题</router-link>
             </div>
-
             <div :class="{active:curindex==10}" @click="curindex=10">
                 <router-link to="/home/vedio">视频</router-link>
             </div>
