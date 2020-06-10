@@ -20,7 +20,7 @@
     </Banner>
     <!-- 导航区域 -->
     <ul class="ul-nav">
-      <li v-for="(item,index) in arrlist" :key="index" @click="goto">
+      <li v-for="(item,index) in arrlist" :key="index" @click="goto(item)">
         <img :src="item.url" alt class="mypic" />
         <span class="smalltitle">{{item.smalltitle}}</span>
         <br />
@@ -557,9 +557,14 @@ export default {
     getprice() {
       this.isclose = true;
     },
-    goto() {
-      console.log("去哪");
-      this.$router.push("/meitu");
+    goto(item) {
+      // console.log("去哪");
+      // this.$router.push("/meitu");
+      if(item.path){
+        this.$router.push({
+          path:item.path
+        })
+      }
     }
   }
 };

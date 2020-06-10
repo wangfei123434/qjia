@@ -26,8 +26,8 @@
                   <span class="count">{{itemz.count}}</span>
                 </p>
               </div>
-              <div class="right">
-                <img :src="itemz.imgsrc" alt />
+              <div :class="{'right':itemz.imgsrc.length<=1,'right1':itemz.imgsrc>1}" >
+                <img v-for="(img,i) in itemz.imgsrc" :src="img" alt :key="i"/>
               </div>
             </div>
           </div>
@@ -138,8 +138,29 @@ export default {
       vactive:0
     };
   },
-  mounted() {
+  created() {
     this.getFooterData();
+  },
+  computed:{
+    // right(){
+    //   let right = ''
+    //   console.log("aaa",this.gongnuearr)
+    //   if(this.gongnuearr[0].desc){
+    //     this.gongnuearr[0].desc.forEach(item=>{
+    //       item.stylepic.forEach((item,i)=>{
+    //         // console.log("item",i,item.imgsrc.length)
+    //         if(item.imgsrc.length<=1){
+    //           console.log("right")
+    //           right = 'right'
+    //         }else if(item.imgsrc.length>1){
+    //           console.log("right1")
+    //           right = 'right1'
+    //         }
+    //       })
+    //     })
+    //     return right
+    //   }
+    // }
   },
   methods: {
     getFooterData() {
