@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.sactive {
+  color: rgba(254, 62, 45);
+  border: 1px solid rgba(254, 62, 45);
+}
+.style-display .box {
+  width: 2.5rem;
+}
+.style-display .mydiv .title {
+  position: absolute;
+  bottom: 0.51rem;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+.style-display .mydiv .word {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.diray .diraybox {
+  padding: 0.1rem;
+}
+.diray .diraybox .words {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-top: 0.2rem;
+}
+.diray .titlepic {
+  width: 4rem;
+  border-radius: 0.08rem;
+}
+.diray .person {
+  width: 0.3rem;
+  border-radius: 50%;
+}

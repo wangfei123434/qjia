@@ -18,22 +18,33 @@
   margin-right: 0.1rem;
   margin-bottom: 0.2rem;
 }
-.cargobox {
-  border: 1px solid red;
-}
 .cargobox .cragocontent {
   border-bottom: 1px solid rgba(251, 238, 238);
   padding: 0.3rem;
   display: flex;
   position: relative;
+  align-items: center;
 }
-.cargobox .cragocontent .right {
+.cargobox .cragocontent.right1 {
+  flex-wrap: wrap;
+}
+.cargobox .cragocontent.right1 .left {
+  width: 100%;
+}
+.cargobox .cragocontent.right1 .rightpick {
+  position: static;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cargobox .cragocontent .rightpick {
   width: 30%;
   position: absolute;
   right: 0.1rem;
 }
-.cargobox .cragocontent .right img {
-  width: 1.8rem;
+.cargobox .cragocontent .rightpick img {
+  width: 1.6rem;
+  height: 1.4rem;
 }
 .cargobox .cragocontent .left {
   width: 70%;
@@ -59,8 +70,9 @@
   color: rgba(175, 175, 175);
 }
 .question-top {
-  padding-top: 0.3rem;
-  padding-left: 0.2rem;
+  display: flex;
+  background: rgba(245, 245, 245);
+  padding: 0.2rem;
 }
 .question-top form {
   display: flex;
@@ -69,15 +81,18 @@
   border: none;
   outline: none;
   width: 100%;
-  text-indent: 0.5rem;
+  text-indent: 0.6rem;
   border-radius: 0.3rem;
 }
 .question-top form div {
+  overflow: hidden;
+  width: 70%;
   position: relative;
   border: 1px solid lightgray;
-  height: 0.5rem;
-  line-height: 0.5rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
   border-radius: 0.3rem;
+  font-size: 12px;
 }
 .question-top form .div02 {
   width: 30%;
@@ -87,7 +102,7 @@
   width: 0.3rem;
   position: absolute;
   top: 0.13rem;
-  left: 0.1rem;
+  left: 0.2rem;
 }
 .question-top form .pen {
   width: 0.3rem;
@@ -102,7 +117,7 @@
 .ulnav li {
   flex: 1;
   border-radius: 20px;
-  padding: 0.05rem 0.2rem;
+  padding: 0.05rem;
   font-size: 12px;
   margin: 0.2rem 0.2rem;
   background: rgba(245, 245, 245);
@@ -114,4 +129,38 @@
 .divlist ul li {
   padding: 0.2rem;
   border-bottom: 1px solid #efecec;
+}
+.divlist .listques {
+  position: relative;
+}
+.divlist .listques .wenda {
+  position: absolute;
+  right: 0.2rem;
+  color: rgba(186, 186, 186);
+  font-size: 12px;
+}
+.videos ul li {
+  display: flex;
+  padding: 0.2rem;
+}
+.videos ul li .left .title {
+  margin-bottom: 0.2rem;
+}
+.videos ul li .left .word {
+  font-size: 12px;
+  color: rgba(199, 199, 199);
+  position: relative;
+}
+.videos ul li .left .word .count {
+  position: absolute;
+  right: 0.1rem;
+}
+.videos ul li .left .person {
+  width: 0.4rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.1rem;
+}
+.videos ul li .right img {
+  width: 2rem;
 }

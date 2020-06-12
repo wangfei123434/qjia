@@ -42,7 +42,7 @@
     img {
         width: 50/100rem;
         position: absolute;
-        top: 20/100rem;
+        top: 10/100rem;
     }
 
     .search {
@@ -114,8 +114,8 @@
                 }
 
                 .person {
-                    width: 40/100rem;
-                    height: 40/100rem;
+                    width: 45/100rem;
+                    height: 45/100rem;
                     border-radius: 20/100rem;
                     vertical-align: middle;
                     margin-right: 10/100rem;
@@ -154,10 +154,12 @@ aside {
     bottom: 0;
     width: 100%;
     padding: 20/100rem;
+    z-index: 3000;
 
     div {
         ul {
             display: flex;
+
             li {
                 flex: 1;
                 position: relative;
@@ -192,8 +194,6 @@ aside {
 }
 
 .footer-pic {
-    background: rgba(245, 246, 249);
-
     .totop {
         .picbox {
             position: relative;
@@ -202,13 +202,6 @@ aside {
                 width: 100%;
             }
 
-            .close {
-                width: 40/100rem;
-                position: absolute;
-                top: -60/100rem;
-                right: 10/100rem;
-                background: yellow;
-            }
         }
 
         .input-area {
@@ -219,7 +212,6 @@ aside {
             form {
                 background: #fff;
                 border: 1px solid #eceaea;
-
                 margin-bottom: 10/100rem;
                 padding: 13/100rem;
                 border-radius: 8/100rem;
@@ -258,8 +250,9 @@ aside {
             color: #fff;
             height: 80/100rem;
             line-height: 80/100rem;
-            border-radius: 8/100rem;
+            border-radius: 10/100rem;
             margin: 20/100rem;
+            overflow: hidden;
 
             button {
                 border: none;
@@ -271,13 +264,22 @@ aside {
     }
 }
 
-.mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .4);
-    z-index: 9999;
+.van-overlay {
+    z-index: 2014;
+
+}
+
+.van-popup--bottom {
+    bottom: 120/100rem;
+}
+
+.van-popup__close-icon--top-right {
+    top: -41px;
+    right: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.van-popup {
+    overflow-y: visible;
 }

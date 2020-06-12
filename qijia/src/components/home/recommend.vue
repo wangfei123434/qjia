@@ -176,55 +176,13 @@
           <a href="#" class="more">寻找家的感觉></a>
         </li>
       </ul>
-      <ul class="nav-list">
-        <!-- 效果图   案例 日记 -->
-        <li
-          v-bind:class="{actives:currentindex==index}"
-          @click="change(index,item.title)"
-          v-for="(item,index) in navlist"
-          :key="index"
-        >{{item.title}}</li>
-      </ul>
-      <!-- 风格  户型  -->
-      <ul class="stylelist">
-        <li v-for="(item,index) in navlist" :key="index" v-show="index==currindex">
-          <span
-            v-bind:class="{sactive:scurrindex==indexc}"
-            v-for="(itemc,indexc) in item.desc"
-            :key="indexc"
-            @click="changestyle(indexc,item)"
-          >{{itemc.name}}</span>
-        </li>
-      </ul>
-      <!-- 风格的展示 -->
-      <ul class="style-display">
-        <li v-for="(item,index) in navlist" :key="index" v-show="index==licurindex">
-          <div
-            v-for="(itemd,indexd) in item.desc"
-            :key="indexd"
-            class="mydiv"
-            v-show="indexd==scurrindex"
-          >
-            <div v-for="(itemk,indexk) in itemd.stylepic" :key="indexk">
-              <img :src="itemk.imgSrc" alt />
-              <span class="styles" v-bind:style="{color:itemk.color}">{{itemk.finishStyle}}</span>
-              <br />
-              <span
-                class="styles style01 style03"
-                v-bind:style="{color:itemk.color1}"
-              >{{itemk.title}}</span>
-              <span class="styles style02 style04" v-bind:style="{color:itemk.color}">{{itemk.line}}</span>
-              <br />
-              <span class="count" v-bind:style="{color:itemk.color}">{{itemk.quantity}}</span>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <Renovateidea></Renovateidea>
+
       <p class="searchmore">
         <a href="#">查看更多屋主装修过程></a>
       </p>
       <!-- 获取报价 -->
-      <div>
+      <div class="getprices">
         <p>在深圳，把家装成这样要花多少钱？</p>
         <ul class="getprice">
           <li>
@@ -259,43 +217,6 @@
       </ul>
       <!-- 引入底部的装修干货的组件 -->
       <Cargotab></Cargotab>
-      <!-- 导航区域 -->
-      <!-- <ul class="nav-list">
-        <li
-          v-for="(item,index) in ulnavlist"
-          :key="index"
-          v-bind:class="{actives:actives==index}"
-          @click="changenav(index,item.name)"
-        >{{item}}</li>
-      </ul>-->
-      <!-- 二级菜单  -->
-      <!-- <div class="cargolist">
-        <ul v-for="(item,index) in gongnue" :key="index">
-          <li
-            v-for="(itemc,indexc) in item.desc"
-            :key="indexc"
-            v-bind:class="{sactive:cuactive==indexc}"
-          >{{itemc.name1}}</li>
-        </ul>
-      <! 小编推荐等-->
-      <!-- <div v-for="(items,index) in gongnue"  class="gongnues" :key="index">
-          <div
-            v-for="(itemy,indexy) in items.desc"
-            :key="indexy+'-only1'"
-            class="gongbuenav"
-            style="border-bottom: 1px solid rgba(236, 236, 236);"
-          >
-            <div class="aa" v-for="(itemz,indexz) in itemy.stylepic" :key="indexz+'-only2'">
-              <p>{{itemz.title}}</p>
-              <img :src="itemz.imgsrc" alt class="gongnuepic" />
-              <div>
-                <span class="author">{{itemz.author}}</span>
-                <span class="count">{{itemz.count}}</span>
-              </div>
-            </div>
-          </div>
-      </div>-->
-      <!-- </div> -->
     </div>
     <!-- 遮罩层区域 -->
     <div class="mask" v-show="isclose"></div>
@@ -422,11 +343,13 @@
 <script>
 import Banner from "../../components/Banner.vue";
 import Cargotab from "../../components/cargotab.vue";
+import Renovateidea from "../../components/renovateidea.vue";
 export default {
   name: "recommend",
   components: {
     Banner,
-    Cargotab
+    Cargotab,
+    Renovateidea
   },
   data: function() {
     return {
@@ -457,7 +380,7 @@ export default {
       stylepicarr: [],
       arr: [],
       goodsarr: [],
-      navlist: [],
+      // navlist: [],
       showgoods: [],
       ulnavlist: [],
       gongnue: [],
@@ -483,19 +406,15 @@ export default {
         // console.log("加油", res.data.mydata.nav);
         // console.log("更改", res.data.mydata.renovatematerial);
         this.renovatematerialarr = res.data.mydata.renovatematerial;
-        console.log("烦躁", res.data.myydata);
-        this.navlist = res.data.mydata.nav;
+        //this.navlist = res.data.mydata.nav;
         this.arrlist = res.data.mydata.ullists;
         this.renovatearr = res.data.mydata.renovate;
         this.couponarr = res.data.mydata.coupon;
         this.goodservicearr = res.data.mydata.goodservice;
-
         this.buymateriallist = res.data.mydata.buymateriallist;
         this.showgoods = res.data.mydata.showgoods;
         this.ulnavlist = res.data.mydata.ulnavlist;
         this.gongnue = res.data.mydata.gongnue;
-        console.log("showgoods", this.showgoods);
-        console.log("睡觉", res.data.mydata.ulnavlist);
 
         // this.navarr = res.data.mydata.nav;
         // this.apartment = res.data.mydata.apartment;
@@ -505,12 +424,13 @@ export default {
 
         this.goodsarr = res.data.mydata.goods;
         console.log(this.goodsarr);
+        console.log("早起", this.renovatematerialarr); //18个
 
-        let arr = this.renovatematerialarr.filter((item, i) => {
+        let arr1 = this.renovatematerialarr.filter((item, i) => {
           return i < 8;
         });
-        this.arr = arr;
-        console.log("arr", arr);
+        this.arr = arr1;
+        console.log("arr1", arr1); //前8个
       });
     },
     //点击买建材对应的选项
@@ -522,10 +442,10 @@ export default {
       console.log("收起来");
       //点击上拉的时候下拉箭头显示  收起箭头消失
       //点击上拉的时候 只显示前10个
-      let arr = this.renovatematerialarr.filter((item, i) => {
+      let arr1 = this.renovatematerialarr.filter((item, i) => {
         return i < 8;
       });
-      this.arr = arr;
+      this.arr = arr1;
       this.ishow = false;
     },
     show() {
@@ -546,10 +466,7 @@ export default {
       console.log(item, index);
       this.actives = index;
     },
-    changestyle(indexc, item) {
-      console.log(indexc, item);
-      this.scurrindex = indexc;
-    },
+
     clickclose() {
       console.log("关闭了");
       this.isclose = false;
@@ -559,8 +476,8 @@ export default {
     },
     goto(item) {
       console.log("去哪");
-      if(item.path){
-      this.$router.push(item.path);
+      if (item.path) {
+        this.$router.push(item.path);
       }
     }
   }

@@ -20,12 +20,12 @@
         <div class="div01">
           <span class="span01">
             <img src="../assets/images/home/cc.png" alt />
-            <input type="text" placeholder="请输入验证码" v-model="code" />
+            <input type="text" placeholder="请输入验证码" v-model="code" />       
           </span>
         </div>
         <div class="div02">
           <img src="../assets/images/home/code.jpg" alt class="code" />
-          <a href="#"></a>
+          <a href="#">换一张</a>
         </div>
       </form>
       <form action="#" class="form02">
@@ -102,11 +102,11 @@ export default {
   name: "login",
   data: function() {
     return {
-      tel: "",
-      code: "",
-      num: "",
-      username: "",
-      pwd: "",
+      tel: "",  //手机号码
+      code: "",   //验证码
+      num: "",  //短信校验码
+      username: "",   //用户名
+      pwd: "",   //密码
       isshow: true,
       iscoming: false
     };

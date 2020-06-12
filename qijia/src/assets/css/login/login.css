@@ -38,6 +38,7 @@
   background: #fff;
   border: 1px solid #e3e0e0;
   border-bottom: none;
+  font-size: 14px;
 }
 .login .login-form form {
   height: 0.7rem;
@@ -49,6 +50,7 @@
 .login .login-form form input {
   border: none;
   outline: none;
+  background: transparent;
 }
 .login .login-form form ::-webkit-input-placeholder {
   color: rgba(205, 205, 205);
@@ -86,11 +88,11 @@
   color: red;
 }
 .login .login-p {
-  height: 0.4rem;
-  line-height: 0.4rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
   text-align: left;
-  padding: 0.2rem;
   color: rgba(179, 179, 179);
+  padding-left: 0.2rem;
 }
 .login .btn {
   width: 90%;
@@ -129,6 +131,7 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .login .other-login div {
   position: relative;
@@ -172,6 +175,8 @@
   font-size: 13px;
 }
 .login .footer {
+  position: fixed;
+  bottom: 0;
   padding-top: 0.1rem;
   width: 100%;
   background: #fff;
