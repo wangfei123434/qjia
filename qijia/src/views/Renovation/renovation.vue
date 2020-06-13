@@ -1,15 +1,74 @@
 <template>
 	<div class="width">
-		<div class="quyu searchBar" id="searchBar">
-			<div class="quyuone" :class="searchBarFixed==true ? 'isFixed':'' " @click="aaa()">
-				<a href="#">区域</a>
-				<span><img src="../../assets/images/找装修/下箭头.jpg" alt=""></span>
+		<van-sticky>
+
+			<div class="quyu searchBar" id="searchBar">
+				
+				<div class="bobyen" v-show="bobynoearr" @click="bobynoearr=true">
+					<div class="tionthree">
+						<h4>擅长房型</h4>
+						<ul class="shanchang">
+				
+							<li @click="fang(index)" v-for="(item,index) in listone" :class="{'tion3':one === index}" :key="index">
+								<a href="#">{{item}}</a>
+							</li>
+						</ul>
+						<h4 class="hr">装修服务</h4>
+						<ul class="shanchang">
+							<li @click="xiu(index)" v-for="(item,index) in listtwo" :class="{'tion3':two === index}" :key="index">
+								<a href="#">{{item}}</a>
+							</li>
+						</ul>
+				
+						<h4 class="hr">特色服务</h4>
+						<ul class="shanchang">
+							<li @click="hao(index)" v-for="(item,index) in arr.nav3" :class="{'tion3':arren === index}" :key="index">
+								<a href="#">{{item}}</a>
+							</li>
+						</ul>
+				
+						<h4 class="hr">风格偏好</h4>
+						<ul class="shanchang">
+							<li @click="feng(index)" v-for="(item,index) in listthree" :class="{'tion3':three === index}" :key="index">
+								<a href="#">{{item}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="bobyone" v-show="bobyonearr" @click="bobyonearr=false">
+					<div class="tiontwo">
+						<ul class="active">
+							<div class="zong">
+								<p>综合排序</p>
+								<p>齐家平台综合智能排序</p>
+							</div>
+							<li @click="en(index)" v-for="(item,index) in listen" :class="{'ao':ten === index}" :key="index">
+								<a href="#">{{item}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="body" v-show="show" @click="show=false">
+					<div class="tion">
+						<ul class="tionone">
+							<li @click="change(index)" v-for="(item,index) in list" :class="{'tion2':ind === index}" :key="index">
+								<a href="#">{{item}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="quyuone" :class="searchBarFixed==true ? 'isFixed':'' " @click.prevent="aaa()">
+					<a href="#">{{dires}}</a>
+					<span><img src="../../assets/images/找装修/下箭头.jpg" alt=""></span>
+				</div>
+				<div class="quyutwo">
+					<span><img src="../../assets/images/找装修/sort-icon.png" alt="" @click="bbb()"></span>
+					<span class="i"><img src="../../assets/images/找装修/screen-icon.png" alt="" @click="ccc()"></span>
+				</div>
 			</div>
-			<div class="quyutwo">
-				<span><img src="../../assets/images/找装修/sort-icon.png" alt="" @click="bbb()"></span>
-				<span class="i"><img src="../../assets/images/找装修/screen-icon.png" alt="" @click="ccc()"></span>
-			</div>
-		</div>
+		</van-sticky>
 
 		<!-- 区域部分 -->
 		<ul class="ul">
@@ -18,7 +77,7 @@
 					<img :src="item.icon" />
 					<p>{{item.title}}</p>
 				</a>
-				
+
 			</li>
 		</ul>
 		<!-- 3D设计部分 -->
@@ -55,7 +114,7 @@
 									<span class="xingtwo">好评率{{item.favorable_rate}}</span>
 								</div>
 								<!-- 设计 施工 服务 -->
-								<div class="design">
+								<div class="designtion">
 									<span>设计{{item.design}} | </span>
 									<span>施工{{item.roadwork}} | </span>
 									<span>服务{{item.serve}} </span>
@@ -173,15 +232,7 @@
 			</van-tabs>
 
 		</div>
-		<div class="body" v-show="show" @click="show=false">
-			<div class="tion">
-				<ul class="tionone">
-					<li @click="change(index)" v-for="(item,index) in list" :class="{'tion2':ind === index}" :key="index">
-						<a href="#">{{item}}</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		
 		<!-- 1 -->
 		<div class="bobyone" v-show="bobyonearr" @click="bobyonearr=false">
 			<div class="tiontwo">
@@ -197,37 +248,7 @@
 			</div>
 		</div>
 		<!-- 2 -->
-		<div class="bobynoe" v-show="bobynoearr" @click="bobynoearr=true">
-			<div class="tionthree">
-					<h4>擅长房型</h4>
-				<ul class="shanchang">
-				
-					<li @click="fang(index)" v-for="(item,index) in listone"  :class="{'tion3':one === index}"  :key="index" >
-						<a href="#">{{item}}</a>
-					</li>
-				</ul>
-				<h4 class="hr">装修服务</h4>
-				<ul class="shanchang">
-					<li @click="xiu(index)" v-for="(item,index) in listtwo"  :class="{'tion3':two === index}"  :key="index">
-						<a href="#">{{item}}</a>
-					</li>
-				</ul>
-				
-				<h4 class="hr">特色服务</h4>
-				<ul class="shanchang">
-					<li @click="hao(index)" v-for="(item,index) in arr.nav3" :class="{'tion3':arren === index}"  :key="index">
-						<a href="#">{{item}}</a>
-					</li>
-				</ul>
-				
-				<h4 class="hr">风格偏好</h4>
-				<ul class="shanchang">
-					<li @click="feng(index)" v-for="(item,index) in listthree" :class="{'tion3':three === index}"  :key="index">
-						<a href="#">{{item}}</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		
 	</div>
 </template>
 
@@ -237,22 +258,23 @@
 		data: function() {
 			return {
 				arr: [],
-				arren:'',
+				arren: '',
 				list: ['全城', '福田', '罗湖', '南山', '盐田', '宝安', '龙岗', '光明区', '坪山区', '龙华区', '大鹏新区'],
 				ind: '',
-				listen:['设计好评优先','施工好评优先','服务态度好评优先','离我最近的门店'],
+				listen: ['设计好评优先', '施工好评优先', '服务态度好评优先', '离我最近的门店'],
 				ten: '',
-				listone:['小户型一房','两房','三房','四房','Loft','复式','别墅','大平层','商铺装修','办公空间'],
-				one:'',
-				listtwo:['方案设计','半包装修','全包装修','一站式整装','局部装修','上门维修','软装设计'],
-				two:'',
-				listthree:['现代','美式','欧式','中式','北欧','混搭','新古典','简欧','工业','后现代'],
-				three:'',
+				listone: ['小户型一房', '两房', '三房', '四房', 'Loft', '复式', '别墅', '大平层', '商铺装修', '办公空间'],
+				one: '',
+				listtwo: ['方案设计', '半包装修', '全包装修', '一站式整装', '局部装修', '上门维修', '软装设计'],
+				two: '',
+				listthree: ['现代', '美式', '欧式', '中式', '北欧', '混搭', '新古典', '简欧', '工业', '后现代'],
+				three: '',
 				activeName: 'a',
 				show: false,
 				searchBarFixed: false,
 				bobyonearr: false,
-				bobynoearr: false
+				bobynoearr: false,
+				dires:"区域"
 			}
 		},
 		mounted() {
@@ -260,7 +282,7 @@
 				window.addEventListener('scroll', this.handleScroll)
 		},
 		methods: {
-			goTo(){
+			goTo() {
 				this.$router.push('/reservation')
 			},
 			aaa() {
@@ -280,20 +302,21 @@
 			},
 			change(index) {
 				this.ind = index
+				this.dires = this.list[index]
 			},
-			en(index){
+			en(index) {
 				this.ten = index
 			},
-			fang(index){
+			fang(index) {
 				this.one = index
 			},
-			xiu(index){
+			xiu(index) {
 				this.two = index
 			},
-			hao(index){
+			hao(index) {
 				this.arren = index
 			},
-			feng(index){
+			feng(index) {
 				this.three = index
 			},
 			getrenovationdata() {

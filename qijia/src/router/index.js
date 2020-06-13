@@ -77,7 +77,7 @@ const routes = [
 	}, {
 		path: '/mine',
 		name: 'Mine',
-		component: () => import('../views/Mine/mine.vue')
+		component: () => import('../views/mine/Mine.vue')
 	}, {
 		path: '/freesheji',
 		name: 'Freesheji',
@@ -87,7 +87,7 @@ const routes = [
 		name: 'Community',
 		redirect: '/community/forum',
 		component: () =>
-			import('../views/Community/community.vue'),
+			import('../views/Community/Community.vue'),
 		children: [
 			{
 				path: '/community/question', component: () => import('../components/community/question'),
@@ -100,7 +100,7 @@ const routes = [
 	{
 		path: '/buildingMaterials',
 		name: 'BuildingMaterials',
-		component: () => import('../views/BuildingMaterials/buildingMaterials.vue'),
+		component: () => import('../views/buildingMaterials/BuildingMaterials.vue'),
 		children: [
 			{ path: "/buildingMaterials", redirect: "/buildingMaterials/mustbuy1" },
 			{ path: "mustbuy1", component: MustBuy1 },

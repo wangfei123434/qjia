@@ -6,8 +6,8 @@
 	.searchBar{
 		width: 96%;
 		// border: 1px solid red;
-		position:fixed;
-		top:0;
+		// position:fixed;
+		position: relative;
 		z-index: 3;
 		height: 40/100rem;
 		background-color: #fff;
@@ -15,6 +15,164 @@
 		
 		justify-content: space-between;
 		padding: 20/100rem 15/100rem;
+		.body{
+			position: absolute;
+			height: 100vh;
+			top: 94%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(97,96,96,0.8);
+			z-index: 1;
+		
+		}
+		.bobyen{
+			position: absolute;
+			height: 100vh;
+			top: 99%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(97,96,96,0.8);
+			z-index: 1;
+		}
+		.bobyone{
+					 position: absolute;
+					 height: 100vh;
+					 top: 84%;
+					 bottom: 0;
+					 left: 0;
+					 right: 0;
+					 background-color: rgba(97,96,96,0.8);
+					 z-index: 1;
+					
+		}
+		.tiontwo{
+					 padding: 25/100rem;
+					 width: 92%;
+					 position: absolute;
+					top: 0%;
+					 height: 475/100rem;
+					 // border: 1px solid red;
+					 z-index: 2;
+					 background-color: #fff;
+					  // background-color: black;
+					  color: black;
+					  .active{
+					  	.zong{
+					  		// border-bottom:1px solid #ecebeb ;
+					  		// margin-left: 25/100rem;
+					  		p:nth-of-type(2){
+					  			font-size: 14px;
+					  			color: gray;
+					  			margin-top: 10/100rem;
+					  			padding-bottom: 35/100rem;
+					  		}
+					  	}
+					  	li{
+					  		padding: 25/100rem 0 35/100rem 0;
+					  		border-top:1px solid #ecebeb ;
+					  		a{
+					  			color: black;
+					  			font-size: 16px;
+					  		}
+					  		
+					  	}
+					  	.ao{
+					  		// background-color: black;
+					  		a{
+					  			color: red;
+					  		}
+					  	  }
+					  }
+		}
+		
+		.tionthree{
+			  bottom:0;
+			overflow-y: scroll;
+			// overflow-x: hidden;
+			// overflow: hidden;
+			width: 100%;
+			position: absolute;
+			top: 0%;
+			height: 928/100rem;
+			// border: 1px solid red;
+			z-index: 2;
+			background-color: #fff;
+			 // background-color: black;
+			 color: black;
+			 .shanchang{
+				 display: flex;
+				 flex-wrap: wrap;
+				 margin-left: 15/100rem;
+				 margin-top: 12/100rem;
+				 li{
+					 text-align: center;
+					 // border: 1px solid red;
+					 border-radius: 2px;
+					 margin: 20/100rem 10/100rem;
+					 padding: 10/100rem;
+					 width: 18%;
+					 background-color: #F5F5F5;
+					 a{
+						 color: black;
+						 font-size: 13px;
+					 }
+				 }
+				 .tion3{
+				background-color: #fef4f3;
+				a{
+					color:#ee2d1b;
+				}
+			}
+				 
+			 }
+			 h4{
+			 	 font-size:14px;
+				 margin-left: 25/100rem;
+			 }
+			 .hr{
+				 margin: 40/100rem 25/100rem 7/100rem 20/100rem;
+			 }
+		}
+		
+		
+		.tion{
+					 width: 100%;
+					 position: absolute;
+					 top: 0%;
+					 height: 330/100rem;
+					 // border: 1px solid red;
+					 z-index: 2;
+					 background-color: #fff;
+					 // background-color: green;
+					 color: black;
+					 .tionone{
+					 	display: flex;
+					 	flex-wrap: wrap;
+					 	margin-left: 15/100rem;
+					 	margin-top: 12/100rem;
+					 	li{
+					 		text-align: center;
+					 		// border: 1px solid red;
+					 		border-radius: 2px;
+					 		margin: 20/100rem 10/100rem;
+					 		padding: 10/100rem;
+					 		width: 18%;
+					 		background-color: #F5F5F5;
+					 		a{
+					 			color: black;
+					 			font-size: 15px;
+					 		}
+					 	}
+					 	.tion2{
+					 		background-color: #fef4f3;
+					 		a{
+					 			color:#ee2d1b;
+					 		}
+					 	}
+					 }
+		}
 		.quyuone{
 		  a{
 			  color: black;
@@ -39,7 +197,7 @@
 		.ul{
 			display: flex;
 			// border: 1px solid black;
-			margin-top: 60/100rem;
+			margin-top: 20/100rem;
 			li{
 				text-align: center;
 				flex: 1;
@@ -122,6 +280,7 @@
 		}
 		.list{
 			// border: 1px solid red;
+			// padding: 20/100rem 20/100rem 20/100rem 20/100rem;
 			margin-top: 30/100rem;
 			li{
 				// line-height: 25px;
@@ -175,7 +334,7 @@
 							font-size: 12px;
 						}
 					}
-					.design{
+					.designtion{
 					 // border: 1px solid red;
 						margin-top: 10/100rem;
 						span{
@@ -255,163 +414,8 @@
 				}
 			}
 		}
-		.body{
-			position: fixed;
-			height: 100vh;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: rgba(97,96,96,0.8);
-			z-index: 1;
 		
-		}
-		 .tion{
-			 width: 100%;
-			 position: fixed;
-			 top: 7%;
-			 height: 330/100rem;
-			 // border: 1px solid red;
-			 z-index: 2;
-			 background-color: #fff;
-			 // background-color: green;
-			 color: black;
-		 }
-		 .bobyone{
-			 position: fixed;
-			 height: 100vh;
-			 top: 0;
-			 bottom: 0;
-			 left: 0;
-			 right: 0;
-			 background-color: rgba(97,96,96,0.8);
-			 z-index: 1;
-			
-		 }
-		 .tiontwo{
-			 padding: 25/100rem;
-			 width: 92%;
-			 position: fixed;
-			top: 7.1%;
-			 height: 475/100rem;
-			 // border: 1px solid red;
-			 z-index: 2;
-			 background-color: #fff;
-			  // background-color: black;
-			  color: black;
-		 }
-		 .bobynoe{
-			 position: fixed;
-			 height: 100vh;
-			 top: 0;
-			 bottom: 0;
-			 left: 0;
-			 right: 0;
-			 background-color: rgba(97,96,96,0.8);
-			 z-index: 1;
-		 }
-		.tionthree{
-			  bottom:0;
-			overflow-y: scroll;
-			// overflow-x: hidden;
-			// overflow: hidden;
-			width: 100%;
-			position: fixed;
-			top: 7.1%;
-			height: 928/100rem;
-			// border: 1px solid red;
-			z-index: 2;
-			background-color: #fff;
-			 // background-color: black;
-			 color: black;
-			 .shanchang{
-				 display: flex;
-				 flex-wrap: wrap;
-				 margin-left: 15/100rem;
-				 margin-top: 12/100rem;
-				 li{
-					 text-align: center;
-					 // border: 1px solid red;
-					 border-radius: 2px;
-					 margin: 20/100rem 10/100rem;
-					 padding: 10/100rem;
-					 width: 18%;
-					 background-color: #F5F5F5;
-					 a{
-						 color: black;
-						 font-size: 13px;
-					 }
-				 }
-				 .tion3{
-				background-color: #fef4f3;
-				a{
-					color:#ee2d1b;
-				}
-			}
-				 
-			 }
-			 h4{
-			 	 font-size:14px;
-				 margin-left: 25/100rem;
-			 }
-			 .hr{
-				 margin: 40/100rem 25/100rem 7/100rem 20/100rem;
-			 }
-		}
+		 
+		
 	
-		.tionone{
-			display: flex;
-			flex-wrap: wrap;
-			margin-left: 15/100rem;
-			margin-top: 12/100rem;
-			li{
-				text-align: center;
-				// border: 1px solid red;
-				border-radius: 2px;
-				margin: 20/100rem 10/100rem;
-				padding: 10/100rem;
-				width: 18%;
-				background-color: #F5F5F5;
-				a{
-					color: black;
-					font-size: 15px;
-				}
-			}
-			.tion2{
-				background-color: #fef4f3;
-				a{
-					color:#ee2d1b;
-				}
-			}
-		}
-	
-			.active{
-				.zong{
-					// border-bottom:1px solid #ecebeb ;
-					// margin-left: 25/100rem;
-					p:nth-of-type(2){
-						font-size: 14px;
-						color: gray;
-						margin-top: 10/100rem;
-						padding-bottom: 35/100rem;
-					}
-				}
-				li{
-					padding: 25/100rem 0 35/100rem 0;
-					border-top:1px solid #ecebeb ;
-					a{
-						color: black;
-						font-size: 16px;
-					}
-					
-				}
-				.ao{
-					// background-color: black;
-					a{
-						color: red;
-					}
-				  }
-			}
-		
-		
 	
