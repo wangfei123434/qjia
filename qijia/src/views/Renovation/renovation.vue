@@ -59,7 +59,7 @@
 				</div>
 				
 				<div class="quyuone" :class="searchBarFixed==true ? 'isFixed':'' " @click.prevent="aaa()">
-					<a href="#">{{dires}}</a>
+					<a>{{dires}}</a>
 					<span><img src="../../assets/images/找装修/下箭头.jpg" alt=""></span>
 				</div>
 				<div class="quyutwo">
@@ -327,16 +327,22 @@
 					.catch(err => {
 						console.log(err)
 					})
+
 			}
 			// handleScroll() {
 			// 	let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
 			// 	let offsetTop = document.querySelector('#searchBar').offsetTop
 			// 	scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false,
 			// 	console.log(scrollTop,offsetTop)
+			},
+			// handleScroll() {
+			// 	let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+			// 	let offsetTop = document.querySelector('#searchBar').offsetTop
+			// 	scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false
 			// }
 
 		}
-	}
+	
 </script>
 
 <style scoped lang="less">

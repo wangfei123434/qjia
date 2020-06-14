@@ -13,13 +13,13 @@
   				<img src="../../assets/images/选建材/search-icon-n.png" />
   			</span>
   		</div>
-  		<!-- 广告图片 -->
-  		<div class="advert">
+  		<!-- 广告图片   新加了东西  fnLogin（）-->
+  		<div class="advert" >
   			<img src="../../assets/images/选建材/zq7OryTKuT1HzbRfzgGneMH18Toq.jpg" />
   		</div>
   		<!-- 导航 -->
   		<div class="nav">
-  			<a v-for="(item,index) in buildingMaterials_data.lista" :key="index">
+  			<a v-for="(item,index) in buildingMaterials_data.lista" :key="index" @click="fnLogin()">
   				<i></i>
   				<br />
   				{{ item }}
@@ -189,6 +189,9 @@
 			},
 			goback(){
 				this.$router.go(-1)
+			},
+			fnLogin(){
+				this.$router.push("/afterLoginIndex")
 			}
 		}
 	}

@@ -114,6 +114,36 @@ const routes = [
 		]
 	},
 	{
+		path:"/afterLoginIndex",
+		name:"AfterLoginIndex",
+		component:() =>import("../views/AfterLoginIndex/afterLoginIndex.vue")
+	},
+	{
+		path:"/found",
+		name:"Found",
+		component:() =>import("../views/Found/found.vue")
+	},
+	{
+		path:"/car",
+		name:"Car",
+		component:() =>import("../views/Car/car.vue")
+	},
+	{
+		path:"/my",
+		name:"My",
+		component:() =>import("../views/My/my.vue")
+	},
+	{
+		path:"/shopping",
+		name:"Shopping",
+		component:() =>import("../views/Shopping/shopping.vue")
+	},
+	{
+		path:"/closeAnAccount",
+		name:"CloseAnAccount",
+		component:() =>import("../views/CloseAnAccount/closeAnAccount.vue")
+	},
+	{
 		path: '/meitu',
 		name: 'Meitu',
 		component: () => import('../components/home/meitu.vue')

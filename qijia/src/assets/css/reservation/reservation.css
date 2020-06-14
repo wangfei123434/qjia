@@ -12,6 +12,7 @@
   font-size: 0.3rem;
   position: relative;
   padding-top: 0.4rem;
+  margin-bottom: 0.7rem;
 }
 * body .reservation .my_header a {
   display: inline-block;
