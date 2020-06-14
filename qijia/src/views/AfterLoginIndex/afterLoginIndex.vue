@@ -2,7 +2,7 @@
 	<div class="AfterLoginIndex">
 		<!-- 轮播图 -->
 		<div class="swiper">
-			<van-swipe class="my-swipe" :autoplay="0" indicator-color="white">
+			<van-swipe class="my-swipe" :autoplay="2000" indicator-color="white">
 				<van-swipe-item>
 					<img src="https://image-c.weimobwmc.com/saas-wxbiz/02b2b7fd5d074a41a372560e2880f5b0.jpg?imageView2/2/w/750/q/80/interlace/1" />
 				</van-swipe-item>
@@ -81,6 +81,8 @@
 			</ul>
 			<p class="more">查看更多 ></p>
 		</div>
+		
+		
 		<!-- 底部tabbar组件 -->
 		<Tabbar></Tabbar>
 	</div>

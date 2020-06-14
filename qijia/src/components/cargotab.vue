@@ -18,16 +18,25 @@
             class="cargobox"
             v-show="indexc==liactive"
           >
-            <div v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="cragocontent">
+            <!-- 如果说imgsrc中的数组的长度大于1的话 我就选用right1这套样式
+            如果说是imgsrc中的数组长度要是小于等于1的话 我就选用空的的这套样式-->
+            <div
+              v-for="(itemz,indexz) in itemc.stylepic"
+              :key="indexz"
+              class="cragocontent"
+              :class="{'':itemz.imgsrc.length<=1,'right1':itemz.imgsrc.length>1}"
+            >
               <div class="left">
                 <p class="title">{{itemz.title}}</p>
                 <p class="myp">
                   <span class="author">{{itemz.author}}</span>
+                  <span class="circle">ㆍ</span>
                   <span class="count">{{itemz.count}}</span>
                 </p>
               </div>
-              <div :class="{'right':itemz.imgsrc.length<=1,'right1':itemz.imgsrc>1}" >
-                <img v-for="(img,i) in itemz.imgsrc" :src="img" alt :key="i"/>
+
+              <div class="rightpick">
+                <img v-for="(img,i) in itemz.imgsrc" :src="img" alt :key="i" />
               </div>
             </div>
           </div>
@@ -47,78 +56,68 @@
           </form>
         </div>
         <ul class="ulnav">
-          <li v-for="(item,index) in question" :key="index" v-bind:class="{sactive:sactive==index}" @click="changes(index,item)">
+          <li
+            v-for="(item,index) in question"
+            :key="index"
+            v-bind:class="{sactive:sactive==index}"
+            @click="changes(index,item)"
+          >
             <span v-for="(itemc,indexc) in item.desc" :key="indexc">{{itemc.name}}</span>
           </li>
         </ul>
         <div v-for="(item,index) in question" :key="index" class="divlist" v-show="index==vactive">
           <ul v-for="(itemc,indexc) in item.desc" :key="indexc" class="ullist">
-            <li v-for="(itemz,indexz) in itemc.stylepic" :key="indexz">{{itemz}}</li>
+            <li v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="listques">
+              <span>{{itemz.desc}}</span>
+              <span class="wenda">
+                <span style="color:red">{{itemz.count}}</span>
+                问答
+              </span>
+            </li>
           </ul>
         </div>
       </van-tab>
-      <!-- <van-tab title="论坛" name="c" class="intro">
-        <div class="myDiv">
-          <div
-            :class="{'van-multi-ellipsis--l3':isActive}"
-            @click="isActive=false"
-          >{{ introData.text}}</div>
-          <p>
-            营业时间
-            <span>{{ introData.time}}</span>
-          </p>
-          <p>
-            公司规模
-            <span>{{ introData.gm}}</span>
-          </p>
-          <p>
-            承接类型
-            <span>{{ introData.lx}}</span>
-          </p>
-          <p class="van-ellipsis">
-            服务区域
-            <span>{{ introData.qy}}</span>
-          </p>
-          <p class="van-ellipsis">
-            公司地址
-            <span>{{ introData.dz}}</span>
-          </p>
+      <van-tab title="论坛" name="c">
+        <ul class="ulnav">
+          <li
+            v-for="(item,index) in luntan"
+            :key="index"
+            v-bind:class="{sactive:lactive==index}"
+            @click="changenav(index,item)"
+          >
+            <span v-for="(itemc,indexc) in item.desc" :key="indexc">{{itemc.name}}</span>
+          </li>
+        </ul>
+        <div v-for="(item,index) in question" :key="index" class="divlist" v-show="index==vactive">
+          <ul v-for="(itemc,indexc) in item.desc" :key="indexc" class="ullist">
+            <li v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="listques">
+              <span>{{itemz.desc}}</span>
+              <span class="wenda">
+                <span>{{itemz.count}}</span>
+                讨论
+              </span>
+            </li>
+          </ul>
         </div>
-        <p class="loading">
-          <span>查看更多></span>
-        </p>
       </van-tab>
-      <van-tab title="视频" name="c" class="intro">
-        <div class="myDiv">
-          <div
-            :class="{'van-multi-ellipsis--l3':isActive}"
-            @click="isActive=false"
-          >{{ introData.text}}</div>
-          <p>
-            营业时间
-            <span>{{ introData.time}}</span>
-          </p>
-          <p>
-            公司规模
-            <span>{{ introData.gm}}</span>
-          </p>
-          <p>
-            承接类型
-            <span>{{ introData.lx}}</span>
-          </p>
-          <p class="van-ellipsis">
-            服务区域
-            <span>{{ introData.qy}}</span>
-          </p>
-          <p class="van-ellipsis">
-            公司地址
-            <span>{{ introData.dz}}</span>
-          </p>
-        </div>
-        <p class="loading">
-          <span>查看更多></span>
-        </p>
-      </van-tab>-->
+      <van-tab title="视频" name="c" class="videos">
+        <ul v-for="(item,index) in videos" :key="index" class="divlist">
+          <li v-for="(itemc,indexc) in item.stylepic" :key="indexc">
+            <div class="left">
+              <p class="title">{{itemc.title}}</p>
+              <p class="word">
+                <img :src="itemc.person" alt="" class="person">
+                <span>{{itemc.author}}</span> 
+                <span class="count">{{itemc.count}}阅读</span>               
+              </p>
+            </div>
+            <div class="right">
+              <img :src="itemc.imgsrc" alt="">
+            </div>
+          </li>
+       
+        </ul>
+      </van-tab>
     </van-tabs>
   </div>
 </template>
@@ -131,17 +130,20 @@ export default {
       activeName: "a",
       gongnuearr: [],
       question: [],
+      luntan: [],
+      videos: [],
       isActive: true,
+      lactive: 0,
       cuactive: 0,
       liactive: 0,
       sactive: 0,
-      vactive:0
+      vactive: 0
     };
   },
   created() {
     this.getFooterData();
   },
-  computed:{
+  computed: {
     // right(){
     //   let right = ''
     //   console.log("aaa",this.gongnuearr)
@@ -168,6 +170,8 @@ export default {
         console.log("你好", res.data.mydata.question);
         this.gongnuearr = res.data.mydata.gongnue;
         this.question = res.data.mydata.question;
+        this.luntan = res.data.mydata.luntan;
+        this.videos = res.data.mydata.videos;
       });
     },
     clickme(i, v) {
@@ -175,11 +179,15 @@ export default {
       this.cuactive = i;
       this.liactive = i;
     },
-      changes(i, v) {
+    changes(i, v) {
       console.log(i, v);
       this.vactive = i;
-        this.sactive = i;
-     
+      this.sactive = i;
+    },
+    changenav(i, v) {
+      console.log(i, v);
+      this.vactive = i;
+      this.lactive = i;
     }
   }
 };

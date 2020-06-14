@@ -1406,8 +1406,8 @@
                 "btn": "申请免费设计服务",
                 "color": "rgba(56, 128, 229)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon1.png",
-                "title":"免费设计",
-                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "title": "免费设计",
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
             },
             {
                 "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon2.png",
@@ -1416,8 +1416,8 @@
                 "btn": "免费获取报价明细",
                 "color": "rgba(216, 62, 63)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon2.png",
-                "title":"智能报价",
-                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "title": "智能报价",
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
             },
             {
                 "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon3.png",
@@ -1426,8 +1426,8 @@
                 "btn": "年利率3.55%限时申请",
                 "color": "rgba(244, 142, 51)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon3.png",
-                "title":"装修贷款",
-                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "title": "装修贷款",
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
             },
             {
                 "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon4.png",
@@ -1436,8 +1436,8 @@
                 "btn": "限时免费设计定制",
                 "color": "rgba(112, 69, 225)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon4.png",
-                "title":"全景定制",
-                "chacha":"http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "title": "全景定制",
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
             }
         ]
     }

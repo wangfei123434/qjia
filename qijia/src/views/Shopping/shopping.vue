@@ -64,6 +64,9 @@
 				<van-icon name="phone-circle-o" size="30" />
 			</i>
 		</div>
+		<div class="myImg">
+			<img :src=currActiveData.img />
+		</div>
 		<!-- 底部 -->
 		<footer class="myFooter">
 			<van-tabbar>
@@ -120,7 +123,7 @@
 		</div>
 		<!-- 单独购买弹出框 -->
 		<div class="popup">
-			<van-popup v-model="showCar" position="bottom" :style="{ height: '61%' }">
+			<van-popup v-model="showCar" position="bottom" :style="{ height: '58%' }">
 				<div class="my_top">
 					<img :src=currActiveData.img />
 					<div>
@@ -349,7 +352,6 @@
 		}
 
 		.my_qjia {
-			margin-bottom: 300px;
 			display: flex;
 			padding: 30/100rem;
 			position: relative;
@@ -465,7 +467,7 @@
 			.my_p {
 				width: 100%;
 				color: white;
-
+                display: flex;
 				span {
 					display: inline-block;
 					width: 50%;

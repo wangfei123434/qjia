@@ -65,13 +65,14 @@ a {
 }
 /* 深圳找装修区域 */
 .search-renovate {
-  padding: 0.1rem;
   background: #fff;
   margin-top: 0.3rem;
 }
 .search-renovate .search-renovate-h {
   display: flex;
   position: relative;
+  padding: 0.2rem;
+  padding-top: 0.2rem;
 }
 .search-renovate .search-renovate-h .more {
   font-size: 12px;
@@ -79,7 +80,7 @@ a {
   text-decoration: none;
   position: absolute;
   right: 0.1rem;
-  top: 0.1rem;
+  top: 0.3rem;
 }
 .search-renovate .search-renovate-h .search-renovate-t h3 {
   color: rgba(245, 142, 20);
@@ -97,6 +98,8 @@ a {
 .renovatenav {
   display: flex;
   overflow-x: scroll;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
 }
 .renovatenav li {
   padding: 0.1rem;
@@ -133,7 +136,7 @@ a {
 }
 .renovatelist li {
   display: flex;
-  padding: 0.1rem;
+  padding: 0.2rem;
   text-align: center;
 }
 .renovatelist li div {
@@ -147,6 +150,7 @@ a {
 }
 .coupon {
   text-align: left;
+  padding: 0.2rem;
 }
 .coupon p {
   padding: 0.2rem 0;
@@ -194,6 +198,9 @@ a {
   color: rgba(153, 153, 153);
   font-size: 12px;
 }
+.goodservice {
+  padding: 0.2rem;
+}
 .goodservice p {
   text-align: left;
   padding: 0.2rem 0;
@@ -227,6 +234,9 @@ a {
 .renovate-material {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 .renovate-material li {
   width: 1.3rem;
@@ -295,15 +305,12 @@ a {
   margin: 0.2rem 0.2rem;
   background: rgba(245, 245, 245);
 }
-.stylelist li:nth-of-type(3) span {
-  border: none;
-  background-color: #fff;
-}
 .style-display {
   overflow-x: scroll;
 }
 .style-display li .mydiv {
   display: flex;
+  padding: 0.2rem;
 }
 .style-display li .mydiv div {
   position: relative;
@@ -360,15 +367,6 @@ a {
   left: 50%;
   top: 60%;
   transform: translate(-50%, -60%);
-}
-.style-display li:nth-of-type(2) div:nth-of-type(1) div .style03 {
-  width: 100%;
-  text-align: center;
-  top: 2rem;
-  left: 0;
-}
-.style-display li:nth-of-type(2) div:nth-of-type(1) div .style04 {
-  top: 2.2rem;
 }
 .apartment li span {
   text-align: right;
@@ -428,6 +426,9 @@ a {
 .searchmore {
   padding: 0.3rem;
 }
+.getprices {
+  padding: 0.2rem;
+}
 .getprice {
   margin-top: 0.3rem;
   display: flex;
@@ -440,7 +441,8 @@ a {
   display: flex;
 }
 .getprice .price-right .top input {
-  width: 1.6rem;
+  font-size: 12px;
+  width: 1.9rem;
   margin-right: 0.2em;
   padding: 0.09rem;
   border: 1px solid rgba(244, 244, 244);
@@ -468,6 +470,7 @@ a {
   outline: none;
   background: none;
   color: rgba(241, 83, 69);
+  font-size: 12px;
 }
 .mask {
   position: absolute;

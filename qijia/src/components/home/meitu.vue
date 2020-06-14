@@ -22,10 +22,10 @@
           {{item.title}}
           <!-- <ul class="navlist">
             <li v-for="(itemc,indexc) in item.desc" :key="indexc">{{itemc.name}}</li>
-          </ul> -->
+          </ul>-->
         </li>
       </ul>
-      <!-- 要展示的区域 -->
+      <!-- <!要展示的区域-->
       <ul class="picsshow">
         <li v-for="(item,index) in ullist" :key="index" v-show="index==curindex">
           <div v-for="(itemc,indexc) in item.desc" :key="indexc" class="picsdisplay">
@@ -49,39 +49,38 @@
             <span class="activeborder" v-show="isshow"></span>
             <img :src="item.smallpic" alt />
             <br />
-            <span>{{item.title}}</span>
+            <span :style="{color:colorindex==index?item.color:'#000'}">{{item.title}}</span>
           </li>
         </ul>
       </div>
     </aside>
     <!-- 底部的弹出的盒子 -->
     <div class="footer-pic">
-      <div class="totop" v-for="(item,index) in footerlist" :key="index" v-show="isshow">
-        <div class="picbox">
-          <img :src="item.imgsrc" alt class="pics" />
-          <img :src="item.chacha" alt class="close" />
+      <van-popup v-model="isshow" position="bottom" closeable>
+        <div class="totop" v-for="(item,index) in footerlist" :key="index" v-show="index==sactive">
+          <div class="picbox">
+            <img :src="item.imgsrc" alt class="pics" />
+          </div>
+          <div class="input-area">
+            <form action>
+              <span class="span01">{{item.area}}</span>
+              <input type="text" placeholder="80" />
+              <span class="span02">m²</span>
+            </form>
+            <form action>
+              <span class="span01">{{item.tel}}</span>
+              <input type="text" placeholder="请输入您的手机号码" />
+            </form>
+          </div>
+          <div class="btn" v-bind:style="{background:item.color}">
+            <button v-bind:style="{background:item.color}">{{item.btn}}</button>
+          </div>
         </div>
-        <div class="input-area">
-          <form action>
-            <span class="span01">{{item.area}}</span>
-            <input type="text" placeholder="80" />
-            <span class="span02">m²</span>
-          </form>
-          <form action>
-            <span class="span01">{{item.tel}}</span>
-            <input type="text" placeholder="请输入您的手机号码" />
-          </form>
-        </div>
-        <div class="btn" v-bind:style="{background:item.color}">
-          <button v-bind:style="{background:item.color}">{{item.btn}}</button>
-        </div>
-      </div>
+      </van-popup>
     </div>
-    <div class="mask" v-show="isshow">遮罩层</div>
   </div>
 </template>
 <script>
-
 export default {
   name: "meitu",
   data: function() {
@@ -91,7 +90,9 @@ export default {
       curindex: 0,
       activeshow: 0,
       active: 0,
-      isshow: false
+      isshow: false,
+      colorindex: 0, //颜色的索引,
+      sactive: 0
     };
   },
   mounted() {
@@ -101,24 +102,22 @@ export default {
   methods: {
     getmeitudata() {
       this.$axios.get("/data/home/meitu.json").then(res => {
-        console.log(res.data.mydata);
         this.ullist = res.data.mydata.nav;
         this.footerlist = res.data.mydata.footerpic;
-        console.log("美女", this.ullist);
-        console.log("哈喽", this.footerlist);
       });
     },
     clickchange(index, item) {
-      console.log("点击我了", index, item);
       this.curindex = index;
     },
-    show(index,item){
-      console.log("出现了",index,item)
-
+    show(index, item) {
+      this.colorindex = index;
+      this.isshow = !this.isshow;
+      console.log(index);
+      this.sactive = index;
     }
   }
 };
 </script>
-<style  lang="less">
+<style  lang="less" scoped>
 @import url("../../assets/css/meitu/meitu.css");
 </style>

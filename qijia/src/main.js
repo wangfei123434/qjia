@@ -13,8 +13,12 @@ Vue.component(SwipeItem.name, SwipeItem);
 import Axios from "axios"
 Vue.prototype.$axios = Axios
 // Vant
-import Vant from 'vant'
+import Vant,{Lazyload} from 'vant'
 import 'vant/lib/index.css'
+// Vue.use(Lazyload, options);
+Vue.use(Lazyload, {
+  lazyComponent: true
+});
 Vue.use(Vant)
 // ElementUI
 import ElementUI from 'element-ui';

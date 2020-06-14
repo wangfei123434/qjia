@@ -35,7 +35,7 @@
 .logotop img {
   width: 0.5rem;
   position: absolute;
-  top: 0.2rem;
+  top: 0.1rem;
 }
 .logotop .search {
   right: 0.2rem;
@@ -92,8 +92,8 @@
   border-radius: 0.08rem;
 }
 .picsshow li .picsdisplay div .person {
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.45rem;
+  height: 0.45rem;
   border-radius: 0.2rem;
   vertical-align: middle;
   margin-right: 0.1rem;
@@ -123,6 +123,7 @@ aside {
   bottom: 0;
   width: 100%;
   padding: 0.2rem;
+  z-index: 3000;
 }
 aside div ul {
   display: flex;
@@ -153,21 +154,11 @@ aside div ul li .activeborder {
   z-index: -1;
   display: inline-block;
 }
-.footer-pic {
-  background: rgba(245, 246, 249);
-}
 .footer-pic .totop .picbox {
   position: relative;
 }
 .footer-pic .totop .picbox img {
   width: 100%;
-}
-.footer-pic .totop .picbox .close {
-  width: 0.4rem;
-  position: absolute;
-  top: -0.6rem;
-  right: 0.1rem;
-  background: yellow;
 }
 .footer-pic .totop .input-area {
   width: 90%;
@@ -205,8 +196,9 @@ aside div ul li .activeborder {
   color: #fff;
   height: 0.8rem;
   line-height: 0.8rem;
-  border-radius: 0.08rem;
+  border-radius: 0.1rem;
   margin: 0.2rem;
+  overflow: hidden;
 }
 .footer-pic .totop .btn button {
   border: none;
@@ -214,13 +206,18 @@ aside div ul li .activeborder {
   outline: none;
   width: 100%;
 }
-.mask {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 9999;
+.van-overlay {
+  z-index: 2014;
+}
+.van-popup--bottom {
+  bottom: 1.2rem;
+}
+.van-popup__close-icon--top-right {
+  top: -41px;
+  right: 16px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.van-popup {
+  overflow-y: visible;
 }

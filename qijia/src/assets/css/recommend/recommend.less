@@ -80,13 +80,15 @@
 
  /* 深圳找装修区域 */
  .search-renovate {
-     padding: 10/100rem;
+     //  padding: 10/100rem;
      background: #fff;
      margin-top: 30/100rem;
 
      .search-renovate-h {
          display: flex;
          position: relative;
+         padding: 20/100rem;
+         padding-top: 20/100rem;
 
 
          .more {
@@ -95,7 +97,7 @@
              text-decoration: none;
              position: absolute;
              right: 10/100rem;
-             top: 10/100rem;
+             top: 30/100rem;
          }
 
          .search-renovate-t {
@@ -126,6 +128,8 @@
  .renovatenav {
      display: flex;
      overflow-x: scroll;
+     margin-left: 20/100rem;
+     margin-right: 20/100rem;
 
      li {
          padding: 10/100rem;
@@ -169,7 +173,7 @@
 
      li {
          display: flex;
-         padding: 10/100rem;
+         padding: 20/100rem;
 
          text-align: center;
 
@@ -189,6 +193,7 @@
 
  .coupon {
      text-align: left;
+     padding: 20/100rem;
 
      p {
          padding: 20/100rem 0;
@@ -212,11 +217,12 @@
 
          li:nth-of-type(2) {
              background: rgba(247, 237, 232);
-             color:rgba(229, 151, 118);
-             .coupon-right{
-                background: rgba(243, 225, 216);
+             color: rgba(229, 151, 118);
+
+             .coupon-right {
+                 background: rgba(243, 225, 216);
              }
-            
+
          }
 
          .aboutprice {
@@ -235,14 +241,14 @@
              font-size: 12px;
              background: rgba(245, 236, 211);
              padding: 8px;
-            //  width: 30%;
-             float:right;
+             //  width: 30%;
+             float: right;
 
          }
 
          .coupon-left {
              width: 78%;
-             float:left;
+             float: left;
              padding-top: 20/100rem;
          }
 
@@ -256,6 +262,8 @@
  }
 
  .goodservice {
+     padding: 20/100rem;
+
      p {
          text-align: left;
          padding: 20/100rem 0;
@@ -297,6 +305,10 @@
  .renovate-material {
      display: flex;
      flex-wrap: wrap;
+     text-align: center;
+     padding-left: 40/100rem;
+     padding-right: 40/100rem;
+
 
      li {
          width: 130/100rem;
@@ -395,14 +407,14 @@
  }
 
 
- .stylelist {
-     li:nth-of-type(3) {
-         span {
-             border: none;
-             background-color: #fff;
-         }
-     }
- }
+ //  .stylelist {
+ //      li:nth-of-type(3) {
+ //          span {
+ //              border: none;
+ //              background-color: #fff;
+ //          }
+ //      }
+ //  }
 
  //  风格的展示部分
  .style-display {
@@ -411,6 +423,7 @@
      li {
          .mydiv {
              display: flex;
+             padding: 20/100rem;
 
              div {
                  position: relative;
@@ -486,49 +499,51 @@
                  }
              }
          }
+     
+ 
 
-         div:nth-of-type(4) {
-             div {
-                 .styles {
-                     left: 50%;
-                     top: 40%;
-                     transform: translate(-50%, -40%)
-                 }
+          div:nth-of-type(4) {
+              div {
+                  .styles {
+                      left: 50%;
+                      top: 40%;
+                      transform: translate(-50%, -40%)
+                  }
 
-                 .count {
-                     left: 50%;
-                     top: 60%;
-                     transform: translate(-50%, -60%)
-                 }
-             }
-         }
-     }
- }
-
-
-
- .style-display {
-     li:nth-of-type(2) {
-         div:nth-of-type(1) {
-             div {
-                 .style03 {
-                     width: 100%;
-                     text-align: center;
-                     top: 200/100rem;
-                     left: 0;
-                 }
-
-                 .style04 {
-                     top: 220/100rem;
-                 }
-
-             }
-         }
+                  .count {
+                      left: 50%;
+                      top: 60%;
+                      transform: translate(-50%, -60%)
+                  }
+              }
+          }
+      }
+  }
 
 
 
-     }
- }
+//  .style-display {
+//      li:nth-of-type(2) {
+//          div:nth-of-type(1) {
+//              div {
+//                  .style03 {
+//                      width: 100%;
+//                      text-align: center;
+//                      top: 200/100rem;
+//                      left: 0;
+//                  }
+
+//                  .style04 {
+//                      top: 220/100rem;
+//                  }
+
+//              }
+//          }
+
+
+
+//      }
+//  }
 
  //  户型的展示部分
  .apartment {
@@ -613,6 +628,10 @@
  }
 
  // 获取报价
+ .getprices {
+     padding: 20/100rem;
+ }
+
  .getprice {
      margin-top: 30/100rem;
      display: flex;
@@ -629,7 +648,8 @@
              display: flex;
 
              input {
-                 width: 160/100rem;
+                 font-size: 12px;
+                 width: 190/100rem;
                  margin-right: 20/100em;
                  padding: 9/100rem;
                  border: 1px solid rgba(244, 244, 244);
@@ -661,6 +681,7 @@
                  outline: none;
                  background: none;
                  color: rgba(241, 83, 69);
+                 font-size: 12px;
              }
          }
      }
