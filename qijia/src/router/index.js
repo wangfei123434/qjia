@@ -77,7 +77,7 @@ const routes = [
 	}, {
 		path: '/mine',
 		name: 'Mine',
-		component: () => import('../views/Mine/mine.vue')
+		component: () => import('../views/mine/Mine.vue')
 	}, {
 		path: '/freesheji',
 		name: 'Freesheji',
@@ -87,7 +87,7 @@ const routes = [
 		name: 'Community',
 		redirect: '/community/forum',
 		component: () =>
-			import('../views/Community/community.vue'),
+			import('../views/Community/Community.vue'),
 		children: [
 			{
 				path: '/community/question', component: () => import('../components/community/question'),
@@ -100,7 +100,7 @@ const routes = [
 	{
 		path: '/buildingMaterials',
 		name: 'BuildingMaterials',
-		component: () => import('../views/BuildingMaterials/buildingMaterials.vue'),
+		component: () => import('../views/buildingMaterials/BuildingMaterials.vue'),
 		children: [
 			{ path: "/buildingMaterials", redirect: "/buildingMaterials/mustbuy1" },
 			{ path: "mustbuy1", component: MustBuy1 },
@@ -112,6 +112,36 @@ const routes = [
 			{ path: "mustbuy7", component: MustBuy7 },
 			{ path: "mustbuy8", component: MustBuy8 }
 		]
+	},
+	{
+		path:"/afterLoginIndex",
+		name:"AfterLoginIndex",
+		component:() =>import("../views/AfterLoginIndex/afterLoginIndex.vue")
+	},
+	{
+		path:"/found",
+		name:"Found",
+		component:() =>import("../views/Found/found.vue")
+	},
+	{
+		path:"/car",
+		name:"Car",
+		component:() =>import("../views/Car/car.vue")
+	},
+	{
+		path:"/my",
+		name:"My",
+		component:() =>import("../views/My/my.vue")
+	},
+	{
+		path:"/shopping",
+		name:"Shopping",
+		component:() =>import("../views/Shopping/shopping.vue")
+	},
+	{
+		path:"/closeAnAccount",
+		name:"CloseAnAccount",
+		component:() =>import("../views/CloseAnAccount/closeAnAccount.vue")
 	},
 	{
 		path: '/meitu',
