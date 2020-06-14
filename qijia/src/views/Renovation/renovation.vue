@@ -1,7 +1,6 @@
 <template>
 	<div class="width">
-		<van-sticky>
-
+		<van-sticky :offset-top="50">
 			<div class="quyu searchBar" id="searchBar">
 				
 				<div class="bobyen" v-show="bobynoearr" @click="bobynoearr=true">
@@ -73,7 +72,7 @@
 		<!-- 区域部分 -->
 		<ul class="ul">
 			<li v-for="(item,index) in arr.nav1" :key="index">
-				<a href="/#/local">
+				<a href="/Local">
 					<img :src="item.icon" />
 					<p>{{item.title}}</p>
 				</a>
@@ -328,12 +327,13 @@
 					.catch(err => {
 						console.log(err)
 					})
-			},
-			handleScroll() {
-				let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-				let offsetTop = document.querySelector('#searchBar').offsetTop
-				scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false
 			}
+			// handleScroll() {
+			// 	let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+			// 	let offsetTop = document.querySelector('#searchBar').offsetTop
+			// 	scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false,
+			// 	console.log(scrollTop,offsetTop)
+			// }
 
 		}
 	}

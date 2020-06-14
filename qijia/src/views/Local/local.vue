@@ -43,9 +43,10 @@
 		
 	     <div class="swprie">
 		<mt-swipe>
-		  <mt-swipe-item>4564564645</mt-swipe-item>
-		  <mt-swipe-item>1215</mt-swipe-item>
-		  <mt-swipe-item>1221</mt-swipe-item>
+		  <mt-swipe-item><img src="../../assets/images/局部装修/cf.png" alt=""></mt-swipe-item>
+		  <mt-swipe-item><img src="../../assets/images/局部装修/cf2.png" alt=""></mt-swipe-item>
+		  <mt-swipe-item><img src="../../assets/images/局部装修/cf3.png" alt=""></mt-swipe-item>
+		   <mt-swipe-item><img src="../../assets/images/局部装修/cf4.png" alt=""></mt-swipe-item>
 		</mt-swipe>
 		</div>
 		<div class="hardcoverone">
