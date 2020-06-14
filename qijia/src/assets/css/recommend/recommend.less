@@ -237,25 +237,35 @@
          }
 
          .coupon-right {
-             width: 20px;
+             width: 20%;
              font-size: 12px;
              background: rgba(245, 236, 211);
              padding: 8px;
              //  width: 30%;
              float: right;
+             height: 100%;
 
          }
 
          .coupon-left {
-             width: 78%;
+             width: 80%;
              float: left;
              padding-top: 20/100rem;
+             .coupon-top{
+                 position: relative;
+                 .use{
+                     position: absolute;
+                     right:0;
+                     font-size:10px;
+                 }
+             }
          }
 
 
          .coupon-bottom {
              color: rgba(153, 153, 153);
-             font-size: 12px;
+             font-size: 10px;
+             margin-top:20/100rem;
          }
      }
 
@@ -499,51 +509,51 @@
                  }
              }
          }
-     
- 
-
-          div:nth-of-type(4) {
-              div {
-                  .styles {
-                      left: 50%;
-                      top: 40%;
-                      transform: translate(-50%, -40%)
-                  }
-
-                  .count {
-                      left: 50%;
-                      top: 60%;
-                      transform: translate(-50%, -60%)
-                  }
-              }
-          }
-      }
-  }
 
 
 
-//  .style-display {
-//      li:nth-of-type(2) {
-//          div:nth-of-type(1) {
-//              div {
-//                  .style03 {
-//                      width: 100%;
-//                      text-align: center;
-//                      top: 200/100rem;
-//                      left: 0;
-//                  }
+         div:nth-of-type(4) {
+             div {
+                 .styles {
+                     left: 50%;
+                     top: 40%;
+                     transform: translate(-50%, -40%)
+                 }
 
-//                  .style04 {
-//                      top: 220/100rem;
-//                  }
+                 .count {
+                     left: 50%;
+                     top: 60%;
+                     transform: translate(-50%, -60%)
+                 }
+             }
+         }
+     }
+ }
 
-//              }
-//          }
+
+
+ //  .style-display {
+ //      li:nth-of-type(2) {
+ //          div:nth-of-type(1) {
+ //              div {
+ //                  .style03 {
+ //                      width: 100%;
+ //                      text-align: center;
+ //                      top: 200/100rem;
+ //                      left: 0;
+ //                  }
+
+ //                  .style04 {
+ //                      top: 220/100rem;
+ //                  }
+
+ //              }
+ //          }
 
 
 
-//      }
-//  }
+ //      }
+ //  }
 
  //  户型的展示部分
  .apartment {

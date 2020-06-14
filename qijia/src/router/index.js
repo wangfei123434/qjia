@@ -117,6 +117,16 @@ const routes = [
 		path: '/meitu',
 		name: 'Meitu',
 		component: () => import('../components/home/meitu.vue')
+	},
+	{
+		path: "/findpwd",
+		name:"findpwd",
+		component: () => import('../components/findpwd.vue')
+	},
+	{
+		path: "/register",
+		name:"register",
+		component: () => import('../components/register.vue')
 	}
 
 ]

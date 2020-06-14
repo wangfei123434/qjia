@@ -20,12 +20,12 @@
         <div class="div01">
           <span class="span01">
             <img src="../assets/images/home/cc.png" alt />
-            <input type="text" placeholder="请输入验证码" v-model="code" />       
+            <input type="text" placeholder="请输入验证码" v-model="userCode" />
           </span>
         </div>
         <div class="div02">
-          <img src="../assets/images/home/code.jpg" alt class="code" />
-          <a href="#">换一张</a>
+          <img :src="code[this.imgCode].img" alt class="code" />
+          <a href="#" @click.prevent="change">换一张</a>
         </div>
       </form>
       <form action="#" class="form02">
@@ -36,12 +36,18 @@
           </span>
         </div>
         <div>
-          <a href="#" @click="getcode">发送短信</a>
+          <a
+            href="#"
+            @click.prevent="getcode"
+            v-bind:disabled="Dphone"
+            :class="{right_number:Dphone }"
+            v-text="computedTime>0?`重新获取${computedTime}s`:'获取验证码'"
+          >发送短信</a>
         </div>
       </form>
     </div>
     <!-- 齐家账号 -->
-    <div class="login-form" v-show="iscoming">
+    <div class="login-form" v-show="!isshow">
       <form action="#">
         <span class="span01">
           <img src="../assets/images/home/renwu.png" alt class="person" />
@@ -68,13 +74,15 @@
       <input type="submit" @click="submitin" value="登录" />
     </div>
     <p class="pwd">
-      <a href="#">立即注册</a>
-      <a href="#">忘记密码</a>
+      <a href="#" @click.prevent="registerfast">立即注册</a>
+      <a href="#" @click.prevent="forgetpwd">忘记密码</a>
     </p>
     <div class="other-login">
       <div>
         <span class="line line01"></span>
-        <span class="word">其他账号登录</span>
+        <van-divider
+          :style="{ color: 'rgba(209, 211, 212)', borderColor: 'rgba(209, 211, 212)', padding: '0 16px' }"
+        >其他账号</van-divider>
         <span class="line line02"></span>
       </div>
       <ul class="qq">
@@ -98,55 +106,133 @@
   </div>
 </template>
 <script>
+import Vue from "vue";
+import { Toast } from "vant";
+Vue.use(Toast);
+import { setCookie, getCookie } from "../util/util.js";
 export default {
   name: "login",
   data: function() {
     return {
-      tel: "",  //手机号码
-      code: "",   //验证码
-      num: "",  //短信校验码
-      username: "",   //用户名
-      pwd: "",   //密码
+      tel: "", //手机号码
+      code: [
+        {
+          img: require("../assets/images/home/code.jpg"),
+          value: "8P39"
+        },
+        {
+          img: require("../assets/images/home/code2.jpg"),
+          value: "DVGB"
+        },
+        {
+          img: require("../assets/images/home/code3.jpg"),
+          value: "FSGH"
+        }
+      ], //存储的验证码的图片
+      imgCode: 0,
+      userCode: "", //用户输入的这个验证码的值
+      num: "", //短信校验码
+      username: "", //用户名
+      pwd: "", //密码
       isshow: true,
-      iscoming: false
+      iscoming: false,
+      ccode: "", //六位数的随机数
+      codes: "", //
+      Dphone: false, //发送验证码背景
+      computedTime: 0 //倒计时
     };
   },
   methods: {
-    submitin() {
-      //   console.log("提交成功了");
-      let telreg = /^[1][3,4,5,7,8][0-9]{9}$/; //手机号码的
-      //快速登录的方式
-      if (this.tel.length == 0) {
-        alert("手机号码不能为空");
-        return;
-      } else if (!telreg.test(this.tel)) {
-        alert("关联手机号码输入不正确，请重新输入");
-        return;
-      } else if (this.code.length == 0) {
-        alert("验证码不能为空");
-        return;
-      } else if (this.num.length == 0) {
-        return;
-      } else {
-        alert("提交成功");
-        window.location.href = "../home/recommend";
+    forgetpwd() {
+      this.$router.push("/findpwd");
+    },
+    registerfast() {
+      this.$router.push("/register");
+    },
+    change() {
+      this.imgCode++;
+      if (this.imgCode > this.code.length - 1) {
+        this.imgCode = 0;
       }
-
-      //齐家账号登录的方式
-      if (this.username.length == 0) {
-        // alert("登录名不能为空");
-        return;
-      } else if (this.pwd.length == 0) {
-        alert("密码不能为空");
-        return;
-      } else if (this.pwd.length != 0) {
-        var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
-        if (!pwdreg.test(this.pwd)) {
-          alert("密码长度为6-16位");
+    },
+    submitin() {
+      if (this.isshow) {
+        let telreg = /^[1][3,4,5,7,8][0-9]{9}$/; //手机号码的
+        //快速登录的方式
+        if (this.tel.length == 0) {
+          Toast({
+            message: "手机号不能为空"
+          });
           return;
+        } else if (!telreg.test(this.tel)) {
+          Toast({
+            message: "手机号码输入不正确，请重新输入"
+          });
+          return;
+        } else if (this.userCode == "") {
+          Toast({
+            message: "验证码不能为空"
+          });
+          return;
+        } else if (this.userCode != this.code[this.imgCode].value) {
+          Toast({
+            message: "验证码输入错误"
+          });
+          return;
+        } else if (this.num.length == 0) {
+          Toast({
+            message: "短信校验码不能为空"
+          });
+          return;
+        } else if (this.num != this.ccode) {
+          Toast({
+            message: "短信码有误，请重新输入"
+          });
         } else {
-          alert("恭喜您登录成功");
-          window.location.href = "../home/recommend";
+          sessionStorage.setItem("phone", this.tel);
+          this.$router.push({ path: "/home/recommend" });
+        }
+        //齐家账号登录的方式
+      } else {
+        let userreg = /^[a-zA-Z0-9_-]{4,16}$/; //用户名（4到16位，字母数字下划线，减号）
+        let emailreg = /^[\w\-]+@[a-zA-Z\d\-]+(\.[a-zA-Z]{2,8}){1,2}$/; //邮箱的正则
+        let telreg = /^[1][3,4,5,7,8][0-9]{9}$/; //手机号码的
+
+        if (this.username.length == 0) {
+          Toast({
+            message: "用户名不能为空"
+          });
+          return;
+        }
+        if (userreg.test(this.username) === true) {
+          return true;
+        }
+        if (emailreg.test(this.username) === true) {
+          return true;
+        } else {
+          Toast({
+            message: "用户名输入有误，请重新输入"
+          });
+          return false;
+        }
+
+        if (this.pwd.length == 0) {
+          Toast({
+            message: "密码不能为空"
+          });
+          return false;
+        }
+        if (this.pwd.length != 0) {
+          var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
+          if (!pwdreg.test(this.pwd)) {
+            Toast({
+              message: "密码输入有误，请重新输入"
+            });
+            return false;
+          } else {
+            sessionStorage.setItem("phone", this.tel);
+            this.$router.push({ path: "/home/recommend" });
+          }
         }
       }
     },
@@ -162,36 +248,100 @@ export default {
     },
     goback() {
       console.log("返回了");
-      this.$router.go(-1)
+      this.$router.go(-1);
     },
-    getcode() {
-      console.log("发送短信了");
-
-      let count = 5;
-      let timer = null;
-      function setTime(eledom) {
-        //count递减
-        //获取验证码变成了重新发送  ${}是读取变量
-        if (count == 0) {
-          clearTimeout(timer);
-          $(eledom).prop("disabled", false); //当等于0的时候，解除掉禁用，又可以点击了
-          $(eledom).val("获取验证码");
-          count = 5; //重新还原一下，，因为第一次走完了，第二次再点，点不动，从59再开始倒计时，因为变成0的时候，下一次进来还是0
-          return; //当它是0的时候，后面的代码不再执行，保持的是获取验证码
-        } else {
-          $(eledom).prop("disabled", true); //计时器在获取验证码的时，不可以再点，禁用
-          $(eledom).val(`重新发送(${count})`);
-          count--;
-        }
-        timer = setTimeout(function() {
-          clearTimeout(timer);
-          setTime(eledom);
-        }, 1000);
+    //随机数的短信验证码
+    generatedCode() {
+      const random = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      let code = "";
+      for (let i = 0; i < 6; i++) {
+        let index = Math.floor(Math.random() * 9.9);
+        code += random[index];
       }
+      this.ccode = code;
+    },
+    // // 判断验证码是否输入准确
+    // checkCode() {
+    //   if (this.tel && this.ccode != "" && this.ccode == this.num) {
+    //     sessionStorage.setItem("phone", this.tel);
+    //     this.$router.push({ path: "/home" });
+    //   } else {
+    //     Toast({
+    //       message: "手机验证码输入有误，请重新输入"
+    //     });
+    //   }
+    // },
 
-      clearTimeout(timer);
-      setTime(this); //谁点击，就是谁调用 this
+    //发送短信的函数
+    getcode() {
+      let telregs = /^[1][3,4,5,7,8][0-9]{9}$/; //手机号码的
+      if (this.tel.length == 0) {
+        Toast({
+          message: "手机号不能为空"
+        });
+        return;
+      } else if (!telregs.test(this.tel)) {
+        Toast({
+          message: "手机号码输入不正确，请重新输入"
+        });
+        return;
+      } else if (this.userCode == "") {
+        Toast({
+          message: "验证码不能为空"
+        });
+        return;
+      } else if (this.userCode != this.code[this.imgCode].value) {
+        Toast({
+          message: "验证码输入错误"
+        });
+        return;
+      } else {
+        this.generatedCode();
+        //请求验证码
+        // let params = new URLSearchParams();
+        // params.append("phone", this.tel);
+        // params.append("code", this.ccode);
+        //  this.$axios
+        //   .post("/api/sedsms", params)
+
+        //   .then(res => {
+        //     console.log(res);
+        //   })
+        //   .catch(err => {
+        //     console.log(err);
+        //   });
+
+        this.$axios({
+          method: "post",
+          url: "/api/sedsms",
+          data: {
+            phone: this.tel,
+            code: this.ccode
+          }
+        })
+          .then(res => {
+            console.log(res);
+          })
+          .catch(err => {
+            console.log(err);
+          });
+        this.Dphone = true;
+        //进入倒计时的状态
+        if (this.computedTime == 0) {
+          this.computedTime = 20;
+          var IntervalId = setInterval(() => {
+            this.computedTime--;
+            if (this.computedTime <= 0) {
+              clearInterval(IntervalId); //关闭定时器
+              this.Dphone = false;
+            }
+          }, 1000);
+        }
+      }
     }
+    // Toast({
+    //   message: "发送成功"
+    // });
   }
 };
 </script>

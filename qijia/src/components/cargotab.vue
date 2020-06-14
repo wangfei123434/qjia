@@ -2,7 +2,7 @@
   <div class="footer_list">
     <van-tabs v-model="activeName" animated>
       <van-tab title="攻略" name="a" class="case">
-        <ul v-for="(item,index) in gongnuearr" :key="index" class="cargolist">
+        <ul v-for="(item,index) in gongnuearr" :key=" 'info-'+ index" class="cargolist info">
           <li
             v-bind:class="{sactive:cuactive==indexc}"
             v-for="(itemc,indexc) in item.desc"
@@ -11,7 +11,7 @@
           >{{itemc.name1}}</li>
         </ul>
         <!-- 渲染区域 -->
-        <div v-for="(item,index) in gongnuearr" :key="index">
+        <div v-for="(item,index) in gongnuearr" :key=" 'info1-'+ index"  class="info1">
           <div
             v-for="(itemc,indexc) in item.desc"
             :key="indexc"
@@ -58,14 +58,14 @@
         <ul class="ulnav">
           <li
             v-for="(item,index) in question"
-            :key="index"
+            :key=" 'info3-'+ index" class="info3"
             v-bind:class="{sactive:sactive==index}"
             @click="changes(index,item)"
           >
             <span v-for="(itemc,indexc) in item.desc" :key="indexc">{{itemc.name}}</span>
           </li>
         </ul>
-        <div v-for="(item,index) in question" :key="index" class="divlist" v-show="index==vactive">
+        <div v-for="(item,index) in question"  :key=" 'info4-'+ index" class="divlist info4" v-show="index==vactive">
           <ul v-for="(itemc,indexc) in item.desc" :key="indexc" class="ullist">
             <li v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="listques">
               <span>{{itemz.desc}}</span>
@@ -85,11 +85,11 @@
             v-bind:class="{sactive:lactive==index}"
             @click="changenav(index,item)"
           >
-            <span v-for="(itemc,indexc) in item.desc" :key="indexc">{{itemc.name}}</span>
+            <span v-for="(itemc,indexc) in item.desc" :key=" 'info5-'+ indexc" class="info5">{{itemc.name}}</span>
           </li>
         </ul>
         <div v-for="(item,index) in question" :key="index" class="divlist" v-show="index==vactive">
-          <ul v-for="(itemc,indexc) in item.desc" :key="indexc" class="ullist">
+          <ul v-for="(itemc,indexc) in item.desc" :key=" 'info6-'+ indexc" class="ullist info6">
             <li v-for="(itemz,indexz) in itemc.stylepic" :key="indexz" class="listques">
               <span>{{itemz.desc}}</span>
               <span class="wenda">
@@ -131,7 +131,7 @@ export default {
       gongnuearr: [],
       question: [],
       luntan: [],
-      videos: [],
+      videos: [], 
       isActive: true,
       lactive: 0,
       cuactive: 0,
