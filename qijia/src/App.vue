@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <myheader v-if="$route.path!='/reservation'&&$route.path!='/login'"></myheader>
+    <myheader v-if="$route.path!='/reservation'&&$route.path!='/login'&&$route.path!='/afterLoginIndex'&&$route.path!='/found'&&$route.path!='/car'&&$route.path!='/my'&&$route.path!='/shopping'&&$route.path!='/closeAnAccount'"></myheader>
     <router-view />
   </div>
 </template>
@@ -19,18 +19,10 @@ export default {
 </script>
 
 <style lang="less">
-<<<<<<< HEAD
-
-=======
->>>>>>> 95e62064e7a44301016c6020080825bb484326b1
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-<<<<<<< HEAD
-  //  text-align: center;
-=======
->>>>>>> 95e62064e7a44301016c6020080825bb484326b1
 }
 body {
   font-size: 16px;
