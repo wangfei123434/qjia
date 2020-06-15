@@ -112,7 +112,7 @@ export default {
     show(index, item) {
       this.colorindex = index;
       this.isshow = !this.isshow;
-      console.log(index);
+      // console.log(index);
       this.sactive = index;
     }
   }

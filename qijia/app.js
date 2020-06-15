@@ -25,9 +25,9 @@ app.all('*', function (req, res, next) {
     res.header("Content-Type", "application/json;charset=utf-8");
     next();
 });
-app.get("/abc",(req,res)=>{
-    console.log(req)
-})
+// app.get("/abc",(req,res)=>{
+//     console.log(req)
+// })
 //收到前端post请求
 app.post('/sedsms', function (req, res) {
     // console.log(req.stack);
@@ -39,8 +39,8 @@ app.post('/sedsms', function (req, res) {
     //发送短信
     smsClient.sendSMS({
         PhoneNumbers: req.body.phone, //必填:待发送手机号,支持以逗号分隔的形式进行批量调用，目前从前端获取手机号码
-        SignName: '齐家装修', //必填:短信签名-可在短信控制台中找到
-        TemplateCode: 'SMS_192542522', //必填:短信模板-可在短信控制台中找到
+        SignName: '阳光超市', //必填:短信签名-可在短信控制台中找到
+        TemplateCode: 'SMS_193240375', //必填:短信模板-可在短信控制台中找到
         TemplateParam: JSON.stringify({ "code": req.body.code })  //可选:模板中的变量替换JSON串,目前不用
     }).then(function (res) {
         console.log(1)

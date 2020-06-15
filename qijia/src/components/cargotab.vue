@@ -167,7 +167,7 @@ export default {
   methods: {
     getFooterData() {
       this.$axios.get("/data/home/index.json").then(res => {
-        console.log("你好", res.data.mydata.question);
+        // console.log("你好", res.data.mydata.question);
         this.gongnuearr = res.data.mydata.gongnue;
         this.question = res.data.mydata.question;
         this.luntan = res.data.mydata.luntan;
@@ -175,17 +175,17 @@ export default {
       });
     },
     clickme(i, v) {
-      console.log(i, v);
+      // console.log(i, v);
       this.cuactive = i;
       this.liactive = i;
     },
     changes(i, v) {
-      console.log(i, v);
+      // console.log(i, v);
       this.vactive = i;
       this.sactive = i;
     },
     changenav(i, v) {
-      console.log(i, v);
+      // console.log(i, v);
       this.vactive = i;
       this.lactive = i;
     }

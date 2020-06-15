@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <myheader v-if="$route.path!='/reservation'&&$route.path!='/login'&&$route.path!='/meitu'&&$route.path!='/home/meitu'&&$route.path!='/findpwd'&&$route.path!='/register'"></myheader>
-=======
-    <myheader v-if="$route.path!='/reservation'&&$route.path!='/login'&&$route.path!='/afterLoginIndex'&&$route.path!='/found'&&$route.path!='/car'&&$route.path!='/my'&&$route.path!='/shopping'&&$route.path!='/closeAnAccount'"></myheader>
->>>>>>> 5e182ec892f3a264e10e45082a6c1ac4e2c3227f
+    <myheader v-if="$route.path!='/reservation'&&$route.path!='/login'&&$route.path!='/afterLoginIndex'&&$route.path!='/found'&&$route.path!='/car'&&$route.path!='/my'&&$route.path!='/shopping'&&$route.path!='/closeAnAccount'&&$route.path!='/findpwd'"></myheader>
     <router-view />
     <!-- <div>
       <img style="width:200px" :src="goods.img" alt="">

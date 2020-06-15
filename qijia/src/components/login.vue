@@ -203,26 +203,17 @@ export default {
             message: "用户名不能为空"
           });
           return;
-        }
-        if (userreg.test(this.username) === true) {
-          return true;
-        }
-        if (emailreg.test(this.username) === true) {
-          return true;
-        } else {
+        } else if (!userreg.test(this.username)) {
           Toast({
-            message: "用户名输入有误，请重新输入"
+            message: "用户名输入有误"
           });
-          return false;
-        }
-
-        if (this.pwd.length == 0) {
+          return;
+        } else if (this.pwd.length == 0) {
           Toast({
             message: "密码不能为空"
           });
           return false;
-        }
-        if (this.pwd.length != 0) {
+        } else if (this.pwd.length != 0) {
           var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
           if (!pwdreg.test(this.pwd)) {
             Toast({
@@ -237,17 +228,17 @@ export default {
       }
     },
     clicklogin() {
-      console.log("快速登录");
+      // console.log("快速登录");
       this.isshow = true;
       this.iscoming = false;
     },
     clickbtn() {
-      console.log("齐家账号登录");
+      // console.log("齐家账号登录");
       this.isshow = false;
       this.iscoming = true;
     },
     goback() {
-      console.log("返回了");
+      // console.log("返回了");
       this.$router.go(-1);
     },
     //随机数的短信验证码
@@ -298,33 +289,33 @@ export default {
       } else {
         this.generatedCode();
         //请求验证码
-        // let params = new URLSearchParams();
-        // params.append("phone", this.tel);
-        // params.append("code", this.ccode);
-        //  this.$axios
-        //   .post("/api/sedsms", params)
+        let params = new URLSearchParams();
+        params.append("phone", this.tel);
+        params.append("code", this.ccode);
+        this.$axios
+          .post("http://localhost:3001/sedsms", params)
 
-        //   .then(res => {
-        //     console.log(res);
-        //   })
-        //   .catch(err => {
-        //     console.log(err);
-        //   });
-
-        this.$axios({
-          method: "post",
-          url: "/api/sedsms",
-          data: {
-            phone: this.tel,
-            code: this.ccode
-          }
-        })
           .then(res => {
             console.log(res);
           })
           .catch(err => {
             console.log(err);
           });
+
+        // this.$axios({
+        //   method: "post",
+        //   url: "/api/sedsms",
+        //   data: {
+        //     phone: this.tel,
+        //     code: this.ccode
+        //   }
+        // })
+        //   .then(res => {
+        //     console.log(res);
+        //   })
+        //   .catch(err => {
+        //     console.log(err);
+        //   });
         this.Dphone = true;
         //进入倒计时的状态
         if (this.computedTime == 0) {
