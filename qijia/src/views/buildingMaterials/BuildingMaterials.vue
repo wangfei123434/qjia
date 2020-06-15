@@ -177,7 +177,7 @@
 			getBuildingMaterials_data() {
 				this.$axios.get("/data/选建材/selectBuildingMaterials.json")
 					.then(res => {
-						console.log(res)
+						// console.log(res)
 						this.buildingMaterials_data =  res.data.data
 						this.nav1 = this.buildingMaterials_data.ranking_list.nav1
 						console.log("aaa",this.buildingMaterials_data)
@@ -191,7 +191,15 @@
 				this.$router.go(-1)
 			},
 			fnLogin(){
+				let hasname=sessionStorage.getItem('uname')
+				console.log(hasname);
+				if(!hasname){
+					// console.log(1);
+					this.$router.push("/login")
+				}else{
+					// console.log(2);
 				this.$router.push("/afterLoginIndex")
+				}
 			}
 		}
 	}

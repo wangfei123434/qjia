@@ -177,6 +177,7 @@
         </li>
       </ul>
       <Renovateidea></Renovateidea>
+<<<<<<< HEAD
 
       <p class="searchmore">
         <a href="#">查看更多屋主装修过程></a>
@@ -491,6 +492,8 @@ export default {
 @import url("../../assets/css/myfont/iconfont.css");
 @import url("../../assets/css/recommend/recommend.css");
 </style>
+=======
+>>>>>>> 2a788cfbae77a4e3e359fb6153f72e7883743e33
 
 
 <script>
@@ -546,7 +549,7 @@ export default {
   },
   methods: {
     getindexdata() {
-      console.log("bbb");
+      // console.log("bbb");
       this.$axios.get("/data/home/index.json").then(res => {
         //   let obj = {
         //     list1:[],
@@ -583,16 +586,16 @@ export default {
           return i < 8;
         });
         this.arr = arr1;
-        console.log("arr1", arr1); //前8个
+        // console.log("arr1", arr1); //前8个
       });
     },
     //点击买建材对应的选项
     clickmaterial(i, v) {
-      console.log("点击选建材", i, v);
+      // console.log("点击选建材", i, v);
       this.active = i;
     },
     pickup() {
-      console.log("收起来");
+      // console.log("收起来");
       //点击上拉的时候下拉箭头显示  收起箭头消失
       //点击上拉的时候 只显示前10个
       let arr1 = this.renovatematerialarr.filter((item, i) => {
@@ -602,7 +605,7 @@ export default {
       this.ishow = false;
     },
     show() {
-      console.log("下拉显示出来");
+      // console.log("下拉显示出来");
       //点击下拉的时候 下拉箭头消失  收起箭头显示
       //点击下来的时候 整个数组显示出来
       this.ishow = true;
@@ -610,25 +613,25 @@ export default {
       // this.renovatematerialarr.push(this.splicearr );
     },
     change(i, v) {
-      console.log("已经改变了", i, v);
+      // console.log("已经改变了", i, v);
       this.currentindex = i;
       this.currindex = i;
       this.licurindex = i;
     },
     changenav(index, item) {
-      console.log(item, index);
+      // console.log(item, index);
       this.actives = index;
     },
 
     clickclose() {
-      console.log("关闭了");
+      // console.log("关闭了");
       this.isclose = false;
     },
     getprice() {
       this.isclose = true;
     },
     goto(item) {
-      console.log("去哪");
+      // console.log("去哪");
       if (item.path) {
         this.$router.push(item.path);
       }
@@ -642,4 +645,3 @@ export default {
 </style>
 
   
->>>>>>> 2756a8d8d061d24cc0a87200cb76e8b7aabc056e

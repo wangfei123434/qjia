@@ -1,14 +1,38 @@
 <template>
   <div class="mine">
     <header class="header">
-      <a href="#" class="sj"></a>
+      <a href="#" class="sj" @click="goto"></a>
       <h2>我的齐家</h2>
       <a href="#" class="menu"></a>
     </header>
-    <div class="header-section">
-      <div class="loginwrap">
-        <span>登录/注册</span>
+    <div class :class="[login==true?'headersectiontrue':'headersection']">
+      <div class="loginwrap" v-if="!login">
+        <span @click="gotologin">登录/注册</span>
         <p>登陆后享受更多装修服务</p>
+      </div>
+      <div class="mine" v-else>
+        <div class="title">
+          <div class="img">
+            <img src="../../assets\images\社区/avatar.png" alt />
+          </div>
+          <span class="i">用户：{{loginmsg}}</span>
+          <span class="set">
+            <img class="icon" src="../../assets\images\社区/bi.png" alt />账户设置
+          </span>
+        </div>
+        <div class="imsg">
+          <div>
+            <p>0.00</p>余额
+          </div>
+          <div>
+            0.00
+            <p>建材贷款</p>
+          </div>
+          <div>
+            0.00
+            <p>装修贷款</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="tab-section">
@@ -56,6 +80,11 @@
   </div>
 </template>
 <script>
+window.addEventListener("storage", function(e) {
+  // console.log(e);
+  // console.log('更改了本地储存');
+  window.location.reload(true);
+});
 import Swiper from "swiper";
 import "swiper/css/swiper.css";
 export default {
@@ -83,7 +112,9 @@ export default {
         { icon: "icon-shangjiaruzhu", title: "入驻齐家" },
         { icon: "icon-tousu1", title: "投诉建议", class: "margin" }
       ],
-      datalist: []
+      datalist: [],
+      login: false,
+      loginmsg: ""
     };
   },
   mounted() {
@@ -98,19 +129,30 @@ export default {
       observer: true,
       observeParents: true
     });
+    let lmsg = sessionStorage.getItem("uname");
+    if (lmsg != null) {
+      this.login = true;
+      this.loginmsg = lmsg;
+    }
   },
   methods: {
+    goto(){
+            this.$router.go(-1);
+    },
     getdata() {
       this.$axios
         .get("/data/我的齐家/mine.json")
         .then(res => {
-          console.log(res);
+          // console.log(res);
           this.datalist = res.data.list;
-          console.log(this.datalist);
+          // console.log(this.datalist);
         })
         .catch(err => {
           console.log(err);
         });
+    },
+    gotologin() {
+      this.$router.push("/login");
     }
   }
 };
@@ -162,7 +204,52 @@ export default {
     margin: 20/100rem;
   }
 }
-.header-section {
+.headersectiontrue {
+  background-image: url(../../assets/images/社区/i-topbg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 20/100rem 30/100rem;
+  .mine {
+    .img {
+      vertical-align: middle;
+      background: #f6f1f1;
+      display: inline-block;
+      border-radius: 50%;
+      height: 100/100rem;
+      width: 100/100rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .i {
+      margin: 0 30/100rem;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .set {
+      padding: 6/100rem;
+      border-radius: 25px;
+      border: 1px solid #666666;
+      font-size: 13px;
+      .icon {
+        width: 22/100rem;
+        height: 22/100rem;
+        margin-right: 10/100rem;
+      }
+    }
+    .imsg {
+      margin: 10/100rem auto;
+      margin-top: 30/100rem;
+      width: 80%;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+}
+.headersection {
   background-image: url(../../assets/images/社区/i-topbg.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -210,6 +297,11 @@ export default {
     background-color: #fff;
     padding: 20/100rem;
     border-bottom: 1px solid #ecebeb;
+    .icon{
+      position: relative;
+      top: -6/100rem;
+      left: 5/100rem;
+    }
     &.margin {
       margin: 20/100rem 0;
       border: none;
@@ -232,7 +324,7 @@ export default {
     padding: 20/100rem 0 50/100rem;
     // height: 300/100rem;
     width: 100%;
-    .swiper-slide{
+    .swiper-slide {
       width: 80%;
     }
     .wrap {
@@ -265,7 +357,7 @@ export default {
         .txt {
           line-height: 1.2;
           overflow: hidden;
-          text-overflow:clip;
+          text-overflow: clip;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;

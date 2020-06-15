@@ -102,17 +102,17 @@ export default {
   },
   methods: {
     getindexdata() {
-      console.log("zzz");
+      // console.log("zzz");
       this.$axios.get("/data/home/index.json").then(res => {
-        console.log(res.data.mydata);
+        // console.log(res.data.mydata);
         this.navlist = res.data.mydata.xiaoguotu;
         this.cases = res.data.mydata.case;
         this.diray = res.data.mydata.diraies;
-        console.log("嗯哼", this.navlist);
+        // console.log("嗯哼", this.navlist);
       });
     },
     changestyle(indexc, item) {
-      console.log(indexc, item);
+      // console.log(indexc, item);
       this.scurrindex = indexc;
     }
   }

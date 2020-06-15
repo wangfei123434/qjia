@@ -165,4 +165,17 @@ const router = new VueRouter({
 	routes,
 	mode: 'history',//就是去掉了#号 默认是hash模式是加了#号的
 })
+router.beforeEach((to, from, next) => {
+	let msg=sessionStorage.getItem('uname')
+	if(to.path == "/login" && !msg) {
+		next() 
+	}else if(to.path=="/login" && msg){
+		next({
+			path:"/mine"
+		})
+	}else {
+		next()
+	}
+	
+})
 export default router

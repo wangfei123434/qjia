@@ -102,7 +102,7 @@
         </van-tab>
       </van-tabs>
     </div>
-    <div class="sendbtn" @click="zhezaoshow=true">
+    <div class="sendbtn" @click="zhezaoshowfn">
       <img src="../../assets/images/社区/Posted.png" alt />
       <p>发帖</p>
     </div>
@@ -117,7 +117,8 @@
         </p>
         <p class="yanzhengma after">
           <input type="text" id="yanzhengma" placeholder="验证码" maxlength="4" />
-          <span>换一张</span>
+          <img :src="code[this.imgCode].img" alt />
+          <span @click="change">换一张</span>
         </p>
         <p class="duanxinma after">
           <input type="text" id="duanxinma" placeholder="短信码" maxlength="6" />
@@ -128,10 +129,7 @@
           <span>一个月之内免登录</span>
         </p>
         <p class="sub">
-          <van-button class="sub" type="primary" text="登录" @click="goaddress" />
-          <van-notify v-model="btnshow" type="warning">
-            <span id="alertmsg">{{msg}}</span>
-          </van-notify>
+          <input type="button" class="sub" @click="goaddress" value="登入" />
         </p>
         <p class="line">
           <span>其他账号登录</span>
@@ -142,16 +140,36 @@
         </div>
       </form>
     </div>
-    <div class="zhezao" v-show="zhezaoshow" @click="zhezaoshow=false"></div>
+    <div class="zhezao" v-show="zhezaoshow" @click="zhezaoshowfn"></div>
   </div>
 </template>
 <script>
+window.addEventListener("storage", function(e) {
+  // console.log(e);
+  // console.log('更改了本地储存');
+  window.location.reload(true);
+});
 export default {
   name: "question",
   data() {
     return {
+      code: [
+        {
+          img: require("../../assets/images/home/code.jpg"),
+          value: "8p39"
+        },
+        {
+          img: require("../../assets/images/home/code2.jpg"),
+          value: "dvgb"
+        },
+        {
+          img: require("../../assets/images/home/code3.jpg"),
+          value: "fsgh"
+        }
+      ],
+      imgCode: 0,
       msg: "",
-      btnshow: false,
+      loginmsg: { name: "", status: false },
       toplist: [],
       colorfont: [],
       active: 0,
@@ -172,8 +190,20 @@ export default {
   mounted() {
     this.getdata();
     window.addEventListener("scroll", this.handleScroll, true);
+    // 如果有本地储存用户，则打不开登录界面
+    let lmsg = sessionStorage.getItem("uname");
+    // console.log(lmsg);
+    if (lmsg != null) {
+      this.loginmsg.status = true;
+    }
   },
   methods: {
+    change() {
+      this.imgCode++;
+      if (this.imgCode > this.code.length - 1) {
+        this.imgCode = 0;
+      }
+    },
     handleScroll() {
       var scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop; //变量windowHeight是可视区的高度
@@ -191,7 +221,7 @@ export default {
             res.data.data.list[1].list_li.forEach(item => {
               this.quelist.push(item);
             });
-            console.log(this.newlist);
+            // console.log(this.newlist);
           })
           .catch(err => {
             console.log(err);
@@ -202,16 +232,27 @@ export default {
       this.$axios
         .get("/data/社区/community.json")
         .then(res => {
-          console.log(res);
+          //   console.log(res);
           this.toplist = res.data.data.nav;
           this.colorfont = res.data.data.hot_label;
           this.newlist = res.data.data.list[0].list_li;
           this.quelist = res.data.data.list[1].list_li;
-          console.log(this.quelist);
+          //   console.log(this.quelist);
         })
         .catch(err => {
           console.log(err);
         });
+    },
+    zhezaoshowfn() {
+      //   console.log(this.loginmsg.status);
+      if (this.loginmsg.status) {
+        this.zhezaoshow = false;
+        this.$toast({
+          message: "已登录"
+        });
+        return;
+      }
+      this.zhezaoshow = !this.zhezaoshow;
     },
     goaddress() {
       var phone = document.getElementById("phone").value;
@@ -220,54 +261,61 @@ export default {
       var duanxinma = document.getElementById("duanxinma").value;
       if (phone == "") {
         this.msg = "手机号不能为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
       } else if (!/^1[3456789]\d{9}$/.test(phone)) {
         this.msg = "手机号格式错误";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      } else if ((yanzhengma == "")) {
+      } else if (yanzhengma == "") {
         this.msg = "验证码为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      } else if (yanzhengma != "1234") {
-        this.msg = "验证码错误";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
-        return false;
-      }else if (duanxinma =="") {
+      } else if (yanzhengma != this.code[this.imgCode].value) {
+        if (yanzhengma == this.code[this.imgCode].value.toUpperCase()) {
+          return true;
+        } else {
+          this.msg = "验证码错误";
+          this.$toast({
+            message: this.msg,
+            type: "fail"
+          });
+          return false;
+        }
+      } else if (duanxinma == "") {
         this.msg = "短信码为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      }else if (duanxinma !="654321") {
-        this.msg = "短信码为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+      } else if (duanxinma != "654321") {
+        this.msg = "短信码错误";
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
       } else {
         this.msg = "登录成功";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        this.zhezaoshow=false
-        }, 2000);
-        return false
+        this.$toast({
+          message: this.msg,
+          type: "success"
+        });
+        this.zhezaoshow = false;
+        this.loginmsg.name = phone;
+        //					let loginmsg = JSON.stringify(this.loginmsg.name);
+        sessionStorage.setItem("uname", phone);
+        this.loginmsg.status = true;
       }
     }
   }
@@ -294,6 +342,7 @@ export default {
     top: 50%;
   }
 }
+
 .zhezao {
   width: 100%;
   height: 100hv;
@@ -322,6 +371,7 @@ export default {
     margin-top: 8%;
   }
 }
+
 .form {
   animation: from 0.5s;
   padding: 10/100rem;
@@ -449,10 +499,14 @@ export default {
   form {
     padding: 10/100rem 40/100rem;
     .yanzhengma {
+      img {
+        width: 100/100rem;
+      }
       input {
         width: 50%;
       }
       span {
+        margin-left: 15/100rem;
         color: #369af7;
       }
     }
@@ -466,14 +520,17 @@ export default {
     }
   }
 }
+
 .forum {
   padding-top: 25/100rem;
   border-top: 1px solid #eaeaea;
   width: 100%;
 }
+
 .toplist-wrap::-webkit-scrollbar {
   display: none;
 }
+
 .toplist-wrap::after {
   content: ".";
   display: block;
@@ -481,12 +538,12 @@ export default {
   clear: both;
   visibility: hidden; //占位但不可见
 }
+
 .toplist-wrap {
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
   width: 100%;
-
   .list {
     display: inline-block;
     position: relative;
@@ -505,7 +562,7 @@ export default {
       background-color: rgba(97, 96, 96, 0.8);
       height: 100%;
       line-height: 128/100rem;
-      width: 80%;
+      width: 100%;
       padding: 0 10%;
       font-size: 12px;
       position: absolute;
@@ -517,6 +574,7 @@ export default {
     }
   }
 }
+
 .hot {
   padding: 0 20/100rem;
   margin: 80/100rem 0;
@@ -538,6 +596,7 @@ export default {
     }
   }
 }
+
 .section {
   .wrap {
     display: flex;
@@ -555,7 +614,6 @@ export default {
       border-radius: 6px;
       overflow: hidden;
       width: 90%;
-
       .img {
         width: 100%;
         img {
