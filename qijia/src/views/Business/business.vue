@@ -198,7 +198,7 @@
 				this.$axios
 					.get("data/旺铺/shop.json")
 					.then(res => {
-						console.log(res.data.data.favorable);
+						// console.log(res.data.data.favorable);
 						this.arry = res.data.data;
 						this.arry1 = res.data.data.listen;
 						this.arry2 = res.data.data.favorable;
@@ -244,7 +244,7 @@
 				this.yimg = !this.yimg
 			},
 			filter(){
-				console.log(112222)
+				// console.log(112222)
 				this.yimg = false
 				this.$refs.my.style.height = 0 + "px";
 				
@@ -264,12 +264,12 @@
 				this.$refs.tabern.style.height = 0 + "px";
 			},
 			ginhyone(){
-				console.log(88888)
+				// console.log(88888)
 				this.yimg = false
 				this.$refs.my.style.height = 0 + "px";
 			},
 			ginhytwo(){
-				console.log(88888)
+				// console.log(88888)
 				this.stateone = false
 				this.$refs.rightone.style.height = 0 + "px";
 			},
@@ -278,7 +278,7 @@
 				this.dir3 = this.arry2[index].titleone
 			},
 			spanmyming(){
-				console.log(this.stus)
+				// console.log(this.stus)
 				this.stus = !this.stus
 			},
 			soanone(){

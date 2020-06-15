@@ -189,7 +189,7 @@ export default {
         });
         return;
       } else {
-        sessionStorage.setItem("phone", this.tel);
+        sessionStorage.setItem("uname", this.tel);
         this.$router.push({ path: "/home/recommend" });
       }
     }

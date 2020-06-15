@@ -38,7 +38,7 @@
 
         },
         mounted() {
-            console.log(this.swiperid)
+            // console.log(this.swiperid)
             //就是类选择器.mybanner1   .mybanner2
             new Swiper('.' + this.swiperid, {
                 loop: true, // 循环模式选项

@@ -49,7 +49,7 @@
         <i class="img">
           <img src="../../assets/images/社区/my_askfoot_icon.png" alt />
         </i>
-        <span @click="zhezaoshow=true">我的问答</span>
+        <span @click="zhezaoshowfn">我的问答</span>
       </a>
       <a href="#" class="bgc">
         <i class="img">
@@ -60,7 +60,7 @@
     </div>
     <div class="form" v-show="zhezaoshow">
       <p class="close">
-        <span @click="zhezaoshow=!zhezaoshow">X</span>
+        <span @click="zhezaoshow=false">X</span>
       </p>
       <p class="title">请选择快捷登录</p>
       <form action="#">
@@ -69,6 +69,7 @@
         </p>
         <p class="yanzhengma after">
           <input type="text" id="yanzhengma" placeholder="验证码" maxlength="4" />
+          <img src="../../assets/images/社区/code.jpg" alt="">
           <span>换一张</span>
         </p>
         <p class="duanxinma after">
@@ -80,10 +81,7 @@
           <span>一个月之内免登录</span>
         </p>
         <p class="sub">
-          <van-button class="sub" type="primary" text="登录" @click="goaddress" />
-          <van-notify v-model="btnshow" type="warning">
-            <span id="alertmsg">{{msg}}</span>
-          </van-notify>
+          <input type="button" class="sub" @click="goaddress" value="登入" />
         </p>
         <p class="line">
           <span>其他账号登录</span>
@@ -98,18 +96,38 @@
   </div>
 </template>
 <script>
+window.addEventListener('storage', function (e) {
+    // console.log(e);
+    // console.log('更改了本地储存');
+    window.location.reload(true)
+});
 export default {
   name: "question",
   data() {
     return {
-      msg:'',
-      btnshow:false,
+      loginmsg: { name: "", status: false },
+      msg: "",
+      btnshow: false,
       zhezaoshow: false,
       currIndex: 0
     };
   },
-  mounted() {},
+  mounted() {
+    let lmsg = sessionStorage.getItem("uname");
+    // console.log(lmsg);
+    if (lmsg != null) {
+      this.loginmsg.status = true;
+    }
+  },
   methods: {
+    zhezaoshowfn() {
+      //   console.log(this.loginmsg.status);
+      if (this.loginmsg.status) {
+        this.zhezaoshow = false;
+        return;
+      }
+      this.zhezaoshow = !this.zhezaoshow;
+    },
     goaddress() {
       var phone = document.getElementById("phone").value;
       var yonghuxieyi = document.getElementById("yonghuxieyi");
@@ -117,78 +135,80 @@ export default {
       var duanxinma = document.getElementById("duanxinma").value;
       if (phone == "") {
         this.msg = "手机号不能为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
       } else if (!/^1[3456789]\d{9}$/.test(phone)) {
         this.msg = "手机号格式错误";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      } else if ((yanzhengma == "")) {
+      } else if (yanzhengma == "") {
         this.msg = "验证码为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      } else if (yanzhengma != "1234") {
+      } else if (yanzhengma != "hh86") {
         this.msg = "验证码错误";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      }else if (duanxinma =="") {
+      } else if (duanxinma == "") {
         this.msg = "短信码为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
-      }else if (duanxinma !="654321") {
-        this.msg = "短信码为空";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        }, 2000);
+      } else if (duanxinma != "654321") {
+        this.msg = "短信码错误";
+        this.$toast({
+          message: this.msg,
+          type: "fail"
+        });
         return false;
       } else {
         this.msg = "登录成功";
-        this.btnshow = true;
-        setTimeout(() => {
-          this.btnshow = false;
-        this.zhezaoshow=false
-        }, 2000);
-        return false
+        this.$toast({
+          message: this.msg,
+          type: "success"
+        });
+        this.zhezaoshow = false;
+        this.loginmsg.name = phone;
+        //					let loginmsg = JSON.stringify(this.loginmsg.name);
+        sessionStorage.setItem("uname", phone);
+        this.loginmsg.status = true;
       }
     }
   }
-  }
-
+};
 </script>
 <style lang="less" scoped>
-@keyframes from{
-  0%  {
+@keyframes from {
+  0% {
     top: 0;
   }
-  50%{
+  50% {
     top: 55%;
   }
-  65%{
+  65% {
     top: 45%;
   }
-  80%{
+  80% {
     top: 53%;
   }
-  90%{
+  90% {
     top: 48%;
   }
-  100%{
+  100% {
     top: 50%;
   }
 }
@@ -471,6 +491,9 @@ export default {
   form {
     padding: 10/100rem 40/100rem;
     .yanzhengma {
+      img{
+        width: 100/100rem;
+      }
       input {
         width: 50%;
       }

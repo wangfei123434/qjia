@@ -189,65 +189,73 @@ export default {
             message: "短信码有误，请重新输入"
           });
         } else {
-          sessionStorage.setItem("phone", this.tel);
+          sessionStorage.setItem("uname", this.tel);
           this.$router.push({ path: "/home/recommend" });
         }
         //齐家账号登录的方式
       } else {
-        let userreg = /^[a-zA-Z0-9_-]{4,16}$/; //用户名（4到16位，字母数字下划线，减号）
-        let emailreg = /^[\w\-]+@[a-zA-Z\d\-]+(\.[a-zA-Z]{2,8}){1,2}$/; //邮箱的正则
+        // let userreg = /^[a-zA-Z0-9_-]{4,16}$/; //用户名（4到16位，字母数字下划线，减号）
+        // let emailreg = /^[\w\-]+@[a-zA-Z\d\-]+(\.[a-zA-Z]{2,8}){1,2}$/; //邮箱的正则
         let telreg = /^[1][3,4,5,7,8][0-9]{9}$/; //手机号码的
+        var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
 
-        if (this.username.length == 0) {
+        // if (this.username.length == 0) {
+        //   Toast({
+        //     message: "用户名不能为空"
+        //   });
+        //   return;
+        // }
+        // if (userreg.test(this.username) === true) {
+        //   return true;
+        // }
+        // if (emailreg.test(this.username) === true) {
+        //   return true;
+        // } else {
+        //   Toast({
+        //     message: "用户名输入有误，请重新输入"
+        //   });
+        //   return false;
+        // }
+        if (this.username == "") {
           Toast({
             message: "用户名不能为空"
           });
-          return;
-        }
-        if (userreg.test(this.username) === true) {
-          return true;
-        }
-        if (emailreg.test(this.username) === true) {
-          return true;
-        } else {
+          return false;
+        } else if (!pwdreg.test(this.username)) {
           Toast({
-            message: "用户名输入有误，请重新输入"
+            message: "用户名错误"
           });
           return false;
-        }
-
-        if (this.pwd.length == 0) {
+        } else if (this.pwd.length == 0) {
           Toast({
             message: "密码不能为空"
           });
           return false;
-        }
-        if (this.pwd.length != 0) {
-          var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
-          if (!pwdreg.test(this.pwd)) {
-            Toast({
-              message: "密码输入有误，请重新输入"
-            });
-            return false;
-          } else {
-            sessionStorage.setItem("phone", this.tel);
-            this.$router.push({ path: "/home/recommend" });
-          }
+        } else if (!pwdreg.test(this.pwd)) {
+          Toast({
+            message: "密码输入有误，请重新输入"
+          });
+          return false;
+        } else {
+          console.log(1);
+          this.tel=this.username
+          sessionStorage.setItem("uname", this.tel);
+          this.$router.push({ path: "/home/recommend" });
         }
       }
     },
     clicklogin() {
-      console.log("快速登录");
+      // console.log("快速登录");
       this.isshow = true;
       this.iscoming = false;
     },
     clickbtn() {
-      console.log("齐家账号登录");
+      // console.log("齐家账号登录");
       this.isshow = false;
       this.iscoming = true;
     },
     goback() {
-      console.log("返回了");
+      // console.log("返回了");
       this.$router.go(-1);
     },
     //随机数的短信验证码
