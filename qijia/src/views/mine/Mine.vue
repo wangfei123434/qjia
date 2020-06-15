@@ -87,6 +87,7 @@ window.addEventListener("storage", function(e) {
 });
 import Swiper from "swiper";
 import "swiper/css/swiper.css";
+import { getCookie } from '../../util/util';
 export default {
   name: "Mine",
   data() {
@@ -129,7 +130,8 @@ export default {
       observer: true,
       observeParents: true
     });
-    let lmsg = sessionStorage.getItem("uname");
+    
+    let lmsg = getCookie("uname")
     if (lmsg != null) {
       this.login = true;
       this.loginmsg = lmsg;

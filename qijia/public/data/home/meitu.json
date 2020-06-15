@@ -1407,7 +1407,8 @@
                 "color": "rgba(56, 128, 229)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon1.png",
                 "title": "免费设计",
-                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png",
+                "isShow":false
             },
             {
                 "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon2.png",
@@ -1417,7 +1418,9 @@
                 "color": "rgba(216, 62, 63)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon2.png",
                 "title": "智能报价",
-                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png",
+                "isShow":false
+
             },
             {
                 "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon3.png",
@@ -1427,7 +1430,9 @@
                 "color": "rgba(244, 142, 51)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon3.png",
                 "title": "装修贷款",
-                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png",
+                "isShow":false
+
             },
             {
                 "imgsrc": "http://mued3.jia.com/image/mobile/toutiao/wz-footer-icon4.png",
@@ -1437,7 +1442,9 @@
                 "color": "rgba(112, 69, 225)",
                 "smallpic": "http://mued3.jia.com/image/mobile/toutiao/wz-fix-icon4.png",
                 "title": "全景定制",
-                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png"
+                "chacha": "http://mued3.jia.com/image/mobile/toutiao/wz-close-icon.png",
+                "isShow":false
+
             }
         ]
     }

@@ -46,7 +46,7 @@
       <div class="footer">
         <ul>
           <li v-for="(item,index) in footerlist" :key="index" @click="show(index,item)">
-            <span class="activeborder" v-show="isshow"></span>
+            <span class="activeborder" v-show="footerlist[sactive].isShow"></span>
             <img :src="item.smallpic" alt />
             <br />
             <span :style="{color:colorindex==index?item.color:'#000'}">{{item.title}}</span>
@@ -55,9 +55,9 @@
       </div>
     </aside>
     <!-- 底部的弹出的盒子 -->
-    <div class="footer-pic">
-      <van-popup v-model="isshow" position="bottom" closeable>
-        <div class="totop" v-for="(item,index) in footerlist" :key="index" v-show="index==sactive">
+    <div class="footer-pic" v-for="(item,index) in footerlist" :key="index" v-show="index==sactive">
+      <van-popup v-model="item.isShow" position="bottom" closeable>
+        <div class="totop">
           <div class="picbox">
             <img :src="item.imgsrc" alt class="pics" />
           </div>
@@ -88,9 +88,10 @@ export default {
       ullist: [],
       footerlist: [],
       curindex: 0,
+      aaa: true,
+      lastIndex: 0,
       activeshow: 0,
       active: 0,
-      isshow: false,
       colorindex: 0, //颜色的索引,
       sactive: 0
     };
@@ -111,7 +112,15 @@ export default {
     },
     show(index, item) {
       this.colorindex = index;
-      this.isshow = !this.isshow;
+      if (index == this.lastIndex) {
+        this.footerlist[index].isShow = !this.footerlist[index].isShow;
+      } else {
+        this.footerlist.map(item => {
+          item.isShow = false;
+        });
+        this.footerlist[index].isShow = true;
+        this.lastIndex = index;
+      }
       // console.log(index);
       this.sactive = index;
     }

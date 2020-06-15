@@ -21,6 +21,8 @@ export default new Vuex.Store({
 				} else {
 					state.car.push(goods)
 				}
+			}else{
+				state.car.push(goods)
 			}
 			sessionStorage.setItem("goods", JSON.stringify(state.car))
 		},

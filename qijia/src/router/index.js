@@ -9,6 +9,7 @@ import MustBuy5 from "../components/building/mustBuy5.vue"
 import MustBuy6 from "../components/building/mustBuy6.vue"
 import MustBuy7 from "../components/building/mustBuy7.vue"
 import MustBuy8 from "../components/building/mustBuy8.vue"
+import { getCookie } from '@/util/util'
 Vue.use(VueRouter)
 
 const routes = [
@@ -55,11 +56,11 @@ const routes = [
 		name: 'Login',
 		component: () => import(/* webpackChunkName: "about" */'../components/login.vue')
 	},
-    {
-    	path: '/reservation',
-    	name: 'Reservation',
-    	component: () => import(/* webpackChunkName: "about" */'../views/reservation/reservation.vue')
-    },
+	{
+		path: '/reservation',
+		name: 'Reservation',
+		component: () => import(/* webpackChunkName: "about" */'../views/reservation/reservation.vue')
+	},
 	{
 		path: '/renovation',
 		name: 'Renovation',
@@ -114,34 +115,34 @@ const routes = [
 		]
 	},
 	{
-		path:"/afterLoginIndex",
-		name:"AfterLoginIndex",
-		component:() =>import("../views/AfterLoginIndex/afterLoginIndex.vue")
+		path: "/afterLoginIndex",
+		name: "AfterLoginIndex",
+		component: () => import("../views/AfterLoginIndex/afterLoginIndex.vue")
 	},
 	{
-		path:"/found",
-		name:"Found",
-		component:() =>import("../views/Found/found.vue")
+		path: "/found",
+		name: "Found",
+		component: () => import("../views/Found/found.vue")
 	},
 	{
-		path:"/car",
-		name:"Car",
-		component:() =>import("../views/Car/car.vue")
+		path: "/car",
+		name: "Car",
+		component: () => import("../views/Car/car.vue")
 	},
 	{
-		path:"/my",
-		name:"My",
-		component:() =>import("../views/My/my.vue")
+		path: "/my",
+		name: "My",
+		component: () => import("../views/My/my.vue")
 	},
 	{
-		path:"/shopping",
-		name:"Shopping",
-		component:() =>import("../views/Shopping/shopping.vue")
+		path: "/shopping",
+		name: "Shopping",
+		component: () => import("../views/Shopping/shopping.vue")
 	},
 	{
-		path:"/closeAnAccount",
-		name:"CloseAnAccount",
-		component:() =>import("../views/CloseAnAccount/closeAnAccount.vue")
+		path: "/closeAnAccount",
+		name: "CloseAnAccount",
+		component: () => import("../views/CloseAnAccount/closeAnAccount.vue")
 	},
 	{
 		path: '/meitu',
@@ -150,12 +151,12 @@ const routes = [
 	},
 	{
 		path: "/findpwd",
-		name:"findpwd",
+		name: "findpwd",
 		component: () => import('../components/findpwd.vue')
 	},
 	{
 		path: "/register",
-		name:"register",
+		name: "register",
 		component: () => import('../components/register.vue')
 	}
 
@@ -166,16 +167,16 @@ const router = new VueRouter({
 	mode: 'history',//就是去掉了#号 默认是hash模式是加了#号的
 })
 router.beforeEach((to, from, next) => {
-	let msg=sessionStorage.getItem('uname')
-	if(to.path == "/login" && !msg) {
-		next() 
-	}else if(to.path=="/login" && msg){
+	let msg = getCookie("uname")
+	if (to.path == "/login" && !msg) {
+		next()
+	} else if (to.path == "/login" && msg) {
 		next({
-			path:"/mine"
+			path: "/mine"
 		})
-	}else {
+	} else {
 		next()
 	}
-	
+
 })
 export default router

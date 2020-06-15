@@ -67,7 +67,7 @@
       </form>
     </div>
     <p class="login-p">
-      <input type="checkbox" />
+      <input type="checkbox" v-model="status"/>
       <span>一个月之内免登录</span>
     </p>
     <div class="btn">
@@ -109,12 +109,12 @@
 import Vue from "vue";
 import { Toast } from "vant";
 Vue.use(Toast);
-import { setCookie, getCookie } from "../util/util.js";
+import { setCookie, getCookie } from "../util/util";
 export default {
   name: "login",
   data: function() {
     return {
-      tel: "", //手机号码
+      tel: sessionStorage.getItem("uname")||"", //手机号码
       code: [
         {
           img: require("../assets/images/home/code.jpg"),
@@ -135,6 +135,7 @@ export default {
       username: "", //用户名
       pwd: "", //密码
       isshow: true,
+      status:true,
       iscoming: false,
       ccode: "", //六位数的随机数
       codes: "", //
@@ -194,54 +195,68 @@ export default {
         }
         //齐家账号登录的方式
       } else {
-        // let userreg = /^[a-zA-Z0-9_-]{4,16}$/; //用户名（4到16位，字母数字下划线，减号）
-        // let emailreg = /^[\w\-]+@[a-zA-Z\d\-]+(\.[a-zA-Z]{2,8}){1,2}$/; //邮箱的正则
+        let userreg = /^[a-zA-Z0-9_-]{4,16}$/; //用户名（4到16位，字母数字下划线，减号）
+        let emailreg = /^[\w\-]+@[a-zA-Z\d\-]+(\.[a-zA-Z]{2,8}){1,2}$/; //邮箱的正则
         let telreg = /^[1][3,4,5,7,8][0-9]{9}$/; //手机号码的
         var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
-
-        // if (this.username.length == 0) {
-        //   Toast({
-        //     message: "用户名不能为空"
-        //   });
-        //   return;
-        // }
-        // if (userreg.test(this.username) === true) {
-        //   return true;
-        // }
-        // if (emailreg.test(this.username) === true) {
-        //   return true;
-        // } else {
-        //   Toast({
-        //     message: "用户名输入有误，请重新输入"
-        //   });
-        //   return false;
-        // }
-        if (this.username == "") {
+        if (this.username.length == 0) {
           Toast({
-            message: "用户名不能为空"
+            message: "用户名不为空"
           });
           return false;
-        } else if (!pwdreg.test(this.username)) {
+        } else if (
+          !(
+            emailreg.test(this.username) ||
+            telreg.test(this.username) ||
+            userreg.test(this.username)
+          )
+        ) {
+          console.log("1", emailreg.test(this.username));
+          console.log("2", telreg.test(this.username));
+          console.log("3", userreg.test(this.username));
           Toast({
-            message: "用户名错误"
-          });
-          return false;
-        } else if (this.pwd.length == 0) {
-          Toast({
-            message: "密码不能为空"
-          });
-          return false;
-        } else if (!pwdreg.test(this.pwd)) {
-          Toast({
-            message: "密码输入有误，请重新输入"
+            message: "用户名不对"
           });
           return false;
         } else {
-          console.log(1);
-          this.tel=this.username
-          sessionStorage.setItem("uname", this.tel);
-          this.$router.push({ path: "/home/recommend" });
+          if (this.pwd.length == 0) {
+            Toast({
+              message: "密码不能为空"
+            });
+            return false;
+          } else if (!pwdreg.test(this.pwd)) {
+            Toast({
+              message: "密码输入有误，请重新输入"
+            });
+            return false;
+          } else {
+            if(this.status){
+              setCookie("uname",this.tel,2)
+            }
+            this.$router.push({ path: "/home/recommend" });
+          }
         }
+
+        // if (this.username == "") {
+        //   Toast({
+        //     message: "用户名不能为空"
+        //   });
+        //   return false;
+        // }
+        // if (userreg.test(this.username) == true) {
+        //   return true;
+        // }
+        // if (emailreg.test(this.username) == true) {
+        //   return true;
+        // }
+        // if (telreg.test(this.username) == true) {
+        //   return true;
+        // } else {
+        //   Toast({
+        //     message: "用户名错误,请重新输入"
+        //   });
+        //   return false;
+        // }
       }
     },
     clicklogin() {

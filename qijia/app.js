@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 const SMSClient = require('@alicloud/sms-sdk')
 // ACCESS_KEY_ID/ACCESS_KEY_SECRET 根据实际申请的账号信息进行替换
 const accessKeyId = 'LTAI4G564D7rjwMzfPALWigo'
-const secretAccessKey = 'a0pDz76oCSmOEBKQDKAf7XHJ66yYjkk'
+const secretAccessKey = 'a0pDz76oCSmOEBKQDKAf7XHJ66yYjk'
 //初始化sms_client
 let smsClient = new SMSClient({
     accessKeyId,
@@ -40,7 +40,7 @@ app.post('/sedsms', function (req, res) {
     smsClient.sendSMS({
         PhoneNumbers: req.body.phone, //必填:待发送手机号,支持以逗号分隔的形式进行批量调用，目前从前端获取手机号码
         SignName: '阳光超市', //必填:短信签名-可在短信控制台中找到
-        TemplateCode: 'SMS_193240375', //必填:短信模板-可在短信控制台中找到
+        TemplateCode: 'SMS_193241507', //必填:短信模板-可在短信控制台中找到
         TemplateParam: JSON.stringify({ "code": req.body.code })  //可选:模板中的变量替换JSON串,目前不用
     }).then(function (res) {
         console.log(1)
