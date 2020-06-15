@@ -177,8 +177,6 @@
         </li>
       </ul>
       <Renovateidea></Renovateidea>
-<<<<<<< HEAD
-
       <p class="searchmore">
         <a href="#">查看更多屋主装修过程></a>
       </p>
@@ -428,7 +426,6 @@ export default {
         // this.stylepicarr = res.data.mydata.case.stylepics;
 
         this.goodsarr = res.data.mydata.goods;
-
 
         let arr = this.renovatematerialarr.filter((item, i) => {
           return i < 8;

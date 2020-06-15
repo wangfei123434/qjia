@@ -220,39 +220,17 @@ export default {
           Toast({
             message: "用户名不能为空"
           });
-<<<<<<< HEAD
-          return;
-        } else if (!userreg.test(this.username)) {
-          Toast({
-            message: "用户名输入有误"
-          });
-          return;
-=======
           return false;
         } else if (!pwdreg.test(this.username)) {
           Toast({
             message: "用户名错误"
           });
           return false;
->>>>>>> 2a788cfbae77a4e3e359fb6153f72e7883743e33
         } else if (this.pwd.length == 0) {
           Toast({
             message: "密码不能为空"
           });
           return false;
-<<<<<<< HEAD
-        } else if (this.pwd.length != 0) {
-          var pwdreg = /^[a-zA-Z0-9]{6,16}$/; //密码长度为6-16位数由数字或字母组成
-          if (!pwdreg.test(this.pwd)) {
-            Toast({
-              message: "密码输入有误，请重新输入"
-            });
-            return false;
-          } else {
-            sessionStorage.setItem("phone", this.tel);
-            this.$router.push({ path: "/home/recommend" });
-          }
-=======
         } else if (!pwdreg.test(this.pwd)) {
           Toast({
             message: "密码输入有误，请重新输入"
@@ -263,7 +241,6 @@ export default {
           this.tel=this.username
           sessionStorage.setItem("uname", this.tel);
           this.$router.push({ path: "/home/recommend" });
->>>>>>> 2a788cfbae77a4e3e359fb6153f72e7883743e33
         }
       }
     },
