@@ -67,7 +67,7 @@
       </form>
     </div>
     <p class="login-p">
-      <input type="checkbox" v-model="status"/>
+      <input type="checkbox" v-model="status" />
       <span>一个月之内免登录</span>
     </p>
     <div class="btn">
@@ -114,7 +114,7 @@ export default {
   name: "login",
   data: function() {
     return {
-      tel: sessionStorage.getItem("uname")||"", //手机号码
+      tel: sessionStorage.getItem("uname") || "", //手机号码
       code: [
         {
           img: require("../assets/images/home/code.jpg"),
@@ -135,7 +135,7 @@ export default {
       username: "", //用户名
       pwd: "", //密码
       isshow: true,
-      status:true,
+      status: true,
       iscoming: false,
       ccode: "", //六位数的随机数
       codes: "", //
@@ -230,8 +230,8 @@ export default {
             });
             return false;
           } else {
-            if(this.status){
-              setCookie("uname",this.tel,2)
+            if (this.status) {
+              setCookie("uname", this.tel, 2);
             }
             this.$router.push({ path: "/home/recommend" });
           }
@@ -281,6 +281,7 @@ export default {
         let index = Math.floor(Math.random() * 9.9);
         code += random[index];
       }
+      console.log("code呀",code)
       this.ccode = code;
     },
     // // 判断验证码是否输入准确
